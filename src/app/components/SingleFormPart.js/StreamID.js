@@ -28,7 +28,7 @@ const StreamID = ({ items }) => {
         rowData[j].Content
           ? rowData[j].Content.toUpperCase() == "STREAM IDENTIFICATION"
             ? null
-            : row.push(<td key={j}> {rowData[j].Content}</td>)
+            : row.push(<td  key={j}> {rowData[j].Content}</td>)
           : null;
       }
 

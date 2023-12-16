@@ -6,68 +6,63 @@ function SpawningTable({ items }) {
 
     // console.log(items.Cells.RowIndex(0));
     const rowData = items.Cells.filter((cell) => cell.RowIndex === 0);
-    const rowHeader = [];
-    // let colspan;
-    // switch (true) {
-    //   case content?.toUpperCase().includes('DATES OF SPAWNING'):
-    //     colspan = "6";
-    //     break;
-    //   case content.toUpperCase().includes('ARRIVAL IN STREAM'):
-    //     colspan = "2";
-    //     break;
-    //   default:
-    //     null;
-    //     break;
-    // }
-    rowData.map((cell) => {
-      const content = cell.Content;
-      let colspan;
-      switch (true) {
-        case content?.toUpperCase().includes("DATES OF SPAWNING"):
-          colspan = "6";
-          break;
-        case content?.toUpperCase().includes("ARRIVAL IN STREAM"):
-          colspan = "2";
-          break;
-        default:
-          null;
-          break;
-      }
 
-      
-      rowHeader.push(
-        <td colSpan={colspan} key={cell.Content}>
-        {colspan === '6' ? (
-          <>
-            <div>{cell.Content.substring(0, cell.Content.indexOf('START'))}</div>
-            <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-              {cell.Content
-                .substring(cell.Content.indexOf('START'), cell.Content.length)
-                .split(' ')
-                .map((part, index) => (
-                  <span key={index}>{part}</span>
-                ))}
-            </div>
-          </>
-        ) : (
-          cell.Content
-        )}
-      </td>
-      );
-    });
-    // rowHeader.push(<td  key={rowData.Content}>{rowData.Content}</td>);
-    table.push(<tr key={rowHeader}>{rowHeader}</tr>);
-
-    for (let i = 1; i < items.RowCount; i++) {
+    for (let i = 2; i < items.RowCount; i++) {
       const row = [];
       const rowData = items.Cells.filter((cell) => cell.RowIndex === i);
       for (let j = 0; j < items.ColumnCount; j++) {
-        const cellData = rowData.find((cell) => cell.ColumnIndex === j);
+        if (j === 0) {
+          switch (i) {
+            case 2:
+              row.push(
+                <td rowSpan="2" className={styles.rowOne} key={j}>
+                  SOCKEYE 1 <br /> 2{" "}
+                </td>
+              );
+              break;
 
-        const content = cellData ? cellData.Content : "";
+            case 4:
+              row.push(
+                <td rowSpan="2" className={styles.rowOne} key={j}>
+                  COHO 1<br /> 2
+                </td>
+              );
+              break;
 
-        // const colspan = content.toUpperCase().includes('ARRIVAL IN STREAM')? "2": "1";
-        row.push(<td key={j}>{content}</td>);
+            case 6:
+              row.push(
+                <td rowSpan="2" className={styles.rowOne} key={j}>
+                  PINK 1 <br /> 2
+                </td>
+              );
+              break;
+
+            case 8:
+              row.push(
+                <td rowSpan="2" className={styles.rowOne} key={j}>
+                  CHUM 1 <br /> 2
+                </td>
+              );
+              break;
+
+            case 10:
+              row.push(
+                <td rowSpan="2" className={styles.rowOne} key={j}>
+                  CHINOOK 1 <br /> 2
+                </td>
+              );
+              break;
+
+            default:
+              break;
+          }
+        } else {
+          const cellData = rowData.find((cell) => cell.ColumnIndex === j);
+          const content = cellData ? cellData.Content : "";
+
+          // const colspan = content.toUpperCase().includes('ARRIVAL IN STREAM')? "2": "1";
+          row.push(<td key={j}>{content}</td>);
+        }
       }
       table.push(<tr key={i}>{row}</tr>);
     }
@@ -77,7 +72,37 @@ function SpawningTable({ items }) {
     <div className={styles.wrap}>
       <p>SPAWNING RUN TIMING and ESTIMATED NUMBER</p>
       <table className={styles.myTable}>
-        <tbody>{renderTable()}</tbody>
+        <tbody>
+          <tr className={styles.tableHeader}>
+            <td rowSpan={2}>(1)  <br/>SPECIES</td>
+            <td colSpan="2">(2)  <br/>ARRIVAL IN STREAM</td>
+            <td colSpan="6">
+              <div>(3)  <br/>DATES of SPAWNING </div>
+              <div className={styles.columThree}>
+                <span>START</span>
+                <span>PEAK</span>
+                <span>END</span>
+              </div>
+            </td>
+            <td rowSpan={2}>(4) <br/> # of OBS.</td>
+            <td rowSpan={2}>(5) <br/> MTH</td>
+            <td rowSpan={2}>(6) <br/> REL.</td>
+            <td rowSpan={2}>(7)  <br/>TOT. ON GROUNDS</td>
+            <td rowSpan={2}>(8)  <br/>TARGET ESCAPE.</td>
+          </tr>
+          <tr>
+            <td>mth.</td>
+            <td>day</td>
+            <td>mth.</td>
+            <td>day</td>
+            <td>mth.</td>
+            <td>day</td>
+            <td>mth.</td>
+            <td>day</td>
+          </tr>
+
+          {renderTable()}
+        </tbody>
       </table>
     </div>
   );
