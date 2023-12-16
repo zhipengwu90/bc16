@@ -9,11 +9,16 @@ const SingleForm = ({ items }) => {
 
   return (
     <div>
+      <div className={styles.header}>
+        <div className={styles.header1}>DEPARTMENT of FISHERIES and OCEANS</div>
+        <div className={styles.header2}>ANNUAL REPORT of SALMON STREAMS and SPAWNING POPULATION</div>
+      </div>
+
       <div className={styles.headerBox}>
         <StreamID items={items.Tables[0]} />
         <div>
           <YearArea items={items.Tables[1]} />
-          <DateInspection items = {items.Pages}/>
+          <DateInspection items={items.Pages} />
         </div>
       </div>
       <div>

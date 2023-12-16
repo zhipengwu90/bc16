@@ -21,7 +21,7 @@ const DateInspection = ({ items }) => {
       .slice(beginIn, endIn)
       .map((item, index) => {
         // // Return a div element for each LineContent
-        return <span className = {styles.dateText} key= {index}>{item.LineContent} </span>;
+        return <div className = {styles.dateText} key= {index}>{item.LineContent} </div>;
       });
     setContentElements(renderedElements);
   }, [items]);
@@ -29,7 +29,7 @@ const DateInspection = ({ items }) => {
   return (
     <div className={styles.wrapper}>
       <div>DATES of INSPECTION</div>
-     {contentElements}
+     <div className = {styles.dateBox}>{contentElements}</div>
     </div>
   );
 };
