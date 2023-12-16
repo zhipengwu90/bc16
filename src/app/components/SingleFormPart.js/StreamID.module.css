@@ -1,0 +1,9 @@
+.myTable{
+  border:  2px solid black;
+  border-collapse: collapse;
+}
+
+.myTable tr td{
+  border-bottom:  1px solid black;
+}
+
