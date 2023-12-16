@@ -4,6 +4,8 @@ import YearArea from "./SingleFormPart.js/YearArea";
 import styles from "./SingleForm.module.css";
 import SpawningTable from "./SingleFormPart.js/SpawningTable";
 const SingleForm = ({ items }) => {
+  const length = items.Tables.length -1;
+  
   return (
     <div>
       <div className={styles.headerBox}>
@@ -11,7 +13,7 @@ const SingleForm = ({ items }) => {
         <YearArea items={items.Tables[1]} />
       </div>
       <div>
-        <SpawningTable items={items.Tables[2]} />
+        <SpawningTable items={items.Tables[length]} />
       </div>
     </div>
   );
