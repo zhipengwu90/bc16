@@ -25,8 +25,7 @@ const StreamID = ({ items }) => {
       const rowData = items.Cells.filter((cell) => cell.RowIndex === i);
 
       for (let j = 0; j < rowData.length; j++) {
-        rowData[j].Content
-          ? rowData[j].Content.toUpperCase() == "STREAM IDENTIFICATION"
+        rowData[j].Content? rowData[j].Content.toUpperCase() == "STREAM IDENTIFICATION"
             ? null
             : row.push(<td  key={j}> {rowData[j].Content}</td>)
           : null;
@@ -36,7 +35,8 @@ const StreamID = ({ items }) => {
     }
       table.unshift(
         <tr key= 'StreamID'>
-          <td>STREAM IDENTIFICATION</td>
+          <td colSpan={2}>STREAM IDENTIFICATION</td>
+        
         </tr>
       );
     return table;
