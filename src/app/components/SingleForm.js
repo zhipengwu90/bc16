@@ -4,6 +4,7 @@ import YearArea from "./SingleFormPart.js/YearArea";
 import styles from "./SingleForm.module.css";
 import SpawningTable from "./SingleFormPart.js/SpawningTable";
 import DateInspection from "./SingleFormPart.js/DateInspection";
+import UnusualCon from "./SingleFormPart.js/UnusualCon";
 const SingleForm = ({ items }) => {
   const length = items.Tables.length - 1;
 
@@ -11,7 +12,9 @@ const SingleForm = ({ items }) => {
     <div>
       <div className={styles.header}>
         <div className={styles.header1}>DEPARTMENT of FISHERIES and OCEANS</div>
-        <div className={styles.header2}>ANNUAL REPORT of SALMON STREAMS and SPAWNING POPULATION</div>
+        <div className={styles.header2}>
+          ANNUAL REPORT of SALMON STREAMS and SPAWNING POPULATION
+        </div>
       </div>
 
       <div className={styles.headerBox}>
@@ -24,6 +27,7 @@ const SingleForm = ({ items }) => {
       <div>
         <SpawningTable items={items.Tables[length]} />
       </div>
+      <UnusualCon items={items.Pages}/>
     </div>
   );
 };

@@ -70,7 +70,7 @@ function SpawningTable({ items }) {
   };
   return (
     <div className={styles.wrap}>
-      <p>SPAWNING RUN TIMING and ESTIMATED NUMBER</p>
+      <div className={styles.title}>SPAWNING RUN TIMING and ESTIMATED NUMBER</div>
       <table className={styles.myTable}>
         <tbody>
           <tr className={styles.tableHeader}>
@@ -90,7 +90,7 @@ function SpawningTable({ items }) {
             <td rowSpan={2}>(7)  <br/>TOT. ON GROUNDS</td>
             <td rowSpan={2}>(8)  <br/>TARGET ESCAPE.</td>
           </tr>
-          <tr>
+          <tr className={styles.secondRow}>
             <td>mth.</td>
             <td>day</td>
             <td>mth.</td>

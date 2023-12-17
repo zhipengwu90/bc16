@@ -6,6 +6,14 @@
   border-collapse: collapse;
   border: 2px solid black;
 }
+
+.title{
+  margin-top: 15px;
+  padding: 5px 5px 0 5px;
+  font-weight: 600;
+  text-decoration: underline;
+  
+}
 .myTable td {
   height: 1em;
   border-collapse: collapse;
@@ -24,4 +32,8 @@
   text-align: right;
   font-weight: 500;
   padding: 0 5px;
+}
+
+.secondRow td{
+  width: 4%;
 }

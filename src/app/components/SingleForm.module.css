@@ -10,5 +10,8 @@
     font-weight: 600;
 }
 .header1{
-    font-size: 20px;
+    font-size: 1.1em;
+}
+.header2{
+    font-size: 1.05em;
 }
