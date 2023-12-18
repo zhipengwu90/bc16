@@ -1,6 +1,8 @@
 import { promises as fs } from "fs";
 import Link from "next/link";
-
+import styles from "./FileNameReader.module.css";
+import FileSearch from "./FileSearch";
+import FileNameList from "./FileNameList";
 const FileNameReader = async () => {
   try {
     const directoryPath = process.cwd() + "/src/app/dataStorage/";
@@ -10,22 +12,7 @@ const FileNameReader = async () => {
       .filter((file) => file.endsWith(".json"))
       .map((file) => file.replace(".json", ""));
 
-    return (
-      <div>
-        {jsonFiles.map((file, index) => (
-          <div key={index}>
-            <Link
-              href={{
-                pathname: "/file/",
-                query: { fileName: file },
-              }}
-            >
-              {file}
-            </Link>
-          </div>
-        ))}
-      </div>
-    );
+    return <FileNameList fileNameList={jsonFiles} />;
   } catch (error) {
     console.error("Error reading file names:", error);
     throw error;

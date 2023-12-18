@@ -1,0 +1,16 @@
+.listWrapper{
+    width: 70vh;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.noFiles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+    color: #6f1414;
+    font-weight: 600;
+    
+}

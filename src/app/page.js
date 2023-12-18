@@ -4,9 +4,8 @@ import FormRender from "./components/FormRender";
 import FileNameReader from "./components/FileNameReader";
 export default function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       <FileNameReader />
-      {/* <FormRender /> */}
     </div>
   );
 }

@@ -1,15 +1,14 @@
-// "use client";
-// import SingleForm from "./SingleForm";
 
-// import { useState } from "react";
-// const FormRender = () => {
+import SingleForm from "./SingleForm";
+
+const FormRender = ({items}) => {
 
 
-//   return (
-//     <div>
-//       <SingleForm items={item1} />
-//     </div>
-//   );
-// };
+  return (
+    <div>
+      <SingleForm items={items} />
+    </div>
+  );
+};
 
-// export default FormRender;
+export default FormRender;
