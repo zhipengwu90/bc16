@@ -28,10 +28,12 @@ const FileNameList = ({ fileNameList }) => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <FileSearch onSearch={onSearchHandler} />
       <div className={styles.listWrapper}>
-        {fileSearch?.length === 0 && <div className={styles.noFiles}>No files found!</div>}
+        {fileSearch?.length === 0 && (
+          <div className={styles.noFiles}>No files found!</div>
+        )}
         {fileSearch.map((file, index) => (
           <div key={index}>
             <Link
@@ -40,7 +42,7 @@ const FileNameList = ({ fileNameList }) => {
                 query: { fileName: file },
               }}
             >
-              {file}
+              {file.replace(/_/g, " ")}
             </Link>
           </div>
         ))}

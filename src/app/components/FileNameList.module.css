@@ -1,5 +1,5 @@
 .listWrapper{
-    width: 70vh;
+    width: 90vh;
     border: 1px solid #ccc;
     padding: 20px;
 }
@@ -12,5 +12,15 @@
     font-size: 1.5rem;
     color: #6f1414;
     font-weight: 600;
+    min-height: 50vh;
     
+}
+
+.container{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
 }

@@ -1,13 +1,17 @@
 .allWrapper {
-  width: 70vh;
+  margin-left: 10px;
+  width: 40vh;
+
+  position: sticky;
+  top: 40px;
   border: 1px solid #ccc;
-  padding: 20px;
+  padding: 10px;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 30px;
+  grid-template-columns: 0.8fr 1fr;
+  margin-bottom: 20px;
   grid-gap: 10px;
 }
 

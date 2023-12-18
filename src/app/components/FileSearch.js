@@ -48,7 +48,7 @@ function FileSearch(props) {
   };
 
   return (
-    <div className={styles.allWrapper} >
+    <div className={styles.allWrapper}>
       <div className={styles.wrapper}>
         <label htmlFor="area">Area</label>
         <select id="area" name="area" onChange={handleChange} ref={areaRef}>
@@ -61,7 +61,7 @@ function FileSearch(props) {
           <option value="area2">Area 2</option>
           <option value="area3">Area 3</option> */}
         </select>
-        <label htmlFor="waterbody">Waterbody Name</label>
+        <label htmlFor="waterbody">Waterbody</label>
         <input
           name="waterbody"
           onChange={handleChange}
@@ -81,8 +81,12 @@ function FileSearch(props) {
         />
       </div>
       <div className={styles.buttonBox}>
-        <button className={styles.search} onClick={handleSubmit}>Search</button>
-        <button className={styles.reset} onClick={handleReset}>Reset</button>
+        <button className={styles.search} onClick={handleSubmit}>
+          Search
+        </button>
+        <button className={styles.reset} onClick={handleReset}>
+          Reset
+        </button>
       </div>
     </div>
   );
