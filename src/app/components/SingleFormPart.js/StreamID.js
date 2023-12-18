@@ -1,8 +1,21 @@
 import React, { useState, useEffect } from "react";
-
+import checkTable from "../../func/checkTable";
 import styles from "./StreamID.module.css";
 
 const StreamID = ({ items }) => {
+  const [findTable, setFindTable] = useState(null);
+  useEffect(() => {
+    const tableIndex = checkTable(
+      items,
+      "WATER SHED CODE",
+      "GAZETTED",
+      "LOCATION NAME"
+    );
+    if (tableIndex !== undefined && tableIndex !== null) {
+      setFindTable(renderTable(items.Tables[tableIndex]));
+    }
+  }, [items]);
+
   // const renderTable2 = () => {
   //   const table = [];
   //   for (let i = 0; i < items.RowCount; i++) {
@@ -18,35 +31,39 @@ const StreamID = ({ items }) => {
   //   return table;
   // };
 
-  const renderTable = () => {
+  const renderTable = (item) => {
     const table = [];
-    for (let i = 0; i < items.RowCount; i++) {
+    for (let i = 0; i < item.RowCount; i++) {
       const row = [];
-      const rowData = items.Cells.filter((cell) => cell.RowIndex === i);
+      const rowData = item.Cells.filter((cell) => cell.RowIndex === i);
 
       for (let j = 0; j < rowData.length; j++) {
-        rowData[j].Content? rowData[j].Content.toUpperCase() == "STREAM IDENTIFICATION"
+        rowData[j].Content
+          ? rowData[j].Content.toUpperCase() == "STREAM IDENTIFICATION"
             ? null
-            : row.push(<td  key={j}> {rowData[j].Content}</td>)
+            : row.push(<td key={j}> {rowData[j].Content}</td>)
           : null;
       }
 
       table.push(<tr key={i}>{row}</tr>);
     }
-      table.unshift(
-        <tr key= 'StreamID'>
-          <td colSpan={2}>STREAM IDENTIFICATION</td>
-        
-        </tr>
-      );
+    table.unshift(
+      <tr key="StreamID">
+        <td colSpan={2}>STREAM IDENTIFICATION</td>
+      </tr>
+    );
     return table;
   };
 
   return (
     <div className={styles.StreamBox}>
-      <table className={styles.myTable}>
-        <tbody> {renderTable()}</tbody>
-      </table>
+      {findTable ? (
+        <table className={styles.myTable}>
+          <tbody> {findTable} </tbody>{" "}
+        </table>
+      ) : (
+        "Loading..."
+      )}
     </div>
   );
 };

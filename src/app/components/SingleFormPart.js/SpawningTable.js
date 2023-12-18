@@ -1,16 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import checkTable from "../../func/checkTable";
 import styles from "./SpawningTable.module.css";
 function SpawningTable({ items }) {
-  const renderTable = () => {
+
+  const [findTable, setFindTable] = useState(null);
+  useEffect(() => {
+    const tableIndex = checkTable(
+      items,
+      "DATES of SPAWNING",
+      "ARRIVAL IN STREAM",
+      "TARGET ESCAPE"
+    );
+    if (tableIndex !== undefined && tableIndex !== null) {
+      setFindTable(renderTable(items.Tables[tableIndex]));
+    }
+  }, [items]);
+
+
+  const renderTable = (item) => {
     const table = [];
 
     // console.log(items.Cells.RowIndex(0));
-    const rowData = items.Cells.filter((cell) => cell.RowIndex === 0);
+    const rowData = item.Cells.filter((cell) => cell.RowIndex === 0);
 
-    for (let i = 2; i < items.RowCount; i++) {
+    for (let i = 2; i < item.RowCount; i++) {
       const row = [];
-      const rowData = items.Cells.filter((cell) => cell.RowIndex === i);
-      for (let j = 0; j < items.ColumnCount; j++) {
+      const rowData = item.Cells.filter((cell) => cell.RowIndex === i);
+      for (let j = 0; j < item.ColumnCount; j++) {
         if (j === 0) {
           switch (i) {
             case 2:
@@ -71,7 +87,7 @@ function SpawningTable({ items }) {
   return (
     <div className={styles.wrap}>
       <div className={styles.title}>SPAWNING RUN TIMING and ESTIMATED NUMBER</div>
-      <table className={styles.myTable}>
+      {findTable ?  <table className={styles.myTable}>
         <tbody>
           <tr className={styles.tableHeader}>
             <td rowSpan={2}>(1)  <br/>SPECIES</td>
@@ -100,10 +116,9 @@ function SpawningTable({ items }) {
             <td>mth.</td>
             <td>day</td>
           </tr>
-
-          {renderTable()}
+{findTable}
         </tbody>
-      </table>
+      </table>: "No Table Found"}
     </div>
   );
 }

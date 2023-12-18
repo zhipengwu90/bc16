@@ -6,7 +6,10 @@ import SpawningTable from "./SingleFormPart.js/SpawningTable";
 import DateInspection from "./SingleFormPart.js/DateInspection";
 import UnusualCon from "./SingleFormPart.js/UnusualCon";
 const SingleForm = ({ items }) => {
-  const length = items.Tables.length - 1;
+
+
+
+
 
   return (
     <div>
@@ -18,14 +21,14 @@ const SingleForm = ({ items }) => {
       </div>
 
       <div className={styles.headerBox}>
-        <StreamID items={items.Tables[0]} />
+        <StreamID items={items} />
         <div>
-          <YearArea items={items.Tables[1]} />
+          <YearArea items={items} />
           <DateInspection items={items.Pages} />
         </div>
       </div>
       <div>
-        <SpawningTable items={items.Tables[length]} />
+        <SpawningTable items={items} />
       </div>
       <UnusualCon items={items.Pages}/>
     </div>

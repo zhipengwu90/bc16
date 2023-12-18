@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import FormRender from "./components/FormRender";
+
 import FileNameReader from "./components/FileNameReader";
 import logo from "../../public/images/sig-blk-en.svg";
 export default function Home() {

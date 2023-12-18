@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./YearArea.module.css";
+import checkTable from "../../func/checkTable";
 const YearArea = ({ items }) => {
-  const renderTable = () => {
+  const [findTable, setFindTable] = useState(null);
+
+  useEffect(() => {
+    const tableIndex = checkTable(
+      items,
+      "District Number",
+      "Subdistrict Number",
+      "Statistical Area"
+    );
+    console.log(tableIndex);
+    if (tableIndex !== undefined && tableIndex !== null) {
+      setFindTable(renderTable(items.Tables[tableIndex]));
+    }
+  }, [items]);
+
+  const renderTable = (item) => {
     const table = [];
-    for (let i = 0; i < items.RowCount; i++) {
+    for (let i = 0; i < item.RowCount; i++) {
       const row = [];
-      const rowData = items.Cells.filter((cell) => cell.RowIndex === i);
-      for (let j = 0; j < items.ColumnCount; j++) {
+      const rowData = item.Cells.filter((cell) => cell.RowIndex === i);
+      for (let j = 0; j < item.ColumnCount; j++) {
         const cellData = rowData.find((cell) => cell.ColumnIndex === j);
         const content = cellData ? cellData.Content : "";
         row.push(<td key={j}>{content}</td>);
@@ -17,9 +33,13 @@ const YearArea = ({ items }) => {
   };
   return (
     <div className={styles.yearBox}>
-      <table className={styles.myTable}>
-        <tbody> {renderTable()}</tbody>
-      </table>
+      {findTable ? (
+        <table className={styles.myTable}>
+          <tbody> {findTable} </tbody>{" "}
+        </table>
+      ) : (
+        "Loading..."
+      )}
     </div>
   );
 };
