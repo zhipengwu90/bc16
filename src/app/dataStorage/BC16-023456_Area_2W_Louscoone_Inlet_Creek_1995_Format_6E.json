@@ -1,0 +1,3045 @@
+{
+    "HandwrittenContent": [
+        "1"
+    ],
+    "Key-ValuePairs": [],
+    "Pages": [
+        {
+            "PageNumber": 1,
+            "Width": 11.1111,
+            "Height": 18.6528,
+            "Unit": "inch",
+            "Lines": [
+                {
+                    "LineContent": "BC16 1995",
+                    "BoundingBox": "[0.0324, 0.0324], [0.6884, 0.0324], [0.6884, 0.17], [0.0324, 0.17]"
+                },
+                {
+                    "LineContent": "DEPARTMENT of FISHERIES and OCEANS",
+                    "BoundingBox": "[3.0045, 0.9715], [7.5235, 0.9553], [7.5235, 1.1982], [3.0045, 1.2225]"
+                },
+                {
+                    "LineContent": "ANNUAL REPORT of SALMON STREAMS and SPAWNING POPULATION",
+                    "BoundingBox": "[2.0732, 1.2872], [8.4953, 1.2549], [8.5034, 1.4977], [2.0732, 1.5301]"
+                },
+                {
+                    "LineContent": "STREAM IDENTIFICATION",
+                    "BoundingBox": "[0.6803, 2.0968], [2.6158, 2.0806], [2.6158, 2.2749], [0.6803, 2.2992]"
+                },
+                {
+                    "LineContent": "Watershed Code :",
+                    "BoundingBox": "[0.4535, 2.2992], [1.7412, 2.283], [1.7412, 2.4935], [0.4535, 2.5016]"
+                },
+                {
+                    "LineContent": "# 95-3560",
+                    "BoundingBox": "[1.9679, 2.2911], [3.5066, 2.2911], [3.5066, 2.534], [1.9679, 2.5259]"
+                },
+                {
+                    "LineContent": "Gazetted Name :",
+                    "BoundingBox": "[0.5345, 2.6392], [1.7493, 2.6392], [1.7493, 2.8335], [0.5345, 2.8335]"
+                },
+                {
+                    "LineContent": "Louscoone Inlet ( k.",
+                    "BoundingBox": "[2.0003, 2.6392], [3.3123, 2.6392], [3.3123, 2.8254], [2.0003, 2.8335]"
+                },
+                {
+                    "LineContent": "Local Name :",
+                    "BoundingBox": "[0.7937, 2.9793], [1.7412, 2.9793], [1.7412, 3.1655], [0.7937, 3.1655]"
+                },
+                {
+                    "LineContent": "Louscoone Inlet ( k.",
+                    "BoundingBox": "[2.0246, 2.9793], [3.2961, 2.9793], [3.2961, 3.1574], [2.0246, 3.1655]"
+                },
+                {
+                    "LineContent": "Flows into :",
+                    "BoundingBox": "[0.907, 3.3031], [1.7412, 3.3112], [1.7412, 3.4893], [0.907, 3.4893]"
+                },
+                {
+                    "LineContent": "Louscoone Inlel",
+                    "BoundingBox": "[2.0246, 3.295], [3.0693, 3.2869], [3.0774, 3.4812], [2.0327, 3.4893]"
+                },
+                {
+                    "LineContent": "Year:",
+                    "BoundingBox": "[6.5436, 1.9673], [6.9485, 1.9592], [6.9485, 2.1292], [6.5436, 2.1211]"
+                },
+                {
+                    "LineContent": "1995",
+                    "BoundingBox": "[7.0133, 1.9673], [7.3696, 1.9511], [7.3777, 2.113], [7.0133, 2.113]"
+                },
+                {
+                    "LineContent": "District Number:",
+                    "BoundingBox": "[5.7661, 2.1778], [6.9323, 2.1778], [6.9323, 2.3478], [5.7661, 2.3478]"
+                },
+                {
+                    "LineContent": "9",
+                    "BoundingBox": "[7.151, 2.1859], [7.24, 2.1778], [7.2481, 2.3316], [7.1591, 2.3235]"
+                },
+                {
+                    "LineContent": "Statistical Area: 2-34",
+                    "BoundingBox": "[5.8147, 2.4045], [7.3615, 2.3883], [7.3615, 2.5583], [5.8147, 2.5826]"
+                },
+                {
+                    "LineContent": "DATES of INSPECTION",
+                    "BoundingBox": "[5.8633, 2.7283], [7.5073, 2.7202], [7.5073, 2.8983], [5.8714, 2.9226]"
+                },
+                {
+                    "LineContent": "\u015eep 13",
+                    "BoundingBox": "[5.8957, 2.9631], [6.4221, 2.955], [6.4221, 3.1331], [5.8957, 3.1412]"
+                },
+                {
+                    "LineContent": "Oct 18",
+                    "BoundingBox": "[6.9728, 2.9469], [7.483, 2.955], [7.483, 3.1169], [6.9809, 3.125]"
+                },
+                {
+                    "LineContent": "Subdistrict Number:",
+                    "BoundingBox": "[7.7745, 2.1535], [9.1837, 2.1373], [9.1918, 2.3397], [7.7745, 2.3559]"
+                },
+                {
+                    "LineContent": "Subdistrict Name:",
+                    "BoundingBox": "[7.9365, 2.364], [9.2404, 2.364], [9.2404, 2.5664], [7.9365, 2.5664]"
+                },
+                {
+                    "LineContent": "Sandepit",
+                    "BoundingBox": "[9.4914, 2.3559], [10.1069, 2.3559], [10.1069, 2.5583], [9.4914, 2.5583]"
+                },
+                {
+                    "LineContent": "Area 2 West",
+                    "BoundingBox": "[9.3537, 2.1292], [10.2446, 2.1292], [10.2446, 2.3559], [9.3537, 2.3559]"
+                },
+                {
+                    "LineContent": "SPAWNING RUN TIMING and ESTIMATED NUMBER",
+                    "BoundingBox": "[0.5588, 4.2746], [4.2274, 4.2746], [4.2274, 4.4851], [0.5588, 4.4932]"
+                },
+                {
+                    "LineContent": "(1)",
+                    "BoundingBox": "[0.7208, 4.6308], [0.8989, 4.6308], [0.8989, 4.8332], [0.7289, 4.8332]"
+                },
+                {
+                    "LineContent": "SPECIES",
+                    "BoundingBox": "[0.4292, 5.0761], [1.0933, 5.0761], [1.0933, 5.2461], [0.4292, 5.238]"
+                },
+                {
+                    "LineContent": "(2)",
+                    "BoundingBox": "[1.9193, 4.6308], [2.1056, 4.6146], [2.1137, 4.8251], [1.9274, 4.8251]"
+                },
+                {
+                    "LineContent": "ARRIVAL IN",
+                    "BoundingBox": "[1.6197, 4.8494], [2.4943, 4.8413], [2.4943, 5.0194], [1.6197, 5.0194]"
+                },
+                {
+                    "LineContent": "STREAM",
+                    "BoundingBox": "[1.6197, 5.0356], [2.2838, 5.0356], [2.2838, 5.1894], [1.6197, 5.1894]"
+                },
+                {
+                    "LineContent": "(3)",
+                    "BoundingBox": "[4.3084, 4.6308], [4.5028, 4.6227], [4.5109, 4.817], [4.3084, 4.817]"
+                },
+                {
+                    "LineContent": "DATES of SPAWNING",
+                    "BoundingBox": "[3.62, 4.8413], [5.3207, 4.8494], [5.3207, 5.0194], [3.62, 5.0113]"
+                },
+                {
+                    "LineContent": "START",
+                    "BoundingBox": "[2.9397, 5.0761], [3.4823, 5.0761], [3.4742, 5.2461], [2.9397, 5.2461]"
+                },
+                {
+                    "LineContent": "PEAK",
+                    "BoundingBox": "[4.1626, 5.068], [4.5999, 5.068], [4.608, 5.2299], [4.1626, 5.2299]"
+                },
+                {
+                    "LineContent": "END",
+                    "BoundingBox": "[5.4746, 5.068], [5.8147, 5.068], [5.8147, 5.2218], [5.4827, 5.2299]"
+                },
+                {
+                    "LineContent": "(4)",
+                    "BoundingBox": "[6.5436, 4.6227], [6.7217, 4.6146], [6.7217, 4.8008], [6.5436, 4.8008]"
+                },
+                {
+                    "LineContent": "# of",
+                    "BoundingBox": "[6.4383, 4.8413], [6.7703, 4.8413], [6.7703, 4.9951], [6.4464, 5.0032]"
+                },
+                {
+                    "LineContent": "OBS.",
+                    "BoundingBox": "[6.4221, 5.0194], [6.827, 5.0275], [6.827, 5.1732], [6.4302, 5.1651]"
+                },
+                {
+                    "LineContent": "(5)",
+                    "BoundingBox": "[7.1753, 4.6146], [7.3615, 4.6146], [7.3696, 4.7765], [7.1833, 4.7765]"
+                },
+                {
+                    "LineContent": "MTH",
+                    "BoundingBox": "[7.0781, 5.0599], [7.4587, 5.0599], [7.4587, 5.2056], [7.0862, 5.1975]"
+                },
+                {
+                    "LineContent": "161",
+                    "BoundingBox": "[7.8636, 4.6146], [8.0742, 4.6146], [8.0742, 4.7765], [7.8717, 4.7765]"
+                },
+                {
+                    "LineContent": "REL.",
+                    "BoundingBox": "[7.7664, 5.0599], [8.1309, 5.0518], [8.1309, 5.2056], [7.7664, 5.2056]"
+                },
+                {
+                    "LineContent": "(7)",
+                    "BoundingBox": "[8.714, 4.5903], [8.9083, 4.5822], [8.9083, 4.7846], [8.714, 4.7765]"
+                },
+                {
+                    "LineContent": "TOT. ON",
+                    "BoundingBox": "[8.5439, 4.8089], [9.1837, 4.8089], [9.1756, 4.9789], [8.5439, 4.9708]"
+                },
+                {
+                    "LineContent": "GROUNDS",
+                    "BoundingBox": "[8.4953, 4.9951], [9.2728, 4.9951], [9.2728, 5.157], [8.4953, 5.157]"
+                },
+                {
+                    "LineContent": "TARGET",
+                    "BoundingBox": "[9.6615, 4.8008], [10.2851, 4.8008], [10.2932, 4.9708], [9.6615, 4.9708]"
+                },
+                {
+                    "LineContent": "ESCAPE.",
+                    "BoundingBox": "[9.6777, 4.9789], [10.3256, 4.9789], [10.3256, 5.1408], [9.6777, 5.1408]"
+                },
+                {
+                    "LineContent": "mth.",
+                    "BoundingBox": "[1.6359, 5.3271], [1.976, 5.3028], [1.976, 5.4566], [1.6359, 5.4485]"
+                },
+                {
+                    "LineContent": "day",
+                    "BoundingBox": "[2.2109, 5.319], [2.4943, 5.3109], [2.4943, 5.4728], [2.2109, 5.4647]"
+                },
+                {
+                    "LineContent": "mitt.",
+                    "BoundingBox": "[2.8183, 5.3271], [3.1827, 5.3028], [3.1827, 5.4647], [2.8183, 5.4566]"
+                },
+                {
+                    "LineContent": "day",
+                    "BoundingBox": "[3.4095, 5.3028], [3.6929, 5.3028], [3.701, 5.4728], [3.4176, 5.4647]"
+                },
+                {
+                    "LineContent": "mth.",
+                    "BoundingBox": "[4.0249, 5.3109], [4.3894, 5.3028], [4.3894, 5.4566], [4.033, 5.4566]"
+                },
+                {
+                    "LineContent": "day",
+                    "BoundingBox": "[4.5918, 5.2866], [4.9077, 5.3028], [4.9077, 5.4728], [4.5918, 5.4647]"
+                },
+                {
+                    "LineContent": "mth.",
+                    "BoundingBox": "[5.2397, 5.2947], [5.6365, 5.2866], [5.6284, 5.4566], [5.2478, 5.4485]"
+                },
+                {
+                    "LineContent": "day",
+                    "BoundingBox": "[5.8147, 5.2947], [6.0982, 5.2947], [6.0901, 5.4728], [5.8147, 5.4566]"
+                },
+                {
+                    "LineContent": "SOCKEYE 1",
+                    "BoundingBox": "[0.4292, 5.6347], [1.3524, 5.6347], [1.3443, 5.7966], [0.4292, 5.7885]"
+                },
+                {
+                    "LineContent": "2",
+                    "BoundingBox": "[1.2715, 5.8776], [1.3362, 5.8776], [1.3362, 5.999], [1.2715, 5.9909]"
+                },
+                {
+                    "LineContent": "COHO",
+                    "BoundingBox": "[0.5669, 6.08], [1.0285, 6.0881], [1.0285, 6.2338], [0.5669, 6.2257]"
+                },
+                {
+                    "LineContent": "1",
+                    "BoundingBox": "[1.2796, 6.0962], [1.3443, 6.0962], [1.3443, 6.2257], [1.2715, 6.2257]"
+                },
+                {
+                    "LineContent": "Oct",
+                    "BoundingBox": "[4.0411, 6.0719], [4.3246, 6.0719], [4.3246, 6.2419], [4.0411, 6.2338]"
+                },
+                {
+                    "LineContent": "Nov",
+                    "BoundingBox": "[5.2478, 6.0638], [5.5313, 6.0719], [5.5313, 6.2257], [5.2478, 6.2176]"
+                },
+                {
+                    "LineContent": "1",
+                    "BoundingBox": "[6.746, 6.08], [6.8027, 6.08], [6.8027, 6.2014], [6.746, 6.1933]"
+                },
+                {
+                    "LineContent": "1",
+                    "BoundingBox": "[7.402, 6.0719], [7.4668, 6.0719], [7.4749, 6.2014], [7.402, 6.2014]"
+                },
+                {
+                    "LineContent": "2",
+                    "BoundingBox": "[8.058, 6.08], [8.1633, 6.0638], [8.1714, 6.1933], [8.0661, 6.1933]"
+                },
+                {
+                    "LineContent": "10",
+                    "BoundingBox": "[9.0541, 6.0476], [9.2242, 6.0395], [9.2323, 6.1933], [9.0622, 6.1933]"
+                },
+                {
+                    "LineContent": "750",
+                    "BoundingBox": "[10.1393, 6.0476], [10.4227, 6.0395], [10.4227, 6.1852], [10.1474, 6.1771]"
+                },
+                {
+                    "LineContent": "2",
+                    "BoundingBox": "[1.2553, 6.3228], [1.3443, 6.3147], [1.3443, 6.4605], [1.2553, 6.4524]"
+                },
+                {
+                    "LineContent": "PINK",
+                    "BoundingBox": "[0.5669, 6.5252], [0.9637, 6.5252], [0.9556, 6.6791], [0.5669, 6.671]"
+                },
+                {
+                    "LineContent": "1",
+                    "BoundingBox": "[1.2796, 6.5414], [1.3443, 6.5333], [1.3443, 6.6629], [1.2796, 6.6629]"
+                },
+                {
+                    "LineContent": "1",
+                    "BoundingBox": "[7.402, 6.5171], [7.4668, 6.5171], [7.4749, 6.6467], [7.402, 6.6467]"
+                },
+                {
+                    "LineContent": "N/O",
+                    "BoundingBox": "[8.9164, 6.4848], [9.2161, 6.4848], [9.2161, 6.6467], [8.9164, 6.6386]"
+                },
+                {
+                    "LineContent": "5,000",
+                    "BoundingBox": "[9.9854, 6.4605], [10.3903, 6.4605], [10.3903, 6.6305], [9.9854, 6.6305]"
+                },
+                {
+                    "LineContent": "2",
+                    "BoundingBox": "[1.2715, 6.7762], [1.3362, 6.7681], [1.3362, 6.8815], [1.2715, 6.8815]"
+                },
+                {
+                    "LineContent": "CHUM",
+                    "BoundingBox": "[0.5669, 6.9786], [1.0366, 6.9786], [1.0366, 7.1243], [0.5669, 7.1243]"
+                },
+                {
+                    "LineContent": "1",
+                    "BoundingBox": "[1.2715, 6.9867], [1.3524, 6.9786], [1.3524, 7.1081], [1.2715, 7.1081]"
+                },
+                {
+                    "LineContent": "Sep",
+                    "BoundingBox": "[1.644, 6.9867], [1.9355, 6.9867], [1.9355, 7.1405], [1.6359, 7.1405]"
+                },
+                {
+                    "LineContent": "B",
+                    "BoundingBox": "[2.3081, 6.9867], [2.4214, 6.9867], [2.4214, 7.1243], [2.3081, 7.1081]"
+                },
+                {
+                    "LineContent": "Sep",
+                    "BoundingBox": "[2.8426, 6.9705], [3.126, 6.9786], [3.126, 7.1405], [2.8345, 7.1243]"
+                },
+                {
+                    "LineContent": "C",
+                    "BoundingBox": "[3.5066, 6.9867], [3.62, 6.9867], [3.62, 7.1243], [3.5066, 7.1162]"
+                },
+                {
+                    "LineContent": "Oct",
+                    "BoundingBox": "[4.0411, 6.9624], [4.3084, 6.9624], [4.3165, 7.1081], [4.0411, 7.1081]"
+                },
+                {
+                    "LineContent": "A",
+                    "BoundingBox": "[4.6971, 6.9705], [4.8267, 6.9705], [4.8348, 7.1243], [4.6971, 7.1162]"
+                },
+                {
+                    "LineContent": "Oct",
+                    "BoundingBox": "[5.2397, 6.9624], [5.4989, 6.9624], [5.4989, 7.1081], [5.2397, 7.1081]"
+                },
+                {
+                    "LineContent": "C",
+                    "BoundingBox": "[5.9119, 6.9624], [6.0253, 6.9624], [6.0253, 7.1081], [5.9119, 7.1]"
+                },
+                {
+                    "LineContent": "2",
+                    "BoundingBox": "[6.7298, 6.9705], [6.8189, 6.9705], [6.8189, 7.1], [6.7298, 7.1]"
+                },
+                {
+                    "LineContent": "1",
+                    "BoundingBox": "[7.402, 6.9705], [7.4749, 6.9705], [7.4749, 7.0838], [7.402, 7.0838]"
+                },
+                {
+                    "LineContent": "2",
+                    "BoundingBox": "[8.058, 6.9624], [8.1552, 6.9543], [8.1552, 7.0838], [8.058, 7.0838]"
+                },
+                {
+                    "LineContent": "100",
+                    "BoundingBox": "[8.9731, 6.9462], [9.2161, 6.9462], [9.2161, 7.0919], [8.9731, 7.0838]"
+                },
+                {
+                    "LineContent": "7,000",
+                    "BoundingBox": "[9.9854, 6.9381], [10.3741, 6.9381], [10.3741, 7.0758], [9.9854, 7.0677]"
+                },
+                {
+                    "LineContent": "2",
+                    "BoundingBox": "[1.2553, 7.2134], [1.3524, 7.2134], [1.3524, 7.3267], [1.2553, 7.3186]"
+                },
+                {
+                    "LineContent": "CHINOOK",
+                    "BoundingBox": "[0.4373, 7.3996], [1.1824, 7.4077], [1.1824, 7.5777], [0.4373, 7.5696]"
+                },
+                {
+                    "LineContent": "1",
+                    "BoundingBox": "[1.2472, 7.4158], [1.3362, 7.4158], [1.3362, 7.5534], [1.2472, 7.5534]"
+                },
+                {
+                    "LineContent": "2",
+                    "BoundingBox": "[1.2634, 7.6506], [1.3686, 7.6506], [1.3686, 7.7801], [1.2715, 7.7801]"
+                },
+                {
+                    "LineContent": "UNUSUAL CONDITIONS",
+                    "BoundingBox": "[0.4616, 7.9501], [2.1218, 7.9501], [2.1218, 8.1444], [0.4616, 8.1363]"
+                },
+                {
+                    "LineContent": "(A) Enhancement acllvibes or intense biological activities.",
+                    "BoundingBox": "[0.7532, 8.2739], [4.3975, 8.2658], [4.3975, 8.452], [0.7532, 8.4601]"
+                },
+                {
+                    "LineContent": "(B) Unusual Mortalities.",
+                    "BoundingBox": "[0.7289, 8.5006], [2.2757, 8.5006], [2.2757, 8.6868], [0.7289, 8.6868]"
+                },
+                {
+                    "LineContent": "(C) Obstructions or changes in habitat with recommendations.",
+                    "BoundingBox": "[0.7532, 8.7273], [4.7538, 8.7192], [4.7538, 8.9135], [0.7532, 8.9297]"
+                },
+                {
+                    "LineContent": "(2) Large variation In sex ratio or unus ual number of jacks.",
+                    "BoundingBox": "[0.7451, 8.9459], [4.4785, 8.9378], [4.4785, 9.1321], [0.7451, 9.1402]"
+                },
+                {
+                    "LineContent": "(E) High/low water flow level during spawning.",
+                    "BoundingBox": "[0.7451, 9.1564], [3.7172, 9.1564], [3.7172, 9.3588], [0.7451, 9.3588]"
+                },
+                {
+                    "LineContent": "ADDITIONAL COMMENTS",
+                    "BoundingBox": "[0.5669, 9.4883], [2.9074, 9.4802], [2.9074, 9.7231], [0.5669, 9.7312]"
+                },
+                {
+                    "LineContent": "PHYSICAL CONDITION of SPAWNING GROUNDS",
+                    "BoundingBox": "[0.5831, 9.8202], [4.0249, 9.8202], [4.0249, 10.0226], [0.5831, 10.0226]"
+                },
+                {
+                    "LineContent": "(A) Evidence of erosion and silting. Give extent or percent of stream bed affected:",
+                    "BoundingBox": "[0.5021, 10.1522], [6.1953, 10.1441], [6.1953, 10.3546], [0.5021, 10.3708]"
+                },
+                {
+                    "LineContent": "Nane Reported",
+                    "BoundingBox": "[0.4616, 10.395], [1.4496, 10.395], [1.4496, 10.5731], [0.4616, 10.5651]"
+                },
+                {
+                    "LineContent": "(B) Particulars ol scouring of spawnimi beds or change In course of stream :",
+                    "BoundingBox": "[0.4859, 10.8241], [5.8066, 10.816], [5.8066, 11.0184], [0.4859, 11.0265]"
+                },
+                {
+                    "LineContent": "Nane Reported.",
+                    "BoundingBox": "[0.4616, 11.0589], [1.482, 11.0589], [1.4739, 11.2289], [0.4616, 11.2289]"
+                },
+                {
+                    "LineContent": "(C) Water levels flow, normal, abnorm.il. ti abnormal, details should be given :",
+                    "BoundingBox": "[0.4778, 11.4961], [5.9686, 11.488], [5.9686, 11.6904], [0.4778, 11.6985]"
+                },
+                {
+                    "LineContent": "Consistently good water levels through the spayming period.",
+                    "BoundingBox": "[0.4616, 11.7147], [4.2679, 11.7066], [4.2679, 11.9251], [0.4616, 11.9251]"
+                },
+                {
+                    "LineContent": "BIOLOGICAL CONDITIONS",
+                    "BoundingBox": "[0.6155, 12.3785], [2.4943, 12.3785], [2.4943, 12.5809], [0.6155, 12.5728]"
+                },
+                {
+                    "LineContent": "(D) Particulars of distribution of salmon over stream bed :",
+                    "BoundingBox": "[0.5102, 12.7023], [4.5756, 12.7023], [4.5756, 12.9047], [0.5102, 12.9047]"
+                },
+                {
+                    "LineContent": "Spread to 1 km.",
+                    "BoundingBox": "[0.4616, 12.9371], [1.5063, 12.9452], [1.5063, 13.1314], [0.4616, 13.1314]"
+                },
+                {
+                    "LineContent": "(E) Comments on predators :",
+                    "BoundingBox": "[0.5021, 13.3743], [2.6077, 13.3743], [2.5996, 13.5929], [0.5021, 13.5848]"
+                },
+                {
+                    "LineContent": "Moderate impact from birds and bears.",
+                    "BoundingBox": "[0.4616, 13.6091], [2.9397, 13.6091], [2.9397, 13.7953], [0.4616, 13.7953]"
+                },
+                {
+                    "LineContent": "(F) Evidence of digging up eggs by lale spawning lish :",
+                    "BoundingBox": "[0.5021, 13.9329], [4.3732, 13.9329], [4.3732, 14.1515], [0.5021, 14.1515]"
+                },
+                {
+                    "LineContent": "None Reported.",
+                    "BoundingBox": "[0.4535, 14.1596], [1.4901, 14.1596], [1.4901, 14.3539], [0.4535, 14.3539]"
+                },
+                {
+                    "LineContent": "(G) New obstructions (nature and recommendations) :",
+                    "BoundingBox": "[0.5021, 14.3782], [4.3165, 14.3863], [4.3165, 14.5887], [0.5021, 14.5806]"
+                },
+                {
+                    "LineContent": "COMMENTS ON ANY OTHER CONDITIONS AFFECTING THIS STREAM",
+                    "BoundingBox": "[0.5831, 15.5845], [5.4989, 15.5845], [5.4989, 15.8192], [0.5831, 15.8192]"
+                },
+                {
+                    "LineContent": "This creek was only walked by the crew of the \" Sooke Post' this year.",
+                    "BoundingBox": "[0.3563, 15.9326], [4.7781, 15.9326], [4.7781, 16.135], [0.3563, 16.135]"
+                },
+                {
+                    "LineContent": "Both the outer and head creek are included lu this report",
+                    "BoundingBox": "[0.3482, 16.0945], [3.9278, 16.1026], [3.9197, 16.3131], [0.3482, 16.2969]"
+                },
+                {
+                    "LineContent": "VF1189/BC16 - BANKER II",
+                    "BoundingBox": "[0.4697, 17.9323], [2.3, 17.9323], [2.3, 18.1427], [0.4697, 18.1427]"
+                },
+                {
+                    "LineContent": "6",
+                    "BoundingBox": "[2.8426, 17.7784], [3.126, 17.7703], [3.1341, 17.997], [2.8507, 17.997]"
+                },
+                {
+                    "LineContent": "Signature",
+                    "BoundingBox": "[3.7901, 17.9484], [4.4947, 17.9565], [4.4947, 18.1508], [3.7901, 18.1427]"
+                },
+                {
+                    "LineContent": "175",
+                    "BoundingBox": "[3.4419, 17.5356], [4.6242, 17.5598], [4.6161, 17.9323], [3.4419, 17.908]"
+                },
+                {
+                    "LineContent": "Person Preparing Report",
+                    "BoundingBox": "[7.0862, 17.9323], [8.8759, 17.9323], [8.8759, 18.1427], [7.0862, 18.1346]"
+                },
+                {
+                    "LineContent": "David Beggs",
+                    "BoundingBox": "[7.5154, 17.6003], [8.6249, 17.6165], [8.6168, 17.8189], [7.5154, 17.8108]"
+                }
+            ],
+            "Words": [
+                {
+                    "Word": "BC16",
+                    "Confidence": 0.991
+                },
+                {
+                    "Word": "1995",
+                    "Confidence": 0.988
+                },
+                {
+                    "Word": "DEPARTMENT",
+                    "Confidence": 0.978
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.991
+                },
+                {
+                    "Word": "FISHERIES",
+                    "Confidence": 0.984
+                },
+                {
+                    "Word": "and",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "OCEANS",
+                    "Confidence": 0.86
+                },
+                {
+                    "Word": "ANNUAL",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "REPORT",
+                    "Confidence": 0.992
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "SALMON",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "STREAMS",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "and",
+                    "Confidence": 0.996
+                },
+                {
+                    "Word": "SPAWNING",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "POPULATION",
+                    "Confidence": 0.991
+                },
+                {
+                    "Word": "STREAM",
+                    "Confidence": 0.904
+                },
+                {
+                    "Word": "IDENTIFICATION",
+                    "Confidence": 0.86
+                },
+                {
+                    "Word": "Watershed",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "Code",
+                    "Confidence": 0.851
+                },
+                {
+                    "Word": ":",
+                    "Confidence": 0.983
+                },
+                {
+                    "Word": "#",
+                    "Confidence": 0.219
+                },
+                {
+                    "Word": "95-3560",
+                    "Confidence": 0.978
+                },
+                {
+                    "Word": "Gazetted",
+                    "Confidence": 0.576
+                },
+                {
+                    "Word": "Name",
+                    "Confidence": 0.948
+                },
+                {
+                    "Word": ":",
+                    "Confidence": 0.747
+                },
+                {
+                    "Word": "Louscoone",
+                    "Confidence": 0.973
+                },
+                {
+                    "Word": "Inlet",
+                    "Confidence": 0.805
+                },
+                {
+                    "Word": "(",
+                    "Confidence": 0.592
+                },
+                {
+                    "Word": "k.",
+                    "Confidence": 0.519
+                },
+                {
+                    "Word": "Local",
+                    "Confidence": 0.983
+                },
+                {
+                    "Word": "Name",
+                    "Confidence": 0.934
+                },
+                {
+                    "Word": ":",
+                    "Confidence": 0.644
+                },
+                {
+                    "Word": "Louscoone",
+                    "Confidence": 0.964
+                },
+                {
+                    "Word": "Inlet",
+                    "Confidence": 0.772
+                },
+                {
+                    "Word": "(",
+                    "Confidence": 0.703
+                },
+                {
+                    "Word": "k.",
+                    "Confidence": 0.923
+                },
+                {
+                    "Word": "Flows",
+                    "Confidence": 0.988
+                },
+                {
+                    "Word": "into",
+                    "Confidence": 0.961
+                },
+                {
+                    "Word": ":",
+                    "Confidence": 0.86
+                },
+                {
+                    "Word": "Louscoone",
+                    "Confidence": 0.951
+                },
+                {
+                    "Word": "Inlel",
+                    "Confidence": 0.762
+                },
+                {
+                    "Word": "Year:",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "1995",
+                    "Confidence": 0.992
+                },
+                {
+                    "Word": "District",
+                    "Confidence": 0.915
+                },
+                {
+                    "Word": "Number:",
+                    "Confidence": 0.86
+                },
+                {
+                    "Word": "9",
+                    "Confidence": 0.621
+                },
+                {
+                    "Word": "Statistical",
+                    "Confidence": 0.86
+                },
+                {
+                    "Word": "Area:",
+                    "Confidence": 0.961
+                },
+                {
+                    "Word": "2-34",
+                    "Confidence": 0.962
+                },
+                {
+                    "Word": "DATES",
+                    "Confidence": 0.877
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "INSPECTION",
+                    "Confidence": 0.556
+                },
+                {
+                    "Word": "\u015eep",
+                    "Confidence": 0.86
+                },
+                {
+                    "Word": "13",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "Oct",
+                    "Confidence": 0.641
+                },
+                {
+                    "Word": "18",
+                    "Confidence": 0.605
+                },
+                {
+                    "Word": "Subdistrict",
+                    "Confidence": 0.902
+                },
+                {
+                    "Word": "Number:",
+                    "Confidence": 0.952
+                },
+                {
+                    "Word": "Subdistrict",
+                    "Confidence": 0.569
+                },
+                {
+                    "Word": "Name:",
+                    "Confidence": 0.947
+                },
+                {
+                    "Word": "Sandepit",
+                    "Confidence": 0.815
+                },
+                {
+                    "Word": "Area",
+                    "Confidence": 0.573
+                },
+                {
+                    "Word": "2",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "West",
+                    "Confidence": 0.984
+                },
+                {
+                    "Word": "SPAWNING",
+                    "Confidence": 0.861
+                },
+                {
+                    "Word": "RUN",
+                    "Confidence": 0.988
+                },
+                {
+                    "Word": "TIMING",
+                    "Confidence": 0.881
+                },
+                {
+                    "Word": "and",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "ESTIMATED",
+                    "Confidence": 0.819
+                },
+                {
+                    "Word": "NUMBER",
+                    "Confidence": 0.534
+                },
+                {
+                    "Word": "(1)",
+                    "Confidence": 0.74
+                },
+                {
+                    "Word": "SPECIES",
+                    "Confidence": 0.594
+                },
+                {
+                    "Word": "(2)",
+                    "Confidence": 0.884
+                },
+                {
+                    "Word": "ARRIVAL",
+                    "Confidence": 0.991
+                },
+                {
+                    "Word": "IN",
+                    "Confidence": 0.994
+                },
+                {
+                    "Word": "STREAM",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "(3)",
+                    "Confidence": 0.725
+                },
+                {
+                    "Word": "DATES",
+                    "Confidence": 0.994
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.731
+                },
+                {
+                    "Word": "SPAWNING",
+                    "Confidence": 0.863
+                },
+                {
+                    "Word": "START",
+                    "Confidence": 0.994
+                },
+                {
+                    "Word": "PEAK",
+                    "Confidence": 0.983
+                },
+                {
+                    "Word": "END",
+                    "Confidence": 0.965
+                },
+                {
+                    "Word": "(4)",
+                    "Confidence": 0.586
+                },
+                {
+                    "Word": "#",
+                    "Confidence": 0.976
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.517
+                },
+                {
+                    "Word": "OBS.",
+                    "Confidence": 0.99
+                },
+                {
+                    "Word": "(5)",
+                    "Confidence": 0.876
+                },
+                {
+                    "Word": "MTH",
+                    "Confidence": 0.994
+                },
+                {
+                    "Word": "161",
+                    "Confidence": 0.655
+                },
+                {
+                    "Word": "REL.",
+                    "Confidence": 0.911
+                },
+                {
+                    "Word": "(7)",
+                    "Confidence": 0.977
+                },
+                {
+                    "Word": "TOT.",
+                    "Confidence": 0.928
+                },
+                {
+                    "Word": "ON",
+                    "Confidence": 0.725
+                },
+                {
+                    "Word": "GROUNDS",
+                    "Confidence": 0.807
+                },
+                {
+                    "Word": "TARGET",
+                    "Confidence": 0.979
+                },
+                {
+                    "Word": "ESCAPE.",
+                    "Confidence": 0.755
+                },
+                {
+                    "Word": "mth.",
+                    "Confidence": 0.83
+                },
+                {
+                    "Word": "day",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "mitt.",
+                    "Confidence": 0.556
+                },
+                {
+                    "Word": "day",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "mth.",
+                    "Confidence": 0.786
+                },
+                {
+                    "Word": "day",
+                    "Confidence": 0.766
+                },
+                {
+                    "Word": "mth.",
+                    "Confidence": 0.902
+                },
+                {
+                    "Word": "day",
+                    "Confidence": 0.992
+                },
+                {
+                    "Word": "SOCKEYE",
+                    "Confidence": 0.994
+                },
+                {
+                    "Word": "1",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "2",
+                    "Confidence": 0.961
+                },
+                {
+                    "Word": "COHO",
+                    "Confidence": 0.988
+                },
+                {
+                    "Word": "1",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "Oct",
+                    "Confidence": 0.919
+                },
+                {
+                    "Word": "Nov",
+                    "Confidence": 0.911
+                },
+                {
+                    "Word": "1",
+                    "Confidence": 0.292
+                },
+                {
+                    "Word": "1",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "2",
+                    "Confidence": 0.884
+                },
+                {
+                    "Word": "10",
+                    "Confidence": 0.982
+                },
+                {
+                    "Word": "750",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "2",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "PINK",
+                    "Confidence": 0.864
+                },
+                {
+                    "Word": "1",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "1",
+                    "Confidence": 0.929
+                },
+                {
+                    "Word": "N/O",
+                    "Confidence": 0.545
+                },
+                {
+                    "Word": "5,000",
+                    "Confidence": 0.64
+                },
+                {
+                    "Word": "2",
+                    "Confidence": 0.994
+                },
+                {
+                    "Word": "CHUM",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "1",
+                    "Confidence": 0.996
+                },
+                {
+                    "Word": "Sep",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "B",
+                    "Confidence": 0.961
+                },
+                {
+                    "Word": "Sep",
+                    "Confidence": 0.63
+                },
+                {
+                    "Word": "C",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "Oct",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "A",
+                    "Confidence": 0.948
+                },
+                {
+                    "Word": "Oct",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "C",
+                    "Confidence": 0.869
+                },
+                {
+                    "Word": "2",
+                    "Confidence": 0.522
+                },
+                {
+                    "Word": "1",
+                    "Confidence": 0.949
+                },
+                {
+                    "Word": "2",
+                    "Confidence": 0.928
+                },
+                {
+                    "Word": "100",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "7,000",
+                    "Confidence": 0.655
+                },
+                {
+                    "Word": "2",
+                    "Confidence": 0.959
+                },
+                {
+                    "Word": "CHINOOK",
+                    "Confidence": 0.57
+                },
+                {
+                    "Word": "1",
+                    "Confidence": 0.926
+                },
+                {
+                    "Word": "2",
+                    "Confidence": 0.965
+                },
+                {
+                    "Word": "UNUSUAL",
+                    "Confidence": 0.972
+                },
+                {
+                    "Word": "CONDITIONS",
+                    "Confidence": 0.932
+                },
+                {
+                    "Word": "(A)",
+                    "Confidence": 0.884
+                },
+                {
+                    "Word": "Enhancement",
+                    "Confidence": 0.929
+                },
+                {
+                    "Word": "acllvibes",
+                    "Confidence": 0.586
+                },
+                {
+                    "Word": "or",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "intense",
+                    "Confidence": 0.984
+                },
+                {
+                    "Word": "biological",
+                    "Confidence": 0.683
+                },
+                {
+                    "Word": "activities.",
+                    "Confidence": 0.549
+                },
+                {
+                    "Word": "(B)",
+                    "Confidence": 0.947
+                },
+                {
+                    "Word": "Unusual",
+                    "Confidence": 0.961
+                },
+                {
+                    "Word": "Mortalities.",
+                    "Confidence": 0.899
+                },
+                {
+                    "Word": "(C)",
+                    "Confidence": 0.808
+                },
+                {
+                    "Word": "Obstructions",
+                    "Confidence": 0.558
+                },
+                {
+                    "Word": "or",
+                    "Confidence": 0.962
+                },
+                {
+                    "Word": "changes",
+                    "Confidence": 0.982
+                },
+                {
+                    "Word": "in",
+                    "Confidence": 0.952
+                },
+                {
+                    "Word": "habitat",
+                    "Confidence": 0.556
+                },
+                {
+                    "Word": "with",
+                    "Confidence": 0.9
+                },
+                {
+                    "Word": "recommendations.",
+                    "Confidence": 0.674
+                },
+                {
+                    "Word": "(2)",
+                    "Confidence": 0.157
+                },
+                {
+                    "Word": "Large",
+                    "Confidence": 0.983
+                },
+                {
+                    "Word": "variation",
+                    "Confidence": 0.98
+                },
+                {
+                    "Word": "In",
+                    "Confidence": 0.987
+                },
+                {
+                    "Word": "sex",
+                    "Confidence": 0.985
+                },
+                {
+                    "Word": "ratio",
+                    "Confidence": 0.906
+                },
+                {
+                    "Word": "or",
+                    "Confidence": 0.988
+                },
+                {
+                    "Word": "unus",
+                    "Confidence": 0.193
+                },
+                {
+                    "Word": "ual",
+                    "Confidence": 0.909
+                },
+                {
+                    "Word": "number",
+                    "Confidence": 0.87
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.988
+                },
+                {
+                    "Word": "jacks.",
+                    "Confidence": 0.924
+                },
+                {
+                    "Word": "(E)",
+                    "Confidence": 0.614
+                },
+                {
+                    "Word": "High/low",
+                    "Confidence": 0.575
+                },
+                {
+                    "Word": "water",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "flow",
+                    "Confidence": 0.861
+                },
+                {
+                    "Word": "level",
+                    "Confidence": 0.667
+                },
+                {
+                    "Word": "during",
+                    "Confidence": 0.951
+                },
+                {
+                    "Word": "spawning.",
+                    "Confidence": 0.694
+                },
+                {
+                    "Word": "ADDITIONAL",
+                    "Confidence": 0.951
+                },
+                {
+                    "Word": "COMMENTS",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "PHYSICAL",
+                    "Confidence": 0.887
+                },
+                {
+                    "Word": "CONDITION",
+                    "Confidence": 0.735
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.513
+                },
+                {
+                    "Word": "SPAWNING",
+                    "Confidence": 0.572
+                },
+                {
+                    "Word": "GROUNDS",
+                    "Confidence": 0.56
+                },
+                {
+                    "Word": "(A)",
+                    "Confidence": 0.73
+                },
+                {
+                    "Word": "Evidence",
+                    "Confidence": 0.922
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "erosion",
+                    "Confidence": 0.633
+                },
+                {
+                    "Word": "and",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "silting.",
+                    "Confidence": 0.74
+                },
+                {
+                    "Word": "Give",
+                    "Confidence": 0.566
+                },
+                {
+                    "Word": "extent",
+                    "Confidence": 0.56
+                },
+                {
+                    "Word": "or",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "percent",
+                    "Confidence": 0.912
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "stream",
+                    "Confidence": 0.78
+                },
+                {
+                    "Word": "bed",
+                    "Confidence": 0.945
+                },
+                {
+                    "Word": "affected:",
+                    "Confidence": 0.568
+                },
+                {
+                    "Word": "Nane",
+                    "Confidence": 0.847
+                },
+                {
+                    "Word": "Reported",
+                    "Confidence": 0.945
+                },
+                {
+                    "Word": "(B)",
+                    "Confidence": 0.534
+                },
+                {
+                    "Word": "Particulars",
+                    "Confidence": 0.964
+                },
+                {
+                    "Word": "ol",
+                    "Confidence": 0.717
+                },
+                {
+                    "Word": "scouring",
+                    "Confidence": 0.954
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.738
+                },
+                {
+                    "Word": "spawnimi",
+                    "Confidence": 0.611
+                },
+                {
+                    "Word": "beds",
+                    "Confidence": 0.99
+                },
+                {
+                    "Word": "or",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "change",
+                    "Confidence": 0.991
+                },
+                {
+                    "Word": "In",
+                    "Confidence": 0.948
+                },
+                {
+                    "Word": "course",
+                    "Confidence": 0.9
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.972
+                },
+                {
+                    "Word": "stream",
+                    "Confidence": 0.669
+                },
+                {
+                    "Word": ":",
+                    "Confidence": 0.932
+                },
+                {
+                    "Word": "Nane",
+                    "Confidence": 0.93
+                },
+                {
+                    "Word": "Reported.",
+                    "Confidence": 0.571
+                },
+                {
+                    "Word": "(C)",
+                    "Confidence": 0.727
+                },
+                {
+                    "Word": "Water",
+                    "Confidence": 0.991
+                },
+                {
+                    "Word": "levels",
+                    "Confidence": 0.576
+                },
+                {
+                    "Word": "flow,",
+                    "Confidence": 0.945
+                },
+                {
+                    "Word": "normal,",
+                    "Confidence": 0.86
+                },
+                {
+                    "Word": "abnorm.il.",
+                    "Confidence": 0.582
+                },
+                {
+                    "Word": "ti",
+                    "Confidence": 0.507
+                },
+                {
+                    "Word": "abnormal,",
+                    "Confidence": 0.73
+                },
+                {
+                    "Word": "details",
+                    "Confidence": 0.741
+                },
+                {
+                    "Word": "should",
+                    "Confidence": 0.945
+                },
+                {
+                    "Word": "be",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "given",
+                    "Confidence": 0.963
+                },
+                {
+                    "Word": ":",
+                    "Confidence": 0.848
+                },
+                {
+                    "Word": "Consistently",
+                    "Confidence": 0.514
+                },
+                {
+                    "Word": "good",
+                    "Confidence": 0.962
+                },
+                {
+                    "Word": "water",
+                    "Confidence": 0.796
+                },
+                {
+                    "Word": "levels",
+                    "Confidence": 0.615
+                },
+                {
+                    "Word": "through",
+                    "Confidence": 0.964
+                },
+                {
+                    "Word": "the",
+                    "Confidence": 0.991
+                },
+                {
+                    "Word": "spayming",
+                    "Confidence": 0.647
+                },
+                {
+                    "Word": "period.",
+                    "Confidence": 0.948
+                },
+                {
+                    "Word": "BIOLOGICAL",
+                    "Confidence": 0.861
+                },
+                {
+                    "Word": "CONDITIONS",
+                    "Confidence": 0.929
+                },
+                {
+                    "Word": "(D)",
+                    "Confidence": 0.538
+                },
+                {
+                    "Word": "Particulars",
+                    "Confidence": 0.965
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.707
+                },
+                {
+                    "Word": "distribution",
+                    "Confidence": 0.961
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.966
+                },
+                {
+                    "Word": "salmon",
+                    "Confidence": 0.606
+                },
+                {
+                    "Word": "over",
+                    "Confidence": 0.589
+                },
+                {
+                    "Word": "stream",
+                    "Confidence": 0.982
+                },
+                {
+                    "Word": "bed",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": ":",
+                    "Confidence": 0.941
+                },
+                {
+                    "Word": "Spread",
+                    "Confidence": 0.961
+                },
+                {
+                    "Word": "to",
+                    "Confidence": 0.88
+                },
+                {
+                    "Word": "1",
+                    "Confidence": 0.948
+                },
+                {
+                    "Word": "km.",
+                    "Confidence": 0.944
+                },
+                {
+                    "Word": "(E)",
+                    "Confidence": 0.96
+                },
+                {
+                    "Word": "Comments",
+                    "Confidence": 0.57
+                },
+                {
+                    "Word": "on",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "predators",
+                    "Confidence": 0.59
+                },
+                {
+                    "Word": ":",
+                    "Confidence": 0.861
+                },
+                {
+                    "Word": "Moderate",
+                    "Confidence": 0.89
+                },
+                {
+                    "Word": "impact",
+                    "Confidence": 0.969
+                },
+                {
+                    "Word": "from",
+                    "Confidence": 0.93
+                },
+                {
+                    "Word": "birds",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "and",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "bears.",
+                    "Confidence": 0.727
+                },
+                {
+                    "Word": "(F)",
+                    "Confidence": 0.99
+                },
+                {
+                    "Word": "Evidence",
+                    "Confidence": 0.992
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.977
+                },
+                {
+                    "Word": "digging",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "up",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "eggs",
+                    "Confidence": 0.924
+                },
+                {
+                    "Word": "by",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "lale",
+                    "Confidence": 0.944
+                },
+                {
+                    "Word": "spawning",
+                    "Confidence": 0.925
+                },
+                {
+                    "Word": "lish",
+                    "Confidence": 0.565
+                },
+                {
+                    "Word": ":",
+                    "Confidence": 0.871
+                },
+                {
+                    "Word": "None",
+                    "Confidence": 0.982
+                },
+                {
+                    "Word": "Reported.",
+                    "Confidence": 0.865
+                },
+                {
+                    "Word": "(G)",
+                    "Confidence": 0.942
+                },
+                {
+                    "Word": "New",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "obstructions",
+                    "Confidence": 0.569
+                },
+                {
+                    "Word": "(nature",
+                    "Confidence": 0.736
+                },
+                {
+                    "Word": "and",
+                    "Confidence": 0.976
+                },
+                {
+                    "Word": "recommendations)",
+                    "Confidence": 0.63
+                },
+                {
+                    "Word": ":",
+                    "Confidence": 0.961
+                },
+                {
+                    "Word": "COMMENTS",
+                    "Confidence": 0.99
+                },
+                {
+                    "Word": "ON",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "ANY",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "OTHER",
+                    "Confidence": 0.989
+                },
+                {
+                    "Word": "CONDITIONS",
+                    "Confidence": 0.539
+                },
+                {
+                    "Word": "AFFECTING",
+                    "Confidence": 0.961
+                },
+                {
+                    "Word": "THIS",
+                    "Confidence": 0.961
+                },
+                {
+                    "Word": "STREAM",
+                    "Confidence": 0.945
+                },
+                {
+                    "Word": "This",
+                    "Confidence": 0.992
+                },
+                {
+                    "Word": "creek",
+                    "Confidence": 0.92
+                },
+                {
+                    "Word": "was",
+                    "Confidence": 0.995
+                },
+                {
+                    "Word": "only",
+                    "Confidence": 0.994
+                },
+                {
+                    "Word": "walked",
+                    "Confidence": 0.978
+                },
+                {
+                    "Word": "by",
+                    "Confidence": 0.986
+                },
+                {
+                    "Word": "the",
+                    "Confidence": 0.909
+                },
+                {
+                    "Word": "crew",
+                    "Confidence": 0.964
+                },
+                {
+                    "Word": "of",
+                    "Confidence": 0.998
+                },
+                {
+                    "Word": "the",
+                    "Confidence": 0.406
+                },
+                {
+                    "Word": "\"",
+                    "Confidence": 0.93
+                },
+                {
+                    "Word": "Sooke",
+                    "Confidence": 0.983
+                },
+                {
+                    "Word": "Post'",
+                    "Confidence": 0.964
+                },
+                {
+                    "Word": "this",
+                    "Confidence": 0.988
+                },
+                {
+                    "Word": "year.",
+                    "Confidence": 0.98
+                },
+                {
+                    "Word": "Both",
+                    "Confidence": 0.702
+                },
+                {
+                    "Word": "the",
+                    "Confidence": 0.99
+                },
+                {
+                    "Word": "outer",
+                    "Confidence": 0.755
+                },
+                {
+                    "Word": "and",
+                    "Confidence": 0.938
+                },
+                {
+                    "Word": "head",
+                    "Confidence": 0.904
+                },
+                {
+                    "Word": "creek",
+                    "Confidence": 0.86
+                },
+                {
+                    "Word": "are",
+                    "Confidence": 0.961
+                },
+                {
+                    "Word": "included",
+                    "Confidence": 0.593
+                },
+                {
+                    "Word": "lu",
+                    "Confidence": 0.597
+                },
+                {
+                    "Word": "this",
+                    "Confidence": 0.86
+                },
+                {
+                    "Word": "report",
+                    "Confidence": 0.951
+                },
+                {
+                    "Word": "VF1189/BC16",
+                    "Confidence": 0.7
+                },
+                {
+                    "Word": "-",
+                    "Confidence": 0.7
+                },
+                {
+                    "Word": "BANKER",
+                    "Confidence": 0.983
+                },
+                {
+                    "Word": "II",
+                    "Confidence": 0.883
+                },
+                {
+                    "Word": "6",
+                    "Confidence": 0.426
+                },
+                {
+                    "Word": "Signature",
+                    "Confidence": 0.561
+                },
+                {
+                    "Word": "175",
+                    "Confidence": 0.291
+                },
+                {
+                    "Word": "Person",
+                    "Confidence": 0.967
+                },
+                {
+                    "Word": "Preparing",
+                    "Confidence": 0.961
+                },
+                {
+                    "Word": "Report",
+                    "Confidence": 0.931
+                },
+                {
+                    "Word": "David",
+                    "Confidence": 0.993
+                },
+                {
+                    "Word": "Beggs",
+                    "Confidence": 0.985
+                }
+            ],
+            "SelectionMarks": [
+                {
+                    "State": "unselected",
+                    "BoundingBox": "[0.4492, 8.2396], [0.6598, 8.2396], [0.6598, 8.4486], [0.4492, 8.4486]",
+                    "Confidence": 0.996
+                },
+                {
+                    "State": "unselected",
+                    "BoundingBox": "[0.4514, 8.4727], [0.6576, 8.4727], [0.6576, 8.6752], [0.4514, 8.6752]",
+                    "Confidence": 0.995
+                },
+                {
+                    "State": "unselected",
+                    "BoundingBox": "[0.4535, 8.6994], [0.6555, 8.6994], [0.6555, 8.8955], [0.4535, 8.8955]",
+                    "Confidence": 0.997
+                },
+                {
+                    "State": "unselected",
+                    "BoundingBox": "[0.4514, 8.924], [0.6555, 8.924], [0.6555, 9.1265], [0.4514, 9.1265]",
+                    "Confidence": 0.996
+                },
+                {
+                    "State": "unselected",
+                    "BoundingBox": "[0.4578, 9.1463], [0.649, 9.1463], [0.649, 9.3337], [0.4578, 9.3337]",
+                    "Confidence": 0.99
+                },
+                {
+                    "State": "unselected",
+                    "BoundingBox": "[4.7733, 2.4379], [5.3633, 2.4379], [5.3633, 2.6434], [4.7733, 2.6434]",
+                    "Confidence": 0.1
+                }
+            ]
+        }
+    ],
+    "Tables": [
+        {
+            "RowCount": 12,
+            "ColumnCount": 13,
+            "BoundingRegions": [
+                "[0.2886, 4.4617], [10.5715, 4.4551], [10.5793, 7.8303], [0.2961, 7.8359]"
+            ],
+            "Cells": [
+                {
+                    "RowIndex": 0,
+                    "ColumnIndex": 0,
+                    "Content": "(1) SPECIES",
+                    "BoundingRegions": [
+                        "[0.3128, 4.4926], [1.4953, 4.482], [1.4953, 5.4846], [0.3128, 5.4846]"
+                    ]
+                },
+                {
+                    "RowIndex": 0,
+                    "ColumnIndex": 2,
+                    "Content": "(2) ARRIVAL IN STREAM",
+                    "BoundingRegions": [
+                        "[1.4953, 4.482], [2.6884, 4.482], [2.699, 5.263], [1.4953, 5.263]"
+                    ]
+                },
+                {
+                    "RowIndex": 0,
+                    "ColumnIndex": 4,
+                    "Content": "(3) DATES of SPAWNING START PEAK END",
+                    "BoundingRegions": [
+                        "[2.6884, 4.482], [6.2359, 4.4715], [6.2465, 5.2419], [2.699, 5.263]"
+                    ]
+                },
+                {
+                    "RowIndex": 0,
+                    "ColumnIndex": 8,
+                    "Content": "(4) # of OBS.",
+                    "BoundingRegions": [
+                        "[6.2359, 4.4715], [6.9539, 4.4715], [6.9539, 5.4635], [6.2465, 5.4635]"
+                    ]
+                },
+                {
+                    "RowIndex": 0,
+                    "ColumnIndex": 9,
+                    "Content": "(5) MTH",
+                    "BoundingRegions": [
+                        "[6.9539, 4.4715], [7.6296, 4.4609], [7.6296, 5.4635], [6.9539, 5.4635]"
+                    ]
+                },
+                {
+                    "RowIndex": 0,
+                    "ColumnIndex": 10,
+                    "Content": "161 REL.",
+                    "BoundingRegions": [
+                        "[7.6296, 4.4609], [8.3264, 4.4609], [8.3264, 5.4635], [7.6296, 5.4635]"
+                    ]
+                },
+                {
+                    "RowIndex": 0,
+                    "ColumnIndex": 11,
+                    "Content": "(7) TOT. ON GROUNDS",
+                    "BoundingRegions": [
+                        "[8.3264, 4.4609], [9.4773, 4.4609], [9.4878, 5.4529], [8.3264, 5.4635]"
+                    ]
+                },
+                {
+                    "RowIndex": 0,
+                    "ColumnIndex": 12,
+                    "Content": "TARGET ESCAPE.",
+                    "BoundingRegions": [
+                        "[9.4773, 4.4609], [10.5331, 4.4504], [10.5436, 5.4529], [9.4878, 5.4529]"
+                    ]
+                },
+                {
+                    "RowIndex": 1,
+                    "ColumnIndex": 2,
+                    "Content": "mth.",
+                    "BoundingRegions": [
+                        "[1.4953, 5.263], [2.1605, 5.263], [2.1605, 5.4846], [1.4953, 5.4846]"
+                    ]
+                },
+                {
+                    "RowIndex": 1,
+                    "ColumnIndex": 3,
+                    "Content": "day",
+                    "BoundingRegions": [
+                        "[2.1605, 5.263], [2.699, 5.263], [2.699, 5.474], [2.1605, 5.4846]"
+                    ]
+                },
+                {
+                    "RowIndex": 1,
+                    "ColumnIndex": 4,
+                    "Content": "mitt. day",
+                    "BoundingRegions": [
+                        "[2.699, 5.263], [3.8392, 5.2524], [3.8392, 5.474], [2.699, 5.474]"
+                    ]
+                },
+                {
+                    "RowIndex": 1,
+                    "ColumnIndex": 5,
+                    "Content": "mth.",
+                    "BoundingRegions": [
+                        "[3.8392, 5.2524], [4.5677, 5.2524], [4.5677, 5.474], [3.8392, 5.474]"
+                    ]
+                },
+                {
+                    "RowIndex": 1,
+                    "ColumnIndex": 6,
+                    "Content": "day mth.",
+                    "BoundingRegions": [
+                        "[4.5677, 5.2524], [5.7503, 5.2419], [5.7503, 5.474], [4.5677, 5.474]"
+                    ]
+                },
+                {
+                    "RowIndex": 1,
+                    "ColumnIndex": 7,
+                    "Content": "day",
+                    "BoundingRegions": [
+                        "[5.7503, 5.2419], [6.2465, 5.2419], [6.2465, 5.4635], [5.7503, 5.474]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 0,
+                    "Content": "SOCKEYE",
+                    "BoundingRegions": [
+                        "[0.3128, 5.4846], [1.2208, 5.4846], [1.2208, 5.8328], [0.3128, 5.8434]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 1,
+                    "Content": "1",
+                    "BoundingRegions": [
+                        "[1.2208, 5.4846], [1.4953, 5.4846], [1.4953, 5.8328], [1.2208, 5.8328]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 2,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[1.4953, 5.4846], [2.1605, 5.4846], [2.1605, 5.8328], [1.4953, 5.8328]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 3,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.1605, 5.4846], [2.699, 5.474], [2.699, 5.8328], [2.1605, 5.8328]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 4,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.699, 5.474], [3.8392, 5.474], [3.8392, 5.8223], [2.699, 5.8328]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 5,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[3.8392, 5.474], [4.5677, 5.474], [4.5677, 5.8223], [3.8392, 5.8223]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 6,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[4.5677, 5.474], [5.7503, 5.474], [5.7503, 5.8117], [4.5677, 5.8223]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 7,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[5.7503, 5.474], [6.2465, 5.4635], [6.2465, 5.8117], [5.7503, 5.8117]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 8,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.2465, 5.4635], [6.9539, 5.4635], [6.9644, 5.8117], [6.2465, 5.8117]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 9,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.9539, 5.4635], [7.6296, 5.4635], [7.6296, 5.8117], [6.9644, 5.8117]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 10,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[7.6296, 5.4635], [8.3264, 5.4635], [8.3264, 5.8012], [7.6296, 5.8117]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 11,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[8.3264, 5.4635], [9.4878, 5.4529], [9.4878, 5.8012], [8.3264, 5.8012]"
+                    ]
+                },
+                {
+                    "RowIndex": 2,
+                    "ColumnIndex": 12,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[9.4878, 5.4529], [10.5436, 5.4529], [10.5436, 5.8012], [9.4878, 5.8012]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 0,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[0.3128, 5.8434], [1.2208, 5.8328], [1.2208, 6.0333], [0.3128, 6.0439]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 1,
+                    "Content": "2",
+                    "BoundingRegions": [
+                        "[1.2208, 5.8328], [1.4953, 5.8328], [1.4953, 6.0333], [1.2208, 6.0333]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 2,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[1.4953, 5.8328], [2.1605, 5.8328], [2.1605, 6.0333], [1.4953, 6.0333]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 3,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.1605, 5.8328], [2.699, 5.8328], [2.699, 6.0228], [2.1605, 6.0333]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 4,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.699, 5.8328], [3.8392, 5.8223], [3.8392, 6.0228], [2.699, 6.0228]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 5,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[3.8392, 5.8223], [4.5677, 5.8223], [4.5677, 6.0228], [3.8392, 6.0228]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 6,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[4.5677, 5.8223], [5.7503, 5.8117], [5.7503, 6.0122], [4.5677, 6.0228]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 7,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[5.7503, 5.8117], [6.2465, 5.8117], [6.2465, 6.0122], [5.7503, 6.0122]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 8,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.2465, 5.8117], [6.9644, 5.8117], [6.9644, 6.0122], [6.2465, 6.0122]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 9,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.9644, 5.8117], [7.6296, 5.8117], [7.6296, 6.0017], [6.9644, 6.0122]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 10,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[7.6296, 5.8117], [8.3264, 5.8012], [8.3264, 6.0017], [7.6296, 6.0017]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 11,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[8.3264, 5.8012], [9.4878, 5.8012], [9.4878, 5.9911], [8.3264, 6.0017]"
+                    ]
+                },
+                {
+                    "RowIndex": 3,
+                    "ColumnIndex": 12,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[9.4878, 5.8012], [10.5436, 5.8012], [10.5436, 5.9911], [9.4878, 5.9911]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 0,
+                    "Content": "COHO",
+                    "BoundingRegions": [
+                        "[0.3128, 6.0439], [1.2208, 6.0333], [1.2208, 6.2655], [0.3128, 6.2655]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 1,
+                    "Content": "1",
+                    "BoundingRegions": [
+                        "[1.2208, 6.0333], [1.4953, 6.0333], [1.4953, 6.2655], [1.2208, 6.2655]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 2,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[1.4953, 6.0333], [2.1605, 6.0333], [2.1605, 6.2655], [1.4953, 6.2655]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 3,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.1605, 6.0333], [2.699, 6.0228], [2.699, 6.255], [2.1605, 6.2655]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 4,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.699, 6.0228], [3.8392, 6.0228], [3.8392, 6.255], [2.699, 6.255]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 5,
+                    "Content": "Oct",
+                    "BoundingRegions": [
+                        "[3.8392, 6.0228], [4.5677, 6.0228], [4.5677, 6.255], [3.8392, 6.255]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 6,
+                    "Content": "Nov",
+                    "BoundingRegions": [
+                        "[4.5677, 6.0228], [5.7503, 6.0122], [5.7503, 6.255], [4.5677, 6.255]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 7,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[5.7503, 6.0122], [6.2465, 6.0122], [6.2465, 6.2444], [5.7503, 6.255]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 8,
+                    "Content": "1",
+                    "BoundingRegions": [
+                        "[6.2465, 6.0122], [6.9644, 6.0122], [6.9644, 6.2444], [6.2465, 6.2444]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 9,
+                    "Content": "1",
+                    "BoundingRegions": [
+                        "[6.9644, 6.0122], [7.6296, 6.0017], [7.6401, 6.2444], [6.9644, 6.2444]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 10,
+                    "Content": "2",
+                    "BoundingRegions": [
+                        "[7.6296, 6.0017], [8.3264, 6.0017], [8.3264, 6.2444], [7.6401, 6.2444]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 11,
+                    "Content": "10",
+                    "BoundingRegions": [
+                        "[8.3264, 6.0017], [9.4878, 5.9911], [9.4878, 6.2339], [8.3264, 6.2444]"
+                    ]
+                },
+                {
+                    "RowIndex": 4,
+                    "ColumnIndex": 12,
+                    "Content": "750",
+                    "BoundingRegions": [
+                        "[9.4878, 5.9911], [10.5436, 5.9911], [10.5436, 6.2339], [9.4878, 6.2339]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 0,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[0.3128, 6.2655], [1.2208, 6.2655], [1.2208, 6.4766], [0.3128, 6.4871]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 1,
+                    "Content": "2",
+                    "BoundingRegions": [
+                        "[1.2208, 6.2655], [1.4953, 6.2655], [1.4953, 6.4766], [1.2208, 6.4766]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 2,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[1.4953, 6.2655], [2.1605, 6.2655], [2.1605, 6.4766], [1.4953, 6.4766]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 3,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.1605, 6.2655], [2.699, 6.255], [2.699, 6.4766], [2.1605, 6.4766]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 4,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.699, 6.255], [3.8392, 6.255], [3.8392, 6.4766], [2.699, 6.4766]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 5,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[3.8392, 6.255], [4.5677, 6.255], [4.5677, 6.466], [3.8392, 6.4766]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 6,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[4.5677, 6.255], [5.7503, 6.255], [5.7503, 6.466], [4.5677, 6.466]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 7,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[5.7503, 6.255], [6.2465, 6.2444], [6.2465, 6.466], [5.7503, 6.466]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 8,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.2465, 6.2444], [6.9644, 6.2444], [6.9644, 6.4555], [6.2465, 6.466]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 9,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.9644, 6.2444], [7.6401, 6.2444], [7.6401, 6.4555], [6.9644, 6.4555]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 10,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[7.6401, 6.2444], [8.3264, 6.2444], [8.3264, 6.4555], [7.6401, 6.4555]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 11,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[8.3264, 6.2444], [9.4878, 6.2339], [9.4878, 6.4449], [8.3264, 6.4555]"
+                    ]
+                },
+                {
+                    "RowIndex": 5,
+                    "ColumnIndex": 12,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[9.4878, 6.2339], [10.5436, 6.2339], [10.5436, 6.4344], [9.4878, 6.4449]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 0,
+                    "Content": "PINK",
+                    "BoundingRegions": [
+                        "[0.3128, 6.4871], [1.2208, 6.4766], [1.2208, 6.7087], [0.3128, 6.7087]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 1,
+                    "Content": "1",
+                    "BoundingRegions": [
+                        "[1.2208, 6.4766], [1.4953, 6.4766], [1.4953, 6.7087], [1.2208, 6.7087]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 2,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[1.4953, 6.4766], [2.1605, 6.4766], [2.1605, 6.7087], [1.4953, 6.7087]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 3,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.1605, 6.4766], [2.699, 6.4766], [2.699, 6.7087], [2.1605, 6.7087]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 4,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.699, 6.4766], [3.8392, 6.4766], [3.8392, 6.6982], [2.699, 6.7087]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 5,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[3.8392, 6.4766], [4.5677, 6.466], [4.5677, 6.6982], [3.8392, 6.6982]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 6,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[4.5677, 6.466], [5.7503, 6.466], [5.7608, 6.6876], [4.5677, 6.6982]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 7,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[5.7503, 6.466], [6.2465, 6.466], [6.2465, 6.6876], [5.7608, 6.6876]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 8,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.2465, 6.466], [6.9644, 6.4555], [6.9644, 6.6876], [6.2465, 6.6876]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 9,
+                    "Content": "1",
+                    "BoundingRegions": [
+                        "[6.9644, 6.4555], [7.6401, 6.4555], [7.6401, 6.6876], [6.9644, 6.6876]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 10,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[7.6401, 6.4555], [8.3264, 6.4555], [8.337, 6.6771], [7.6401, 6.6876]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 11,
+                    "Content": "N/O",
+                    "BoundingRegions": [
+                        "[8.3264, 6.4555], [9.4878, 6.4449], [9.4878, 6.6771], [8.337, 6.6771]"
+                    ]
+                },
+                {
+                    "RowIndex": 6,
+                    "ColumnIndex": 12,
+                    "Content": "5,000",
+                    "BoundingRegions": [
+                        "[9.4878, 6.4449], [10.5436, 6.4344], [10.5436, 6.6771], [9.4878, 6.6771]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 0,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[0.3128, 6.7087], [1.2208, 6.7087], [1.2208, 6.9409], [0.3128, 6.9515]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 1,
+                    "Content": "2",
+                    "BoundingRegions": [
+                        "[1.2208, 6.7087], [1.4953, 6.7087], [1.4953, 6.9409], [1.2208, 6.9409]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 2,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[1.4953, 6.7087], [2.1605, 6.7087], [2.1605, 6.9409], [1.4953, 6.9409]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 3,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.1605, 6.7087], [2.699, 6.7087], [2.699, 6.9409], [2.1605, 6.9409]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 4,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.699, 6.7087], [3.8392, 6.6982], [3.8392, 6.9304], [2.699, 6.9409]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 5,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[3.8392, 6.6982], [4.5677, 6.6982], [4.5677, 6.9304], [3.8392, 6.9304]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 6,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[4.5677, 6.6982], [5.7608, 6.6876], [5.7608, 6.9304], [4.5677, 6.9304]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 7,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[5.7608, 6.6876], [6.2465, 6.6876], [6.2465, 6.9198], [5.7608, 6.9304]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 8,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.2465, 6.6876], [6.9644, 6.6876], [6.975, 6.9198], [6.2465, 6.9198]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 9,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.9644, 6.6876], [7.6401, 6.6876], [7.6401, 6.9198], [6.975, 6.9198]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 10,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[7.6401, 6.6876], [8.337, 6.6771], [8.337, 6.9198], [7.6401, 6.9198]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 11,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[8.337, 6.6771], [9.4878, 6.6771], [9.4878, 6.9198], [8.337, 6.9198]"
+                    ]
+                },
+                {
+                    "RowIndex": 7,
+                    "ColumnIndex": 12,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[9.4878, 6.6771], [10.5436, 6.6771], [10.5436, 6.8987], [9.4878, 6.9198]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 0,
+                    "Content": "CHUM",
+                    "BoundingRegions": [
+                        "[0.3128, 6.9515], [1.2208, 6.9409], [1.2208, 7.1731], [0.3128, 7.1731]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 1,
+                    "Content": "1",
+                    "BoundingRegions": [
+                        "[1.2208, 6.9409], [1.4953, 6.9409], [1.5059, 7.1731], [1.2208, 7.1731]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 2,
+                    "Content": "Sep",
+                    "BoundingRegions": [
+                        "[1.4953, 6.9409], [2.1605, 6.9409], [2.1605, 7.1625], [1.5059, 7.1731]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 3,
+                    "Content": "B",
+                    "BoundingRegions": [
+                        "[2.1605, 6.9409], [2.699, 6.9409], [2.699, 7.1625], [2.1605, 7.1625]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 4,
+                    "Content": "Sep C",
+                    "BoundingRegions": [
+                        "[2.699, 6.9409], [3.8392, 6.9304], [3.8392, 7.1625], [2.699, 7.1625]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 5,
+                    "Content": "Oct",
+                    "BoundingRegions": [
+                        "[3.8392, 6.9304], [4.5677, 6.9304], [4.5677, 7.1625], [3.8392, 7.1625]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 6,
+                    "Content": "A Oct",
+                    "BoundingRegions": [
+                        "[4.5677, 6.9304], [5.7608, 6.9304], [5.7608, 7.152], [4.5677, 7.1625]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 7,
+                    "Content": "C",
+                    "BoundingRegions": [
+                        "[5.7608, 6.9304], [6.2465, 6.9198], [6.2465, 7.152], [5.7608, 7.152]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 8,
+                    "Content": "2",
+                    "BoundingRegions": [
+                        "[6.2465, 6.9198], [6.975, 6.9198], [6.975, 7.152], [6.2465, 7.152]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 9,
+                    "Content": "1",
+                    "BoundingRegions": [
+                        "[6.975, 6.9198], [7.6401, 6.9198], [7.6401, 7.152], [6.975, 7.152]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 10,
+                    "Content": "2",
+                    "BoundingRegions": [
+                        "[7.6401, 6.9198], [8.337, 6.9198], [8.337, 7.1414], [7.6401, 7.152]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 11,
+                    "Content": "100",
+                    "BoundingRegions": [
+                        "[8.337, 6.9198], [9.4878, 6.9198], [9.4878, 7.1414], [8.337, 7.1414]"
+                    ]
+                },
+                {
+                    "RowIndex": 8,
+                    "ColumnIndex": 12,
+                    "Content": "7,000",
+                    "BoundingRegions": [
+                        "[9.4878, 6.9198], [10.5436, 6.8987], [10.5436, 7.1414], [9.4878, 7.1414]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 0,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[0.3128, 7.1731], [1.2208, 7.1731], [1.2208, 7.363], [0.3128, 7.3736]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 1,
+                    "Content": "2",
+                    "BoundingRegions": [
+                        "[1.2208, 7.1731], [1.5059, 7.1731], [1.5059, 7.363], [1.2208, 7.363]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 2,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[1.5059, 7.1731], [2.1605, 7.1625], [2.1605, 7.363], [1.5059, 7.363]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 3,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.1605, 7.1625], [2.699, 7.1625], [2.699, 7.363], [2.1605, 7.363]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 4,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.699, 7.1625], [3.8392, 7.1625], [3.8392, 7.3525], [2.699, 7.363]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 5,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[3.8392, 7.1625], [4.5677, 7.1625], [4.5677, 7.3525], [3.8392, 7.3525]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 6,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[4.5677, 7.1625], [5.7608, 7.152], [5.7608, 7.3419], [4.5677, 7.3525]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 7,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[5.7608, 7.152], [6.2465, 7.152], [6.2465, 7.3419], [5.7608, 7.3419]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 8,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.2465, 7.152], [6.975, 7.152], [6.975, 7.3419], [6.2465, 7.3419]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 9,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.975, 7.152], [7.6401, 7.152], [7.6401, 7.3419], [6.975, 7.3419]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 10,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[7.6401, 7.152], [8.337, 7.1414], [8.337, 7.3314], [7.6401, 7.3419]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 11,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[8.337, 7.1414], [9.4878, 7.1414], [9.4984, 7.3314], [8.337, 7.3314]"
+                    ]
+                },
+                {
+                    "RowIndex": 9,
+                    "ColumnIndex": 12,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[9.4878, 7.1414], [10.5436, 7.1414], [10.5542, 7.3314], [9.4984, 7.3314]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 0,
+                    "Content": "CHINOOK",
+                    "BoundingRegions": [
+                        "[0.3128, 7.3736], [1.2208, 7.363], [1.2208, 7.5846], [0.3128, 7.5952]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 1,
+                    "Content": "1",
+                    "BoundingRegions": [
+                        "[1.2208, 7.363], [1.5059, 7.363], [1.5059, 7.5846], [1.2208, 7.5846]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 2,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[1.5059, 7.363], [2.1605, 7.363], [2.1605, 7.5846], [1.5059, 7.5846]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 3,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.1605, 7.363], [2.699, 7.363], [2.7095, 7.5846], [2.1605, 7.5846]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 4,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.699, 7.363], [3.8392, 7.3525], [3.8392, 7.5741], [2.7095, 7.5846]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 5,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[3.8392, 7.3525], [4.5677, 7.3525], [4.5677, 7.5741], [3.8392, 7.5741]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 6,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[4.5677, 7.3525], [5.7608, 7.3419], [5.7608, 7.5635], [4.5677, 7.5741]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 7,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[5.7608, 7.3419], [6.2465, 7.3419], [6.2465, 7.5635], [5.7608, 7.5635]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 8,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.2465, 7.3419], [6.975, 7.3419], [6.975, 7.553], [6.2465, 7.5635]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 9,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.975, 7.3419], [7.6401, 7.3419], [7.6401, 7.553], [6.975, 7.553]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 10,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[7.6401, 7.3419], [8.337, 7.3314], [8.337, 7.553], [7.6401, 7.553]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 11,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[8.337, 7.3314], [9.4984, 7.3314], [9.4984, 7.5424], [8.337, 7.553]"
+                    ]
+                },
+                {
+                    "RowIndex": 10,
+                    "ColumnIndex": 12,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[9.4984, 7.3314], [10.5542, 7.3314], [10.5542, 7.5319], [9.4984, 7.5424]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 0,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[0.3128, 7.5952], [1.2208, 7.5846], [1.2208, 7.8274], [0.3128, 7.8274]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 1,
+                    "Content": "2",
+                    "BoundingRegions": [
+                        "[1.2208, 7.5846], [1.5059, 7.5846], [1.5059, 7.8274], [1.2208, 7.8274]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 2,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[1.5059, 7.5846], [2.1605, 7.5846], [2.1605, 7.8168], [1.5059, 7.8274]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 3,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.1605, 7.5846], [2.7095, 7.5846], [2.7095, 7.8168], [2.1605, 7.8168]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 4,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[2.7095, 7.5846], [3.8392, 7.5741], [3.8392, 7.8168], [2.7095, 7.8168]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 5,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[3.8392, 7.5741], [4.5677, 7.5741], [4.5677, 7.8063], [3.8392, 7.8168]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 6,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[4.5677, 7.5741], [5.7608, 7.5635], [5.7608, 7.8063], [4.5677, 7.8063]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 7,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[5.7608, 7.5635], [6.2465, 7.5635], [6.2465, 7.8063], [5.7608, 7.8063]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 8,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.2465, 7.5635], [6.975, 7.553], [6.975, 7.7957], [6.2465, 7.8063]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 9,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[6.975, 7.553], [7.6401, 7.553], [7.6401, 7.7957], [6.975, 7.7957]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 10,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[7.6401, 7.553], [8.337, 7.553], [8.337, 7.7957], [7.6401, 7.7957]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 11,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[8.337, 7.553], [9.4984, 7.5424], [9.4984, 7.7852], [8.337, 7.7957]"
+                    ]
+                },
+                {
+                    "RowIndex": 11,
+                    "ColumnIndex": 12,
+                    "Content": "",
+                    "BoundingRegions": [
+                        "[9.4984, 7.5424], [10.5542, 7.5319], [10.5542, 7.7746], [9.4984, 7.7852]"
+                    ]
+                }
+            ]
+        }
+    ]
+}
