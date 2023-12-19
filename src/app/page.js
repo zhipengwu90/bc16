@@ -1,14 +1,13 @@
-import Image from "next/image";
+
 import styles from "./page.module.css";
 
 import FileNameReader from "./components/FileNameReader";
-import logo from "../../public/images/sig-blk-en.svg";
+import LogoHeader from "./components/LogoHeader";
+
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.dfoHeader}>
-        <Image height={40} src={logo} alt="Logo" />
-      </div>
+      <LogoHeader />
       <FileNameReader />
     </div>
   );

@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 
 
 import { promises as fs } from "fs";
+import LogoHeader from "../components/LogoHeader";
 const File = async ({ searchParams }) => {
   console.log(searchParams);
   const fileName = searchParams.fileName;
@@ -15,6 +16,7 @@ const File = async ({ searchParams }) => {
 
     return (
       <div>
+        <LogoHeader />
         <Link className= {styles.backButton} href="/"> Back</Link>
         <h5>File Name: {fileName}</h5>
 

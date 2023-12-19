@@ -8,6 +8,13 @@
   padding: 10px;
 }
 
+@media (max-width: 768px) {
+  /* Adjust this breakpoint as per your requirements */
+  .allWrapper {
+    position: relative;
+    top: 0px;
+  }
+}
 .wrapper {
   display: grid;
   grid-template-columns: 0.8fr 1fr;

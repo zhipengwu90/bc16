@@ -1,11 +1,12 @@
 .listWrapper{
-    width: 90vh;
+    max-width: 100vw;
     border: 1px solid #ccc;
     padding: 20px;
 }
 
 .noFiles{
     display: flex;
+    width: 30vw;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -16,13 +17,22 @@
     
 }
 
-.container{
 
+
+.container{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: flex-start;
     height: 100%;
+
+}
+
+@media (max-width: 768px) {  /* Adjust this breakpoint as per your requirements */
+    .container {
+        flex-direction: column;
+        align-items: center; /* This centers items vertically in the column direction */
+    }
 }
 
 .linkStyle{
