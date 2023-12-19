@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./YearArea.module.css";
 import checkTable from "../../func/checkTable";
 const YearArea = ({ items }) => {
-  const [findTable, setFindTable] = useState(null);
+  const [findTable, setFindTable] = useState([]);
 
   useEffect(() => {
     const tableIndex = checkTable(
@@ -33,7 +33,7 @@ const YearArea = ({ items }) => {
   };
   return (
     <div className={styles.yearBox}>
-      {findTable ? (
+      {findTable.length ? (
         <table className={styles.myTable}>
           <tbody> {findTable} </tbody>{" "}
         </table>

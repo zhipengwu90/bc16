@@ -14,7 +14,8 @@ const UnusualCon = ({ items }) => {
     );
 
     const beginIn = result.beginIndex + 1;
-    const endIn = result.adjustedEndIndex;
+    const endIn = result.endIndex;
+  
     const renderedElements = findItem
       .slice(beginIn, endIn)
       .map((item, index) => {

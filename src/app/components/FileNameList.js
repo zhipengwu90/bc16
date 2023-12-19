@@ -17,7 +17,7 @@ const FileNameList = ({ fileNameList }) => {
     }
     if (waterbody !== "") {
       filteredFiles = filteredFiles.filter((file) =>
-        file.replace(/_/g, " ").toLowerCase().includes(waterbody)
+        file.replace(/_/g, " ").toLowerCase().includes(waterbody.toLowerCase())
       );
     }
     if (year !== "") {

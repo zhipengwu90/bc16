@@ -69,6 +69,13 @@ function FileSearch(props) {
           type="text"
           placeholder="search name"
           ref={waterbodyRef}
+          onKeyDown={(event) => {
+            if (event.key === "Enter") {
+              // Check if Enter key is pressed
+              event.preventDefault(); // Prevent default form submission
+              handleSubmit(event); // Call the search function
+            }
+          }}
         />
         <label htmlFor="year">Year</label>
         <input
@@ -78,6 +85,13 @@ function FileSearch(props) {
           type="number"
           placeholder="1990"
           ref={yearRef}
+          onKeyDown={(event) => {
+            if (event.key === "Enter") {
+              // Check if Enter key is pressed
+              event.preventDefault(); // Prevent default form submission
+              handleSubmit(event); // Call the search function
+            }
+          }}
         />
       </div>
       <div className={styles.buttonBox}>
