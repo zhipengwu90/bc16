@@ -5,6 +5,10 @@ import styles from "./SingleForm.module.css";
 import SpawningTable from "./SingleFormPart.js/SpawningTable";
 import DateInspection from "./SingleFormPart.js/DateInspection";
 import UnusualCon from "./SingleFormPart.js/UnusualCon";
+import { AdditionalCmt } from "./SingleFormPart.js/AdditionalCmt";
+import CmtOnOther from "./SingleFormPart.js/CmtOnOther";
+import Footer from "./SingleFormPart.js/Footer";
+
 const SingleForm = ({ items }) => {
 
   return (
@@ -27,6 +31,9 @@ const SingleForm = ({ items }) => {
         <SpawningTable items={items} />
       </div>
       <UnusualCon items={items.Pages}/>
+      <AdditionalCmt items={items.Pages}/>
+      <CmtOnOther items={items.Pages}/>
+      <Footer items={items.Pages}/>
     </div>
   );
 };
