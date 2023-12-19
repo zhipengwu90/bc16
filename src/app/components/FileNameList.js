@@ -36,7 +36,7 @@ const FileNameList = ({ fileNameList }) => {
         )}
         {fileSearch.map((file, index) => (
           <div key={index}>
-            <Link
+            <Link className={styles.linkStyle}
               href={{
                 pathname: "/file/",
                 query: { fileName: file },

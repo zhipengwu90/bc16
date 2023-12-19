@@ -13,9 +13,8 @@ const findIndex = (items, beginWord, endWord) => {
     : -1;
 
   // Subtract 1 from endIndex if it's not -1
-  const adjustedEndIndex = endIndex !== -1 ? endIndex : endIndex;
 
-  return { beginIndex, adjustedEndIndex };
+  return { beginIndex, endIndex };
 };
 
 export default findIndex;

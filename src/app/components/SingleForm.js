@@ -7,10 +7,6 @@ import DateInspection from "./SingleFormPart.js/DateInspection";
 import UnusualCon from "./SingleFormPart.js/UnusualCon";
 const SingleForm = ({ items }) => {
 
-
-
-
-
   return (
     <div>
       <div className={styles.header}>

@@ -11,7 +11,7 @@ const YearArea = ({ items }) => {
       "Subdistrict Number",
       "Statistical Area"
     );
-    console.log(tableIndex);
+ 
     if (tableIndex !== undefined && tableIndex !== null) {
       setFindTable(renderTable(items.Tables[tableIndex]));
     }

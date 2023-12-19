@@ -2,8 +2,7 @@ import React, { useState, useEffect, use } from "react";
 import styles from "./DateInspection.module.css";
 import findIndex from "../../func/findIndex";
 const DateInspection = ({ items }) => {
-  const [beginIndex, setBeginIndex] = useState(null);
-  const [endIndex, SetEndIndex] = useState(null);
+
   const [contentElements, setContentElements] = useState([]);
   const findItem = items[0].Lines;
   useEffect(() => {
@@ -12,11 +11,10 @@ const DateInspection = ({ items }) => {
       "DATES of INSPECTION",
       "SPAWNING RUN TIMING"
     );
-    setBeginIndex(result.beginIndex);
-    SetEndIndex(result.adjustedEndIndex);
+
 
     const beginIn = result.beginIndex + 1;
-    const endIn = result.adjustedEndIndex;
+    const endIn = result.endIndex;
     const renderedElements = findItem
       .slice(beginIn, endIn)
       .map((item, index) => {
