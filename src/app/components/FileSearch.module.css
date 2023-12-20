@@ -1,4 +1,5 @@
 .allWrapper {
+  
   margin-left: 10px;
   width: 45vh;
   position: sticky;
@@ -19,6 +20,7 @@
   grid-template-columns: 1fr 1fr;
   margin-bottom: 20px;
   grid-gap: 5px;
+  padding: 5px;
 }
 
 .buttonBox {
