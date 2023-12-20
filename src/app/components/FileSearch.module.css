@@ -1,7 +1,7 @@
 .allWrapper {
-  
+  box-sizing: border-box;
   margin-left: 10px;
-  width: 45vh;
+  width: 50vh;
   position: sticky;
   top: 40px;
   border: 1px solid #ccc;
@@ -16,11 +16,16 @@
   }
 }
 .wrapper {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 20px;
-  grid-gap: 5px;
+  row-gap: 5px;
   padding: 5px;
+}
+.wrapper label{
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .buttonBox {
