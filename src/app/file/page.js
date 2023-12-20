@@ -2,7 +2,6 @@ import Link from "next/link";
 import FormRender from "../components/FormRender";
 import styles from "./page.module.css";
 
-
 import { promises as fs } from "fs";
 import LogoHeader from "../components/LogoHeader";
 const File = async ({ searchParams }) => {
@@ -16,8 +15,11 @@ const File = async ({ searchParams }) => {
 
     return (
       <div>
+        <title>BC16</title>
         <LogoHeader />
-        <Link className= {styles.backButton} href="/"> Back</Link>
+        <Link className={styles.backButton} href="/">
+          Back
+        </Link>
         <h5>File Name: {fileName}</h5>
 
         <FormRender items={jsonData} />
