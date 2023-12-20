@@ -1,7 +1,6 @@
 .allWrapper {
   margin-left: 10px;
-  width: 40vh;
-
+  width: 45vh;
   position: sticky;
   top: 40px;
   border: 1px solid #ccc;
@@ -17,9 +16,9 @@
 }
 .wrapper {
   display: grid;
-  grid-template-columns: 0.8fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-bottom: 20px;
-  grid-gap: 10px;
+  grid-gap: 5px;
 }
 
 .buttonBox {
