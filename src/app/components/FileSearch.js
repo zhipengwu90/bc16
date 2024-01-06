@@ -7,11 +7,19 @@ function FileSearch(props) {
     area: "",
     waterbody: "",
     year: "",
+    format: "",
+  });
+  const areas = props.areas;
+  areas.sort((a, b) => {
+    const numA = parseInt(a.split("_")[1]);
+    const numB = parseInt(b.split("_")[1]);
+    return numA - numB;
   });
 
   const areaRef = useRef(null);
   const waterbodyRef = useRef(null);
   const yearRef = useRef(null);
+  const formatRef = useRef(null);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -33,17 +41,20 @@ function FileSearch(props) {
       area: "",
       waterbody: "",
       year: "",
+      format: "",
     });
 
     // Clear input values or select options
     areaRef.current.value = "";
     waterbodyRef.current.value = "";
     yearRef.current.value = "";
+    formatRef.current.value = "";
 
     props.onSearch({
       area: "",
       waterbody: "",
       year: "",
+      format: "",
     });
   };
 
@@ -55,11 +66,13 @@ function FileSearch(props) {
           <option defaultValue value="">
             All
           </option>
-          <option value="area 2e">Area 2E</option>
-          <option value="area 23">Area 23</option>
-          {/* <option value="area1">Area 1</option>
-          <option value="area2">Area 2</option>
-          <option value="area3">Area 3</option> */}
+          {areas.map((area, index) => {
+            return (
+              <option key={index} value={area.toLowerCase()}>
+                {area.replace(/_/g, " ")}
+              </option>
+            );
+          })}
         </select>
         <label htmlFor="waterbody">Waterbody</label>
         <input
@@ -67,7 +80,7 @@ function FileSearch(props) {
           onChange={handleChange}
           id="waterbody"
           type="text"
-          placeholder="search name"
+          placeholder="Search Name"
           ref={waterbodyRef}
           onKeyDown={(event) => {
             if (event.key === "Enter") {
@@ -93,6 +106,22 @@ function FileSearch(props) {
             }
           }}
         />
+        <label htmlFor="format">Format</label>
+        <select
+          id="format"
+          name="format"
+          onChange={handleChange}
+          ref={formatRef}
+        >
+          <option defaultValue value="">
+            All
+          </option>
+          <option value="Format_4C">4C</option>
+          <option value="Format_4H">4H</option>
+          <option value="Format_5A">5A</option>
+          <option value="Format_6E">6E</option>
+          <option value="Format_7E">7E</option>
+        </select>
       </div>
       <div className={styles.buttonBox}>
         <button className={styles.search} onClick={handleSubmit}>

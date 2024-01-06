@@ -1,9 +1,9 @@
 import Link from "next/link";
-import FormRender from "../components/FormRender";
+import FormRender from "../componentsV2/FormRender";
 import styles from "./page.module.css";
 
 import { promises as fs } from "fs";
-import LogoHeader from "../components/LogoHeader";
+import LogoHeader from "../componentsV2/LogoHeader";
 const File = async ({ searchParams }) => {
   console.log(searchParams);
   const fileName = searchParams.fileName;

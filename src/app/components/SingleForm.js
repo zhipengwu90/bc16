@@ -1,39 +1,30 @@
 "use client";
-import StreamID from "./SingleFormPart.js/StreamID";
-import YearArea from "./SingleFormPart.js/YearArea";
+
+import StreamID from "../components/SingleFormPart/StreamID";
 import styles from "./SingleForm.module.css";
-import SpawningTable from "./SingleFormPart.js/SpawningTable";
-import DateInspection from "./SingleFormPart.js/DateInspection";
-import UnusualCon from "./SingleFormPart.js/UnusualCon";
-import { AdditionalCmt } from "./SingleFormPart.js/AdditionalCmt";
-import CmtOnOther from "./SingleFormPart.js/CmtOnOther";
-import Footer from "./SingleFormPart.js/Footer";
+import Area from "../components/SingleFormPart/Area";
+import Dates from "../components/SingleFormPart/Dates";
+import SpawningTable from "./SingleFormPart/SpawningTable";
 
-const SingleForm = ({ items }) => {
-
+const SingleForm = ({ items, folderName }) => {
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.header}>
-        <div className={styles.header1}>DEPARTMENT of FISHERIES and OCEANS</div>
+        <div className={styles.header1}>DEPARTMENT OF FISHERIES AND OCEANS</div>
         <div className={styles.header2}>
-          ANNUAL REPORT of SALMON STREAMS and SPAWNING POPULATION
+          ANNUAL REPORT OF SALMON STREAMS AND SPAWNING POPULATION
         </div>
       </div>
-
       <div className={styles.headerBox}>
-        <StreamID items={items} />
-        <div>
-          <YearArea items={items} />
-          <DateInspection items={items.Pages} />
+        <div className={styles.streamID}>
+          <StreamID folderName={folderName} items={items} />
+        </div>
+        <div className={styles.areaDates}>
+          <Area items={items} folderName={folderName} />
+          <Dates items={items} folderName={folderName} />
         </div>
       </div>
-      <div>
-        <SpawningTable items={items} />
-      </div>
-      <UnusualCon items={items.Pages}/>
-      <AdditionalCmt items={items.Pages}/>
-      <CmtOnOther items={items.Pages}/>
-      <Footer items={items.Pages}/>
+      <SpawningTable items={items} folderName={folderName} />
     </div>
   );
 };

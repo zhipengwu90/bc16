@@ -13,6 +13,8 @@
   .allWrapper {
     position: relative;
     top: 0px;
+    width: 90vw;
+    margin-left: 0px;
   }
 }
 .wrapper {

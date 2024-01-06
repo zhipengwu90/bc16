@@ -1,18 +1,28 @@
 import { promises as fs } from "fs";
+import path from "path";
 import Link from "next/link";
 import styles from "./FileNameReader.module.css";
-import FileSearch from "./FileSearch";
 import FileNameList from "./FileNameList";
 const FileNameReader = async () => {
   try {
-    const directoryPath = process.cwd() + "/src/app/dataStorage/";
-    const files = await fs.readdir(directoryPath);
-    // Filter out only JSON files
-    const jsonFiles = files
-      .filter((file) => file.endsWith(".json"))
-      .map((file) => file.replace(".json", ""));
+    const folderPath = process.cwd() + "/src/app/bc16Data/";
+    const folderNames = await fs.readdir(folderPath);
 
-    return <FileNameList fileNameList={jsonFiles} />;
+    const filesByFolder = [];
+
+    for (const folderName of folderNames) {
+      const directoryPath = path.join(folderPath, folderName);
+      const files = await fs.readdir(directoryPath);
+      filesByFolder.push(
+        ...files.map((fileName) => ({
+          folderName: folderName,
+          fileName: fileName,
+        }))
+      );
+    }
+    filesByFolder.sort((a, b) => a.fileName.localeCompare(b.fileName));
+
+    return <FileNameList filesByFolder={filesByFolder} />;
   } catch (error) {
     console.error("Error reading file names:", error);
     throw error;

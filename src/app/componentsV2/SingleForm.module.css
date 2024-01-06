@@ -1,0 +1,17 @@
+.headerBox{
+    display: flex;
+    gap: 10px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.header1{
+    font-size: 1.1em;
+}
+.header2{
+    font-size: 1.05em;
+}

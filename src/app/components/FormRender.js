@@ -1,13 +1,6 @@
-
 import SingleForm from "./SingleForm";
-const FormRender = ({items}) => {
-
-
-  return (
-    <div>
-      <SingleForm items={items} />
-    </div>
-  );
+const FormRender = ({ items, folderName }) => {
+  return <SingleForm folderName={folderName} items={items} />;
 };
 
 export default FormRender;
