@@ -1,7 +1,7 @@
 import Link from "next/link";
 import FormRender from "../components/FormRender";
 import styles from "./page.module.css";
-
+import ErrorReport from "./ErrorReport";
 import { promises as fs } from "fs";
 import LogoHeader from "../components/LogoHeader";
 import Iframe from "./Iframe";
@@ -52,6 +52,7 @@ const File = async ({ searchParams }) => {
         >
           PDF Version
         </Link>
+        <ErrorReport fileName={fileName} folderName={folderName} />
         <div className={styles.container}>
           <FormRender folderName={folderName} items={jsonData} />
           <Iframe pdfFolderName={pdfFolderName} fileName={fileName} />
