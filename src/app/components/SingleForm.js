@@ -1,11 +1,12 @@
 "use client";
 
-import StreamID from "../components/SingleFormPart/StreamID";
+import StreamID from "./SingleFormPart/StreamID";
 import styles from "./SingleForm.module.css";
-import Area from "../components/SingleFormPart/Area";
-import Dates from "../components/SingleFormPart/Dates";
+import Area from "./SingleFormPart/Area";
+import Dates from "./SingleFormPart/Dates";
 import SpawningTable from "./SingleFormPart/SpawningTable";
-import UnusualCon from "../components/SingleFormPart/UnusualCon";
+import UnusualCon from "./SingleFormPart/UnusualCon";
+import AdditionalCmt from "./AdditionalCmt";
 
 const SingleForm = ({ items, folderName }) => {
   const format6e = folderName == "6eresultocr";
@@ -35,6 +36,7 @@ const SingleForm = ({ items, folderName }) => {
       {(format4c || format6e || format7e) && (
         <UnusualCon items={items} folderName={folderName} />
       )}
+      {!format7e&&<AdditionalCmt items={items} folderName={folderName} />}
     </div>
   );
 };
