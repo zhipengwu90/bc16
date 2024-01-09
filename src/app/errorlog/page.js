@@ -1,4 +1,5 @@
 import { promises as fs } from "fs";
+import Link from "next/link";
 import path from "path";
 const LogFile = async () => {
   const folderPath = process.cwd() + "/src/app/log/";
@@ -6,7 +7,13 @@ const LogFile = async () => {
   console.log(files);
   return (
     <div>
-      <h1>About</h1>
+      {files.map((file) => (
+        <div>
+          <Link href={`/errorlog/${file}`} key={file}>
+            {file}
+          </Link>
+        </div>
+      ))}
     </div>
   );
 };

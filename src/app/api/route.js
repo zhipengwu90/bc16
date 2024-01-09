@@ -15,7 +15,6 @@ export async function POST(request) {
       // If the file does not exist, create it with the initial content
       await fs.writeFile(
         `${folderPath}/${logFilePath}`,
-        `Log for ${folderName}:\n`,
         "utf8"
       );
     }
