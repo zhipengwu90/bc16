@@ -25,8 +25,6 @@ const File = async ({ searchParams }) => {
     ? "7etest"
     : "";
 
-
-
   try {
     const filePath =
       process.cwd() + `/src/app/bc16Data/${folderName}/${fileName}`;
@@ -46,12 +44,26 @@ const File = async ({ searchParams }) => {
           className={styles.linkStyle}
           rel="noopener noreferrer"
           target="_blank"
-          href={`https://bc16teststorage.blob.core.windows.net/${pdfFolderName}/${fileName.replace(".json", ".pdf")}`}
+          href={`https://bc16teststorage.blob.core.windows.net/${pdfFolderName}/${fileName.replace(
+            ".json",
+            ".pdf"
+          )}`}
         >
           PDF Version
         </Link>
         <div className={styles.container}>
           <FormRender folderName={folderName} items={jsonData} />
+          <iframe className={styles.iframe}
+            src={`https://bc16teststorage.blob.core.windows.net/${pdfFolderName}/${fileName.replace(
+              ".json",
+              ".pdf"
+            )}`}
+    
+            frameborder="0"
+          >
+            This browser does not support PDFs. Please download the PDF to view
+            it.
+          </iframe>
         </div>
       </div>
     );
