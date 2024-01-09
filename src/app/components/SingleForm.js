@@ -7,6 +7,8 @@ import Dates from "./SingleFormPart/Dates";
 import SpawningTable from "./SingleFormPart/SpawningTable";
 import UnusualCon from "./SingleFormPart/UnusualCon";
 import AdditionalCmt from "./AdditionalCmt";
+import Signature from "./Signature";
+import Note4h from "./Note4h";
 
 const SingleForm = ({ items, folderName }) => {
   const format6e = folderName == "6eresultocr";
@@ -36,7 +38,9 @@ const SingleForm = ({ items, folderName }) => {
       {(format4c || format6e || format7e) && (
         <UnusualCon items={items} folderName={folderName} />
       )}
-      {!format7e&&<AdditionalCmt items={items} folderName={folderName} />}
+      {!format7e && <AdditionalCmt items={items} folderName={folderName} />}
+      <Signature items={items} folderName={folderName} />
+      {format4h && <Note4h />}
     </div>
   );
 };

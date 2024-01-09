@@ -14,6 +14,7 @@ const AdditionalCmt = ({ items, folderName }) => {
    Biological (E) Comments on predators
    Biological (F) Evidence of digging eggs
    Biological (G) New obstruction
+    Comments (K)
 */
 
   const a4c = items["Additional (A) Evidence of erosion and silting"];
@@ -23,6 +24,7 @@ const AdditionalCmt = ({ items, folderName }) => {
   const e4c = items["Biological (E) Comments on predators"];
   const f4c = items["Biological (F) Evidence of digging eggs"];
   const g4c = items["Biological (G) New obstruction"];
+  const k4c = items["Comments (K)"];
 
   /*
  4H: 
@@ -33,6 +35,7 @@ const AdditionalCmt = ({ items, folderName }) => {
  Biological Condition (E)
  Biological Condition (F)
  Biological Condition (G)
+ Comments on any other conditions
 */
   const a4h = items["Physical Condition (A)"];
   const b4h = items["Physical Condition (B)"];
@@ -41,6 +44,7 @@ const AdditionalCmt = ({ items, folderName }) => {
   const e4h = items["Biological Condition (E)"];
   const f4h = items["Biological Condition (F)"];
   const g4h = items["Biological Condition (G)"];
+  const k4h = items["Comments on any other conditions"];
 
   /*
 5A:
@@ -53,6 +57,8 @@ const AdditionalCmt = ({ items, folderName }) => {
     (G) New obstructions
     (H) recommended enhancement
     (I) Habitat change
+    (K) Additional comments
+    (K) Additional comments continued
 */
   const a5a = items["(A) Evidence of Erosion"];
   const b5a = items["(B) Particulars of Scouring"];
@@ -63,6 +69,8 @@ const AdditionalCmt = ({ items, folderName }) => {
   const g5a = items["(G) New obstructions"];
   const h5a = items["(H) recommended enhancement"];
   const i5a = items["(I) Habitat change"];
+  const k5a = items["(K) Additional comments"];
+  const k5a2 = items["(K) Additional comments continued"];
 
   /*
 6E:
@@ -73,6 +81,7 @@ Biological conditions (D) Particulars
 Biological conditions (E) Predators comments
 Biological conditions (F) Evidence
 Biological conditions (G) New obstructions
+Comments
 */
   const a6e = items["Physical conditions (A) Evidence"];
   const b6e = items["Physical conditions (B) Particulars"];
@@ -81,6 +90,7 @@ Biological conditions (G) New obstructions
   const e6e = items["Biological conditions (E) Predators comments"];
   const f6e = items["Biological conditions (F) Evidence"];
   const g6e = items["Biological conditions (G) New obstructions"];
+    const k6e = items["Comments"];
 
   return (
     <>
@@ -209,6 +219,28 @@ Biological conditions (G) New obstructions
             </>
           )}
         </ul>
+      </div>
+      <div className={styles.title}>
+        COMMENTS ON ANY OTHER CONDITIONS AFFECTING THIS STREAM
+      </div>
+      <div className={styles.wrapper3}>
+        <div className={styles.myList}>
+          {format4c && (
+            <div className={styles.subList}>{k4c ? k4c : <br />}</div>
+          )}
+          {format4h && (
+            <div className={styles.subList}>{k4h ? k4h : <br />}</div>
+          )}
+          {format5a && (
+            <div className={styles.subList}>{k5a ? k5a : <br />}</div>
+          )}
+          {format6e && (
+            <div className={styles.subList}>{k6e ? k6e : <br />}</div>
+          )}
+          {format5a && (
+            <div className={styles.subList}>{k5a2 ? k5a2 : ""}</div>
+          )}
+        </div>
       </div>
     </>
   );
