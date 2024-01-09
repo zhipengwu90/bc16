@@ -12,3 +12,15 @@
   margin: 0 auto; /* Centers the container horizontally */
 
 }
+
+.linkStyle {
+  text-decoration: none;
+  color: rgb(181, 3, 3);
+  margin-top: 0;
+}
+
+.linkStyle:hover {
+  text-decoration: underline;
+  font-weight: 600;
+  
+}
