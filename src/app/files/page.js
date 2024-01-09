@@ -3,7 +3,8 @@ import FormRender from "../components/FormRender";
 import styles from "./page.module.css";
 
 import { promises as fs } from "fs";
-import LogoHeader from "../componentsV2/LogoHeader";
+import LogoHeader from "../components/LogoHeader";
+import Iframe from "./Iframe";
 const File = async ({ searchParams }) => {
   const fileName = searchParams.fileName;
   const folderName = searchParams.folderName;
@@ -53,17 +54,7 @@ const File = async ({ searchParams }) => {
         </Link>
         <div className={styles.container}>
           <FormRender folderName={folderName} items={jsonData} />
-          <iframe className={styles.iframe}
-            src={`https://bc16teststorage.blob.core.windows.net/${pdfFolderName}/${fileName.replace(
-              ".json",
-              ".pdf"
-            )}`}
-    
-            frameborder="0"
-          >
-            This browser does not support PDFs. Please download the PDF to view
-            it.
-          </iframe>
+          <Iframe pdfFolderName={pdfFolderName} fileName={fileName} />
         </div>
       </div>
     );
