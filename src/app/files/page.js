@@ -41,7 +41,7 @@ const File = async ({ searchParams }) => {
           Back
         </Link> */}
         <h5>File Name: {fileName.replace(/_/g, " ").replace(".json", "")}</h5>
-        <Link
+        {/* <Link
           className={styles.linkStyle}
           rel="noopener noreferrer"
           target="_blank"
@@ -51,7 +51,7 @@ const File = async ({ searchParams }) => {
           )}`}
         >
           PDF Version
-        </Link>
+        </Link> */}
         <ErrorReport fileName={fileName} folderName={folderName} />
         <div className={styles.container}>
           <FormRender folderName={folderName} items={jsonData} />

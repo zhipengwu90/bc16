@@ -59,7 +59,7 @@ const ErrorReport = ({ folderName, fileName }) => {
           ></div>
           <div className={styles.errorWindow}>
             <div className={styles.title}>Report Errors</div>
-            <div className={styles.formWrapper}>
+            <div className={styles.formField}>
               <label htmlFor="errorField">Error Field: </label>
               <select
                 id="errorField"
@@ -79,10 +79,10 @@ const ErrorReport = ({ folderName, fileName }) => {
                 <option value="other">Other</option>
               </select>
             </div>
-            <div>
+            <div className={styles.formField}>
               <label htmlFor="errorDescription">Error Description</label>
-              <br />
               <textarea
+                
                 className={styles.errorDescription}
                 type="text"
                 name="errorDescription"

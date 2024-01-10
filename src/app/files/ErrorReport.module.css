@@ -29,6 +29,7 @@
 .errorDescription {
   width: 100%;
   height: 100px;
+  margin-top: 5px;
 }
 
 .title {
@@ -73,4 +74,8 @@
 }
 .cancel:hover {
   background-color: #ff0000;
+}
+
+.formField{
+  padding: 10px;
 }
