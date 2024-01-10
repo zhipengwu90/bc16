@@ -4,8 +4,8 @@ import path from "path";
 export async function POST(request) {
   const { folderName, fileName, errorField, errorDescription } =
     await request.json();
-  console.log(folderName, fileName, errorField, errorDescription);
-  const folderPath = process.cwd() + "/src/app/log/";
+
+  const folderPath = process.cwd() + "/src/app/mylog/";
 
   try {
     const logFilePath = `${folderName}.log`;
@@ -22,7 +22,7 @@ export async function POST(request) {
     // Append the fileName to the log file
     await fs.appendFile(
       `${folderPath}/${logFilePath}`,
-      `File Name: ${fileName}, Error: ${errorField}, Description: ${errorDescription} \n`,
+      `File Name: ${fileName}, Error: ${errorField}, Description: ${errorDescription}; \n`,
       "utf8"
     );
     return new Response("Success", { status: 200 });

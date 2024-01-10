@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import Link from "next/link";
 import path from "path";
 const LogFile = async () => {
-  const folderPath = process.cwd() + "/src/app/log/";
+  const folderPath = process.cwd() + "/src/app/mylog/";
   const files = await fs.readdir(folderPath);
   console.log(files);
   return (
