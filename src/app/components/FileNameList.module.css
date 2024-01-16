@@ -48,6 +48,11 @@
   text-decoration: underline;
 }
 
+/* .linkStyle:visited {
+  color: #de0303;
+  text-decoration: underline;
+} */
+
 .pagination {
   display: flex;
   flex-wrap: wrap;

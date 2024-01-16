@@ -1,10 +1,33 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import styles from "./ErrorReport.module.css";
-
+import { logData } from "./action.js";
+import { useFormState } from "react-dom";
 const ErrorReport = ({ folderName, fileName }) => {
   const [isError, setIsError] = useState(false);
   const [isToggled, setIsToggled] = useState(false);
+  const [state, formAction] = useFormState(logData, {
+    status: null,
+    message: null,
+  });
+
+  useEffect(() => {
+    if (state.status === 200) {
+      setIsToggled(false);
+      setSubmitData({
+        fileName: fileName,
+        folderName: folderName,
+        errorField: "Stream Identification",
+        errorDescription: "",
+      });
+      errorFieldRef.current.value = "";
+      errorDescriptionRef.current.value = "";
+    }
+
+    if (state.status === 500) {
+      setIsError(true);
+    }
+  }, [state.status]);
 
   const errorFieldRef = useRef(null);
   const errorDescriptionRef = useRef(null);
@@ -57,9 +80,21 @@ const ErrorReport = ({ folderName, fileName }) => {
             className={styles.backdrop}
             onClick={() => setIsToggled(!isToggled)}
           ></div>
-          <div className={styles.errorWindow}>
+          <form className={styles.errorWindow} action={formAction}>
             <div className={styles.title}>Report Errors</div>
             <div className={styles.formField}>
+              <input
+                type="hidden"
+                id="folderName"
+                name="folderName"
+                value={folderName}
+              />
+              <input
+                type="hidden"
+                id="fileName"
+                name="fileName"
+                value={fileName}
+              />
               <label htmlFor="errorField">Error Field: </label>
               <select
                 id="errorField"
@@ -82,7 +117,6 @@ const ErrorReport = ({ folderName, fileName }) => {
             <div className={styles.formField}>
               <label htmlFor="errorDescription">Error Description</label>
               <textarea
-                
                 className={styles.errorDescription}
                 type="text"
                 name="errorDescription"
@@ -93,7 +127,7 @@ const ErrorReport = ({ folderName, fileName }) => {
             <div className={styles.buttonWrapper}>
               <button
                 className={styles.submit}
-                onClick={() => onClickHandler()}
+                // onClick={() => onClickHandler()}
               >
                 Submit
               </button>
@@ -112,7 +146,7 @@ const ErrorReport = ({ folderName, fileName }) => {
                 Cancel
               </button>
             </div>
-          </div>
+          </form>
         </>
       )}
     </>

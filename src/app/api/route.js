@@ -7,6 +7,7 @@ export async function POST(request) {
 
   const folderPath = process.cwd() + "/src/app/mylog/";
 
+
   try {
     const logFilePath = `${folderName}.log`;
     try {
