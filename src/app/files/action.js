@@ -26,14 +26,15 @@ export async function logData(prevState, formData) {
       `File Name: ${fileName}, Error: ${errorField}, Description: ${errorDescription}; \n`,
       "utf8"
     );
+
     return {
-        status: 200,
-        message: "Success",
+      status: 200,
+      message: "Success",
     };
   } catch (error) {
     return {
-        status: 500,
-        message: error.message,
-    }
+      status: 500,
+      message: error.message,
+    };
   }
 }
