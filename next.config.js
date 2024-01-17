@@ -7,7 +7,6 @@ module.exports = {
   output: "standalone",
 
   env: {
-    AZURE_STORAGE_CONNECTION_STRING:
-      process.env.AZURE_STORAGE_CONNECTION_STRING,
+    NEXT_PUBLIC_SAS_URL: process.env.NEXT_PUBLIC_SAS_URL,
   },
 };
