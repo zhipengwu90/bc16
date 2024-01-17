@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  serverMinification: false,
-  
+  experimental: {
+    serverComponentsExternalPackages: ["@azure/storage-blob"],
+  },
 };
 
 module.exports = nextConfig;
@@ -13,5 +14,4 @@ module.exports = {
     NEXT_PUBLIC_SAS_URL: process.env.NEXT_PUBLIC_SAS_URL,
   },
 
-  serverMinification: false,
 };
