@@ -46,7 +46,8 @@ const File = async ({ searchParams }) => {
         {/* <Link className={styles.backButton} href="/">
           Back
         </Link> */}
-        <h5 className={styles.fileName}>File Name: {fileName.replace(/_/g, " ").replace(".json", "")} <Image src={verifiedIcon} alt="verified" height={23} width={23} /></h5>
+        <h5 className={styles.fileName}>File Name: {fileName.replace(/_/g, " ").replace(".json", "")} {verified && <Image src={verifiedIcon} alt="verified" width={20} height={20} />}</h5>
+        
         {/* <Link
           className={styles.linkStyle}
           rel="noopener noreferrer"
