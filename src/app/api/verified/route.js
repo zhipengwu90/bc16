@@ -12,7 +12,7 @@ export async function POST(request) {
     // Generate a blob name based on the folder name
     const blobName = `${dataJson.folderName}.json`;
 
-    const blockBlobClient = containerClient.getBlockBlobClient(blobName);
+    const blockBlobClient = await containerClient.getBlockBlobClient(blobName);
     console.log("blockBlobClient" + blockBlobClient);
     // Check if the blob already exists
 
@@ -41,18 +41,18 @@ export async function POST(request) {
       const updatedJsonData = JSON.stringify(existingJsonArray, null, 2);
 
       // Upload the updated JSON data to the blob
-      //   await blockBlobClient.upload(updatedJsonData, updatedJsonData.length, {
-      //     blobHTTPHeaders: { blobContentType: "application/json" },
-      //   });
+      await blockBlobClient.upload(updatedJsonData, updatedJsonData.length, {
+        blobHTTPHeaders: { blobContentType: "application/json" },
+      });
       return new Response("Success", { status: 200 });
     } else {
       // If blob doesn't exist, create a new JSON array
       const jsonData = JSON.stringify(data, null, 2);
 
       //     // Upload the new JSON array to the blob
-      //   await blockBlobClient.upload(jsonData, jsonData.length, {
-      //     blobHTTPHeaders: { blobContentType: "application/json" },
-      //   });
+      await blockBlobClient.upload(jsonData, jsonData.length, {
+        blobHTTPHeaders: { blobContentType: "application/json" },
+      });
       return new Response("Success", { status: 200 });
     }
   } catch (error) {
