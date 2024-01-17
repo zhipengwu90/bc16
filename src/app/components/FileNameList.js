@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, use } from "react";
 import Image from "next/image";
-import verified from "../../../public/images/verified.png";
+import verified from "../../../public/images/verified.svg";
 import Link from "next/link";
 import FileSearch from "./FileSearch";
 import styles from "./FileNameList.module.css";
@@ -141,7 +141,6 @@ const FileNameList = ({ filesByFolder }) => {
       setPageNumber(inputPageNumber);
     }
   };
-  console.log(currentPageFiles);
   return (
     <div className={styles.container}>
       <FileSearch areas={areas} onSearch={onSearchHandler} />
