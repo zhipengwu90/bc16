@@ -1,3 +1,4 @@
+//server action. didn't work on server at beginning. but it may work now.  no use for now.
 "use server";
 
 import { BlobServiceClient } from "@azure/storage-blob";

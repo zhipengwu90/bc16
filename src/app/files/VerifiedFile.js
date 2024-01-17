@@ -1,13 +1,14 @@
 "use client";
-import React from "react";
-import { verified } from "./verified";
-import { useFormState } from "react-dom";
+import { useState } from "react";
+// import { verified } from "./verified";
+// import { useFormState } from "react-dom";
+import style from "./VerifiedFile.module.css";
 const VerifiedFile = ({ folderName, fileName }) => {
-  const [state, formAction] = useFormState(verified, {
-    status: null,
-    message: null,
-  });
-
+  //   const [state, formAction] = useFormState(verified, {
+  //     status: null,
+  //     message: null,
+  //   });
+  const [isSuccess, setIsSuccess] = useState(false);
   const onClickHandler = async (e) => {
     const submitData = {
       folderName: e.target.folderName.value,
@@ -25,33 +26,8 @@ const VerifiedFile = ({ folderName, fileName }) => {
     if (!Response.ok) {
       throw new Error(Response.statusText);
     } else {
-      console.log("success");
-      const reader = Response.body.getReader();
-
-      const readData = async () => {
-        try {
-          while (true) {
-            const { done, value } = await reader.read();
-
-            if (done) {
-              break;
-            }
-
-            // `value` contains the chunk of data as a Uint8Array
-            const jsonString = new TextDecoder().decode(value);
-            // Parse the JSON string into an object
-            const dataObject = JSON.parse(jsonString);
-
-            console.log("Received chunk:", dataObject);
-          }
-        } catch (error) {
-          console.error("Error reading response:", error);
-        } finally {
-          reader.releaseLock(); // Release the reader's lock when done
-        }
-      };
-
-      readData();
+      console.log("Success");
+      setIsSuccess(true);
     }
   };
 
@@ -70,7 +46,8 @@ const VerifiedFile = ({ folderName, fileName }) => {
       />
       <input type="hidden" id="fileName" name="fileName" value={fileName} />
       <input type="hidden" id="verified" name="verified" value="true" />
-      <button type="submit">Verified File</button>
+      {isSuccess && <p className={style.success}>Submit Successfully</p>}
+      {!isSuccess && <button type="submit">Verified File</button>}
     </form>
   );
 };
