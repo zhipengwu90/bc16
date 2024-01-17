@@ -17,8 +17,8 @@ export async function POST(request) {
     console.log("blockBlobClient" + blockBlobClient);
     // Check if the blob already exists
 
-    // const blobExists = await blockBlobClient.exists();
-    // console.log("blobExists" + blobExists);
+    const blobExists = await blockBlobClient.exists();
+    console.log("blobExists" + blobExists);
 
     // if (blobExists) {
     //   // If blob exists, download the existing JSON data
