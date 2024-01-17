@@ -53,7 +53,7 @@ export async function verified(prevState, data) {
   //     });
   //   } else {
   //     // If blob doesn't exist, create a new JSON array
-  //     const jsonData = JSON.stringify(dataJson, null, 2);
+      const jsonData = JSON.stringify(dataJson, null, 2);
 
   //     // Upload the new JSON array to the blob
   await blockBlobClient.upload(jsonData, jsonData.length, {
