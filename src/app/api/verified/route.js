@@ -4,13 +4,14 @@ export async function POST(request) {
   try {
     const dataJson = await request.json();
     const data = [dataJson];
-    console.log(data);
+   
     const SAS_URL = process.env.NEXT_PUBLIC_SAS_URL;
-    console.log(SAS_URL);
+    
     const blobService = new BlobServiceClient(SAS_URL);
-    console.log("url" + blobService);
+  
     const containerClient = blobService.getContainerClient("verified");
-    console.log("containerClient" + containerClient);
+  
+    
     // Generate a blob name based on the folder name
     const blobName = `${dataJson.folderName}.json`;
 
@@ -31,7 +32,7 @@ export async function POST(request) {
       try {
         existingJsonArray = JSON.parse(existingJson);
       } catch (error) {
-        console.error(`Error parsing existing JSON: ${error}`);
+     
         return;
       }
 
@@ -49,7 +50,7 @@ export async function POST(request) {
     } else {
       // If blob doesn't exist, create a new JSON array
       const jsonData = JSON.stringify(data, null, 2);
-      console.log("jsonData" + jsonData);
+    
       //     // Upload the new JSON array to the blob
       try {
         await blockBlobClient.upload(jsonData, jsonData.length);

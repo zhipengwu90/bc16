@@ -1,6 +1,7 @@
 "use client";
-import { useState, useEffect } from "react";
-
+import { useState, useEffect, use } from "react";
+import Image from "next/image";
+import verified from "../../../public/images/verified.png";
 import Link from "next/link";
 import FileSearch from "./FileSearch";
 import styles from "./FileNameList.module.css";
@@ -8,13 +9,79 @@ import styles from "./FileNameList.module.css";
 const FileNameList = ({ filesByFolder }) => {
   const [fileSearch, setFileSearch] = useState(filesByFolder);
   const [pageNumber, setPageNumber] = useState(1);
-
+  const [verifiedFilejson, setVerifiedFilejson] = useState([]);
   const pageSize = 25;
   const totalPages = Math.ceil(fileSearch.length / pageSize);
   const startIndex = (pageNumber - 1) * pageSize;
   const endIndex = startIndex + pageSize;
+  const [newfilesByFolder, setNewfilesByFolder] = useState(filesByFolder);
 
-  const areas = filesByFolder
+
+  // Extract unique folder names
+  const uniqueFolderNames = [
+    ...new Set(filesByFolder.map((item) => item.folderName)),
+  ];
+
+  const asyncFetch = async () => {
+    const Response = await fetch("/api/verifiedFile", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(uniqueFolderNames),
+    });
+    if (!Response.ok) {
+      throw new Error(Response.statusText);
+    } else if (Response.status === 203) {
+      console.log("No data");
+    } else {
+      const reader = Response.body.getReader();
+      const readData = async () => {
+        try {
+          while (true) {
+            const { done, value } = await reader.read();
+
+            if (done) {
+              break;
+            }
+
+            // `value` contains the chunk of data as a Uint8Array
+            const jsonString = new TextDecoder().decode(value);
+            // Parse the JSON string into an object
+            const dataObject = JSON.parse(jsonString);
+
+            setVerifiedFilejson(dataObject);
+          }
+        } catch (error) {
+          console.error("Error reading response:", error);
+        } finally {
+          reader.releaseLock(); // Release the reader's lock when done
+        }
+      };
+
+      readData();
+    }
+  };
+
+  useEffect(() => {
+    asyncFetch();
+  }, []);
+
+  useEffect(() => {
+    // Create a map from verifiedFilejson for efficient lookup based on fileName
+    const verifiedMap = new Map(
+      verifiedFilejson.map(({ fileName, verified }) => [fileName, verified])
+    );
+
+    // Iterate over filesByFolder and inject 'verified' property if matching fileName is found
+    const updatedFilesByFolder = filesByFolder.map((file) => {
+      const verifiedValue = verifiedMap.get(file.fileName);
+      return verifiedValue ? { ...file, verified: verifiedValue } : file;
+    });
+    setNewfilesByFolder(updatedFilesByFolder);
+  }, [verifiedFilejson]);
+
+  const areas = newfilesByFolder
     .map((item) => {
       const match = item.fileName.match(/Area_(\d+[A-Z]?)/);
       return match ? match[0] : null;
@@ -23,12 +90,12 @@ const FileNameList = ({ filesByFolder }) => {
       return value && self.indexOf(value) === index;
     });
 
-  const currentPageFiles = fileSearch.slice(startIndex, endIndex);
+  const currentPageFiles = newfilesByFolder.slice(startIndex, endIndex);
 
   const onSearchHandler = (searchResults) => {
     const { area, waterbody, year, format } = searchResults;
 
-    let filteredFiles = filesByFolder;
+    let filteredFiles = newfilesByFolder;
 
     if (area !== "") {
       filteredFiles = filteredFiles.filter((file) =>
@@ -74,7 +141,7 @@ const FileNameList = ({ filesByFolder }) => {
       setPageNumber(inputPageNumber);
     }
   };
-
+  console.log(currentPageFiles);
   return (
     <div className={styles.container}>
       <FileSearch areas={areas} onSearch={onSearchHandler} />
@@ -95,10 +162,11 @@ const FileNameList = ({ filesByFolder }) => {
                 query: {
                   folderName: file.folderName,
                   fileName: file.fileName,
+                  verified: file.verified,
                 },
               }}
             >
-              {file.fileName.replace(/_/g, " ").replace(".json", "")}
+              {file.fileName.replace(/_/g, " ").replace(".json", "")}{file.verified &&  <Image src={verified} alt="verified" height={25} width={25} />}
             </Link>
           </div>
         ))}

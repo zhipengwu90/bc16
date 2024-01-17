@@ -3,7 +3,7 @@ import { useState } from "react";
 // import { verified } from "./verified";
 // import { useFormState } from "react-dom";
 import style from "./VerifiedFile.module.css";
-const VerifiedFile = ({ folderName, fileName }) => {
+const VerifiedFile = ({ folderName, fileName, verified }) => {
   //   const [state, formAction] = useFormState(verified, {
   //     status: null,
   //     message: null,
@@ -47,7 +47,7 @@ const VerifiedFile = ({ folderName, fileName }) => {
       <input type="hidden" id="fileName" name="fileName" value={fileName} />
       <input type="hidden" id="verified" name="verified" value="true" />
       {isSuccess && <p className={style.success}>Submit Successfully</p>}
-      {!isSuccess && <button type="submit">Verified File</button>}
+      {!isSuccess && !verified && <button type="submit">Verified File</button>}
     </form>
   );
 };

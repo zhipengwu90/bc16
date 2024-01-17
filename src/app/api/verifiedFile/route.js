@@ -1,70 +1,52 @@
 import { BlobServiceClient } from "@azure/storage-blob";
-import { NextResponse } from "next/server";
+
 export async function POST(request) {
+  const folderName = await request.json();
+
   try {
-    const dataJson = await request.json();
-    const data = [dataJson];
-    console.log(data);
     const SAS_URL = process.env.NEXT_PUBLIC_SAS_URL;
-    console.log(SAS_URL);
+
     const blobService = new BlobServiceClient(SAS_URL);
-    console.log("url" + blobService);
+
     const containerClient = blobService.getContainerClient("verified");
-    console.log("containerClient" + containerClient);
-    // Generate a blob name based on the folder name
-    const blobName = `${dataJson.folderName}.json`;
 
-    const blockBlobClient = containerClient.getBlockBlobClient(blobName);
-    console.log("blockBlobClient" + blockBlobClient);
-    // Check if the blob already exists
+    // // Generate a blob name based on the folder name
+    // const blobName = "4cresultocr.json";
 
-    const blobExists = await blockBlobClient.exists();
-    console.log("blobExists" + blobExists);
+    // const blockBlobClient = containerClient.getBlockBlobClient(blobName);
+    // Define an array to store the combined content
+    let combinedData = [];
+    // Use map with Promise.all to ensure all async operations complete before moving on
+    await Promise.all(
+      folderName.map(async (folderName) => {
+        // Generate a blob name based on the folder name
+        const blobName = `${folderName}.json`;
 
-    if (blobExists) {
-      // If blob exists, download the existing JSON data
-      const existingData = await blockBlobClient.downloadToBuffer();
-      console.log("existingData" + existingData);
-      const existingJson = existingData.toString();
+        // Get the blockBlobClient for the generated blobName
+        const blockBlobClient = containerClient.getBlockBlobClient(blobName);
 
-      // Parse the existing JSON data
-      let existingJsonArray;
-      try {
-        existingJsonArray = JSON.parse(existingJson);
-      } catch (error) {
-        console.error(`Error parsing existing JSON: ${error}`);
-        return;
-      }
+        // Check if the blob already exists
+        const blobExists = await blockBlobClient.exists();
 
-      // Append new data to existing JSON array
-      existingJsonArray = [...existingJsonArray, ...data];
-      console.log(existingJsonArray);
-      // Convert the updated data to JSON string
-      const updatedJsonData = JSON.stringify(existingJsonArray, null, 2);
+        if (blobExists) {
+          // Blob exists, fetch its content
+          const response = await blockBlobClient.downloadToBuffer();
+          const blobContent = JSON.parse(response.toString()); // Assuming the content is JSON
+          combinedData = [...combinedData, ...blobContent];
+        }
+      })
+    );
 
-      // Upload the updated JSON data to the blob
-      await blockBlobClient.upload(updatedJsonData, updatedJsonData.length, {
-        blobHTTPHeaders: { blobContentType: "application/json" },
-      });
-      return new Response(updatedJsonData, { status: 200 });
-    } else {
-      // If blob doesn't exist, create a new JSON array
-      const jsonData = JSON.stringify(data, null, 2);
-      console.log("jsonData" + jsonData);
-      //     // Upload the new JSON array to the blob
-      try {
-        //   await blockBlobClient.upload(jsonData, jsonData.length, {
-        //     blobHTTPHeaders: { blobContentType: "application/json" },
-        //   });
-
-        await blockBlobClient.upload(jsonData, jsonData.length);
-        console.log("uploading");
-      } catch (error) {
-        console.error("Caught an uploading error:", error);
-        return new Response(error.message, { status: 500 });
-      }
-      return new Response("Success", { status: 200 });
+    // Convert the updated data to JSON string
+    if (combinedData.length === 0) {
+      return new Response("No data", { status: 203 });
     }
+
+    const updatedJsonData = JSON.stringify(combinedData, null, 2);
+
+    // Upload the updated JSON data to the blob
+
+    return new Response(updatedJsonData, { status: 200 });
   } catch (error) {
     console.error("Caught an outside error:", error);
     return new Response(error.message, { status: 500 });

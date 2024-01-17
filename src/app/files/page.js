@@ -10,6 +10,9 @@ import VerifiedFile from "./VerifiedFile";
 const File = async ({ searchParams }) => {
   const fileName = searchParams.fileName;
   const folderName = searchParams.folderName;
+  const verified = searchParams.verified;
+ 
+
 
   const format6e = folderName == "6eresultocr";
   const format4c = folderName == "4cresultocr";
@@ -60,7 +63,7 @@ const File = async ({ searchParams }) => {
           <Iframe pdfFolderName={pdfFolderName} fileName={fileName} />
         </div>
 
-        <VerifiedFile fileName={fileName} folderName={folderName} />
+        <VerifiedFile fileName={fileName} folderName={folderName} verified={verified} />
       </div>
     );
   } catch (error) {
