@@ -57,11 +57,13 @@ export async function POST(request) {
       });
       console.log("uploading");
     } catch (error) {
+        console.error("Caught an uploading error:", error);
       return new Response(error.message, { status: 500 });
     }
     return new Response("Success", { status: 200 });
     // }
   } catch (error) {
+    console.error("Caught an outside error:", error);
     return new Response(error.message, { status: 500 });
   }
 }
