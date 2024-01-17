@@ -11,6 +11,7 @@ export async function verified(prevState, data) {
   ];
 
   const SAS_URL = process.env.NEXT_PUBLIC_SAS_URL;
+  console.log(SAS_URL);
   const blobService = new BlobServiceClient(SAS_URL);
 
   const containerClient = blobService.getContainerClient("verified");
