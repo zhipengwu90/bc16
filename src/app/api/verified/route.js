@@ -17,8 +17,8 @@ export async function POST(request) {
     console.log("blockBlobClient" + blockBlobClient);
     // Check if the blob already exists
 
-    const blobExists = await blockBlobClient.exists();
-    console.log("blobExists" + blobExists);
+    // const blobExists = await blockBlobClient.exists();
+    // console.log("blobExists" + blobExists);
 
     // if (blobExists) {
     //   // If blob exists, download the existing JSON data
@@ -48,12 +48,17 @@ export async function POST(request) {
     //   return new Response("Success", { status: 200 });
     // } else {
     // If blob doesn't exist, create a new JSON array
-    // const jsonData = JSON.stringify(data, null, 2);
-
+    const jsonData = JSON.stringify(data, null, 2);
+    console.log("jsonData" + jsonData);
     //     // Upload the new JSON array to the blob
-    // await blockBlobClient.upload(jsonData, jsonData.length, {
-    //   blobHTTPHeaders: { blobContentType: "application/json" },
-    // });
+    try {
+      await blockBlobClient.upload(jsonData, jsonData.length, {
+        blobHTTPHeaders: { blobContentType: "application/json" },
+      });
+      console.log("uploading");
+    } catch (error) {
+      return new Response(error.message, { status: 500 });
+    }
     return new Response("Success", { status: 200 });
     // }
   } catch (error) {
