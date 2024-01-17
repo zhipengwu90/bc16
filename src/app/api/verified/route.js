@@ -56,13 +56,19 @@ export async function POST(request) {
       //     blobHTTPHeaders: { blobContentType: "application/json" },
       //   });
 
-      await blockBlobClient.upload(jsonData, jsonData.length);
-      console.log("uploading");
+      const uploadBlobResponse = await blockBlobClient.upload(
+        jsonData,
+        jsonData.length
+      );
+      if (uploadBlobResponse.requestId) {
+        console.log(`Upload block blob ${blobName} successfully`);
+        return new Response("Success", { status: 200 });
+      }
     } catch (error) {
       console.error("Caught an uploading error:", error);
       return new Response(error.message, { status: 500 });
     }
-    return new Response("Success", { status: 200 });
+
     // }
   } catch (error) {
     console.error("Caught an outside error:", error);
