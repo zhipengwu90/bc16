@@ -1,19 +1,20 @@
 import { BlobServiceClient } from "@azure/storage-blob";
 export async function POST(request) {
-  const dataJson = await request.json();
-  const data = [dataJson];
   try {
-    const SAS_URL = process.env.NEXT_PUBLIC_SAS_URL;
-    console.log(SAS_URL);
-    const blobService = new BlobServiceClient(SAS_URL);
-    console.log("url" + blobService);
-    const containerClient = blobService.getContainerClient("verified");
-    console.log("containerClient" + containerClient);
-    // Generate a blob name based on the folder name
-    const blobName = `${dataJson.folderName}.json`;
+    const dataJson = await request.json();
+    const data = [dataJson];
+    console.log(data);
+    // const SAS_URL = process.env.NEXT_PUBLIC_SAS_URL;
+    // console.log(SAS_URL);
+    // const blobService = new BlobServiceClient(SAS_URL);
+    // console.log("url" + blobService);
+    // const containerClient = blobService.getContainerClient("verified");
+    // console.log("containerClient" + containerClient);
+    // // Generate a blob name based on the folder name
+    // const blobName = `${dataJson.folderName}.json`;
 
-    const blockBlobClient = containerClient.getBlockBlobClient(blobName);
-    console.log("blockBlobClient" + blockBlobClient);
+    // const blockBlobClient = containerClient.getBlockBlobClient(blobName);
+    // console.log("blockBlobClient" + blockBlobClient);
     // Check if the blob already exists
 
     // const blobExists = await blockBlobClient.exists();
@@ -47,12 +48,12 @@ export async function POST(request) {
     //   return new Response("Success", { status: 200 });
     // } else {
     // If blob doesn't exist, create a new JSON array
-    const jsonData = JSON.stringify(data, null, 2);
+    // const jsonData = JSON.stringify(data, null, 2);
 
     //     // Upload the new JSON array to the blob
-    await blockBlobClient.upload(jsonData, jsonData.length, {
-      blobHTTPHeaders: { blobContentType: "application/json" },
-    });
+    // await blockBlobClient.upload(jsonData, jsonData.length, {
+    //   blobHTTPHeaders: { blobContentType: "application/json" },
+    // });
     return new Response("Success", { status: 200 });
     // }
   } catch (error) {
