@@ -5,7 +5,8 @@ import ErrorReport from "./ErrorReport";
 import { promises as fs } from "fs";
 import LogoHeader from "../components/LogoHeader";
 import Iframe from "./Iframe";
-
+import Image from "next/image";
+import verifiedIcon from "../../../public/images/verified.svg";
 import VerifiedFile from "./VerifiedFile";
 const File = async ({ searchParams }) => {
   const fileName = searchParams.fileName;
@@ -39,13 +40,13 @@ const File = async ({ searchParams }) => {
 
     return (
       <div>
-        <title>{folderName}</title>
+        <title>{folderName}</title> 
         {/* <title>{fileName.replace(".json", "").replace(/_/g, " ").replace(/BC16-\d+ /g, '')}</title> */}
         <LogoHeader />
         {/* <Link className={styles.backButton} href="/">
           Back
         </Link> */}
-        <h5>File Name: {fileName.replace(/_/g, " ").replace(".json", "")}</h5>
+        <h5 className={styles.fileName}>File Name: {fileName.replace(/_/g, " ").replace(".json", "")} <Image src={verifiedIcon} alt="verified" height={23} width={23} /></h5>
         {/* <Link
           className={styles.linkStyle}
           rel="noopener noreferrer"
@@ -57,13 +58,14 @@ const File = async ({ searchParams }) => {
         >
           PDF Version
         </Link> */}
-        <ErrorReport fileName={fileName} folderName={folderName} />
+        <ErrorReport fileName={fileName} folderName={folderName} /><br/>
+        <VerifiedFile fileName={fileName} folderName={folderName} verified={verified} />
         <div className={styles.container}>
-          <FormRender folderName={folderName} items={jsonData} />
+          <FormRender folderName={folderName} items={jsonData} verified={verified}  />
           <Iframe pdfFolderName={pdfFolderName} fileName={fileName} />
         </div>
 
-        <VerifiedFile fileName={fileName} folderName={folderName} verified={verified} />
+      
       </div>
     );
   } catch (error) {

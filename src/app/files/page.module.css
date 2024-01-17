@@ -24,3 +24,8 @@
   font-weight: 600;
   
 }
+.fileName{
+  display: flex;
+  align-items: center;
+ 
+}
