@@ -7,8 +7,35 @@ const VerifiedFile = ({ folderName, fileName }) => {
     status: null,
     message: null,
   });
+
+  const onClickHandler = async (e) => {
+    const submitData = {
+      folderName: e.target.folderName.value,
+      fileName: e.target.fileName.value,
+      verified: e.target.verified.value,
+    };
+
+    const Respone = await fetch("/api/verified", {
+      method: "POST",
+      body: JSON.stringify(submitData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    if (!Respone.ok) {
+      throw new Error(Respone.statusText);
+    } else {
+      console.log("Success");
+    }
+  };
+
   return (
-    <form action={formAction}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        onClickHandler(e);
+      }}
+    >
       <input
         type="hidden"
         id="folderName"
@@ -17,7 +44,7 @@ const VerifiedFile = ({ folderName, fileName }) => {
       />
       <input type="hidden" id="fileName" name="fileName" value={fileName} />
       <input type="hidden" id="verified" name="verified" value="true" />
-      <button type="submit"> Verified File</button>
+      <button type="submit">Verified File</button>
     </form>
   );
 };
