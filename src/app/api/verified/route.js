@@ -52,15 +52,26 @@ export async function POST(request) {
     console.log("jsonData" + jsonData);
     //     // Upload the new JSON array to the blob
     try {
+      const controller = new AbortController();
+      const signal = controller.signal;
+
+      // Set a timeout for the upload operation (e.g., 30 seconds)
+      const timeoutId = setTimeout(() => controller.abort(), 30000);
+
       await blockBlobClient.upload(jsonData, jsonData.length, {
         blobHTTPHeaders: { blobContentType: "application/json" },
+        abortSignal: signal, // Provide the signal to the upload options
       });
+
       console.log("uploading");
+
+      // Clear the timeout when the upload is successful
+      clearTimeout(timeoutId);
+        return new Response("Success", { status: 200 });
     } catch (error) {
-        console.error("Caught an uploading error:", error);
+      console.error("Caught an uploading error:", error);
       return new Response(error.message, { status: 500 });
     }
-    return new Response("Success", { status: 200 });
     // }
   } catch (error) {
     console.error("Caught an outside error:", error);
