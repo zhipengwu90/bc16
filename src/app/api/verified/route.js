@@ -4,17 +4,17 @@ export async function POST(request) {
     const dataJson = await request.json();
     const data = [dataJson];
     console.log(data);
-    // const SAS_URL = process.env.NEXT_PUBLIC_SAS_URL;
-    // console.log(SAS_URL);
-    // const blobService = new BlobServiceClient(SAS_URL);
-    // console.log("url" + blobService);
-    // const containerClient = blobService.getContainerClient("verified");
-    // console.log("containerClient" + containerClient);
-    // // Generate a blob name based on the folder name
-    // const blobName = `${dataJson.folderName}.json`;
+    const SAS_URL = process.env.NEXT_PUBLIC_SAS_URL;
+    console.log(SAS_URL);
+    const blobService = new BlobServiceClient(SAS_URL);
+    console.log("url" + blobService);
+    const containerClient = blobService.getContainerClient("verified");
+    console.log("containerClient" + containerClient);
+    // Generate a blob name based on the folder name
+    const blobName = `${dataJson.folderName}.json`;
 
-    // const blockBlobClient = containerClient.getBlockBlobClient(blobName);
-    // console.log("blockBlobClient" + blockBlobClient);
+    const blockBlobClient = containerClient.getBlockBlobClient(blobName);
+    console.log("blockBlobClient" + blockBlobClient);
     // Check if the blob already exists
 
     // const blobExists = await blockBlobClient.exists();
