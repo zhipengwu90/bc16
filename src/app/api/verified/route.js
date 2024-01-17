@@ -1,4 +1,5 @@
 import { BlobServiceClient } from "@azure/storage-blob";
+import { NextResponse } from 'next/server';
 export async function POST(request) {
   try {
     const dataJson = await request.json();
@@ -34,18 +35,24 @@ export async function POST(request) {
         console.error(`Error parsing existing JSON: ${error}`);
         return;
       }
-
-      // Append new data to existing JSON array
-      existingJsonArray = [...existingJsonArray, ...data];
-      console.log(existingJsonArray);
-      // Convert the updated data to JSON string
+      
       const updatedJsonData = JSON.stringify(existingJsonArray, null, 2);
+      return new Response(updatedJsonData, { status: 200 });
 
-      // Upload the updated JSON data to the blob
-      await blockBlobClient.upload(updatedJsonData, updatedJsonData.length, {
-        blobHTTPHeaders: { blobContentType: "application/json" },
-      });
-      return new Response("Success", { status: 200 });
+      
+
+
+    //   // Append new data to existing JSON array
+    //   existingJsonArray = [...existingJsonArray, ...data];
+    //   console.log(existingJsonArray);
+    //   // Convert the updated data to JSON string
+    //   const updatedJsonData = JSON.stringify(existingJsonArray, null, 2);
+
+    //   // Upload the updated JSON data to the blob
+    //   await blockBlobClient.upload(updatedJsonData, updatedJsonData.length, {
+    //     blobHTTPHeaders: { blobContentType: "application/json" },
+    //   });
+    //   return new Response("Success", { status: 200 });
     } else {
       // If blob doesn't exist, create a new JSON array
       const jsonData = JSON.stringify(data, null, 2);

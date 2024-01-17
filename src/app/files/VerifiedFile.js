@@ -15,17 +15,46 @@ const VerifiedFile = ({ folderName, fileName }) => {
       verified: e.target.verified.value,
     };
 
-    const Respone = await fetch("/api/verified", {
+    const Response = await fetch("/api/verified", {
       method: "POST",
       body: JSON.stringify(submitData),
       headers: {
         "Content-Type": "application/json",
       },
     });
-    if (!Respone.ok) {
-      throw new Error(Respone.statusText);
+    if (!Response.ok) {
+      throw new Error(Response.statusText);
     } else {
-      console.log("Success");
+      console.log(Response);
+
+      const reader = Response.body.getReader();
+      console.log(reader);
+
+      const readData = async () => {
+        try {
+          while (true) {
+            const { done, value } = await reader.read();
+
+            if (done) {
+              console.log("Read operation complete");
+              break;
+            }
+
+            // `value` contains the chunk of data as a Uint8Array
+            const jsonString = new TextDecoder().decode(value);
+            // Parse the JSON string into an object
+            const dataObject = JSON.parse(jsonString);
+
+            console.log("Received chunk:", dataObject);
+          }
+        } catch (error) {
+          console.error("Error reading response:", error);
+        } finally {
+          reader.releaseLock(); // Release the reader's lock when done
+        }
+      };
+
+      readData();
     }
   };
 
