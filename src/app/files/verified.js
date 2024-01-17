@@ -10,13 +10,16 @@ export async function verified(prevState, data) {
     },
   ];
 
-  console.log(dataJson);
+
 
   const SAS_URL = process.env.NEXT_PUBLIC_SAS_URL;
   console.log(SAS_URL);
-//   const blobService = new BlobServiceClient(SAS_URL);
 
-//   const containerClient = blobService.getContainerClient("verified");
+  const blobService = new BlobServiceClient(SAS_URL);
+  console.log(blobService);
+
+  const containerClient = blobService.getContainerClient("verified");
+    console.log(containerClient);
 
 //   // Generate a blob name based on the folder name
 //   const blobName = `${data.get("folderName")}.json`;
