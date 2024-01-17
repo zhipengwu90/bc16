@@ -9,4 +9,6 @@ module.exports = {
   env: {
     NEXT_PUBLIC_SAS_URL: process.env.NEXT_PUBLIC_SAS_URL,
   },
+
+  serverMinification: false,
 };

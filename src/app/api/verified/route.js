@@ -60,13 +60,13 @@ export async function POST(request) {
         jsonData,
         jsonData.length
       );
-      if (uploadBlobResponse.requestId) {
-        console.log(`Upload block blob ${blobName} successfully`);
-        return new Response("Success", { status: 200 });
-      }
+      console.log("uploading");
     } catch (error) {
       console.error("Caught an uploading error:", error);
       return new Response(error.message, { status: 500 });
+    } finally {
+      console.log(`File "${blobName}" updated successfully.`);
+      return new Response("Success", { status: 200 });
     }
 
     // }
