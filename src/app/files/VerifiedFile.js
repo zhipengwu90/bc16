@@ -25,10 +25,8 @@ const VerifiedFile = ({ folderName, fileName }) => {
     if (!Response.ok) {
       throw new Error(Response.statusText);
     } else {
-      console.log(Response);
-
+      console.log("success");
       const reader = Response.body.getReader();
-      console.log(reader);
 
       const readData = async () => {
         try {
@@ -36,7 +34,6 @@ const VerifiedFile = ({ folderName, fileName }) => {
             const { done, value } = await reader.read();
 
             if (done) {
-              console.log("Read operation complete");
               break;
             }
 
