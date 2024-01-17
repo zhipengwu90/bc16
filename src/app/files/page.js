@@ -5,6 +5,8 @@ import ErrorReport from "./ErrorReport";
 import { promises as fs } from "fs";
 import LogoHeader from "../components/LogoHeader";
 import Iframe from "./Iframe";
+
+import VerifiedFile from "./VerifiedFile";
 const File = async ({ searchParams }) => {
   const fileName = searchParams.fileName;
   const folderName = searchParams.folderName;
@@ -57,6 +59,8 @@ const File = async ({ searchParams }) => {
           <FormRender folderName={folderName} items={jsonData} />
           <Iframe pdfFolderName={pdfFolderName} fileName={fileName} />
         </div>
+
+        <VerifiedFile fileName={fileName} folderName={folderName} />
       </div>
     );
   } catch (error) {
