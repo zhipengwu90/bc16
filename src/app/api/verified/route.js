@@ -24,7 +24,7 @@ export async function POST(request) {
      const blockBlobClient2 = containerClient2.getBlockBlobClient(blobName);
     const blobExists2 = await blockBlobClient2.exists();
     if (blobExists2) {
-      const existingData = await blockBlobClient.downloadToBuffer();
+      const existingData = await blockBlobClient2.downloadToBuffer();
 
       const existingJson = existingData.toString();
 
