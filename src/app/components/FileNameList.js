@@ -2,6 +2,7 @@
 import { useState, useEffect, use } from "react";
 import Image from "next/image";
 import verified from "../../../public/images/verified.svg";
+import error from "../../../public/images/error.svg";
 import Link from "next/link";
 import FileSearch from "./FileSearch";
 import styles from "./FileNameList.module.css";
@@ -66,15 +67,20 @@ const FileNameList = ({ filesByFolder }) => {
 
   useEffect(() => {
     // Create a map from verifiedFilejson for efficient lookup based on fileName
+    // Create a map from verifiedFilejson for efficient lookup based on fileName
     const verifiedMap = new Map(
-      verifiedFilejson.map(({ fileName, verified }) => [fileName, verified])
+      verifiedFilejson.map(({ fileName, verified, error }) => [
+        fileName,
+        { verified, error },
+      ])
     );
 
-    // Iterate over filesByFolder and inject 'verified' property if matching fileName is found
+    // Iterate over filesByFolder and inject 'verified' and 'error' properties if matching fileName is found
     const updatedFilesByFolder = filesByFolder.map((file) => {
-      const verifiedValue = verifiedMap.get(file.fileName);
-      return verifiedValue ? { ...file, verified: verifiedValue } : file;
+      const values = verifiedMap.get(file.fileName);
+      return values ? { ...file, ...values } : file;
     });
+    console.log(updatedFilesByFolder);
     setNewfilesByFolder(updatedFilesByFolder);
     setFileSearch(updatedFilesByFolder);
   }, [verifiedFilejson]);
@@ -160,12 +166,16 @@ const FileNameList = ({ filesByFolder }) => {
                   folderName: file.folderName,
                   fileName: file.fileName,
                   verified: file.verified,
+                  error: file.error,
                 },
               }}
             >
               {file.fileName.replace(/_/g, " ").replace(".json", "")}
               {file.verified && (
                 <Image src={verified} alt="verified" height={25} width={25} />
+              )}
+               {file.error && (
+                <Image src={error} alt="error" height={17} width={17} />
               )}
             </Link>
           </div>

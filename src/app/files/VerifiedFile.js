@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-// import { verified } from "./verified";
-// import { useFormState } from "react-dom";
+import Image from "next/image";
+import verifiedIcon from "../../../public/images/verified.svg";
 import styles from "./VerifiedFile.module.css";
 const VerifiedFile = ({ folderName, fileName, verified }) => {
   //   const [state, formAction] = useFormState(verified, {
@@ -95,8 +95,8 @@ const VerifiedFile = ({ folderName, fileName, verified }) => {
       )}
 
       {!isSuccess && !verified && (
-        <button type="submit" onClick={() => setIsToggled(true)}>
-          Verified File
+        <button className= {styles.verifiedButton} type="submit" onClick={() => setIsToggled(true)}>
+          <Image src={verifiedIcon} alt="verified" width={22} height={22} />Verified File
         </button>
       )}
     </>

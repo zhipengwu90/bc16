@@ -6,12 +6,14 @@ import { promises as fs } from "fs";
 import LogoHeader from "../components/LogoHeader";
 import Iframe from "./Iframe";
 import Image from "next/image";
+import errorIcon from "../../../public/images/error.svg";
 import verifiedIcon from "../../../public/images/verified.svg";
 import VerifiedFile from "./VerifiedFile";
 const File = async ({ searchParams }) => {
   const fileName = searchParams.fileName;
   const folderName = searchParams.folderName;
   const verified = searchParams.verified;
+  const error = searchParams.error;
  
 
 
@@ -46,7 +48,7 @@ const File = async ({ searchParams }) => {
         {/* <Link className={styles.backButton} href="/">
           Back
         </Link> */}
-        <h5 className={styles.fileName}>File Name: {fileName.replace(/_/g, " ").replace(".json", "")} {verified && <Image src={verifiedIcon} alt="verified" width={20} height={20} />}</h5>
+        <h5 className={styles.fileName}>File Name: {fileName.replace(/_/g, " ").replace(".json", "")} {verified && <Image src={verifiedIcon} alt="verified" width={20} height={20} />} {error && <Image src={errorIcon} alt="error" width={15} height={15} />}</h5>
         
         {/* <Link
           className={styles.linkStyle}
