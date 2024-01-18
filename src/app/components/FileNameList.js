@@ -16,7 +16,6 @@ const FileNameList = ({ filesByFolder }) => {
   const endIndex = startIndex + pageSize;
   const [newfilesByFolder, setNewfilesByFolder] = useState(filesByFolder);
 
-
   // Extract unique folder names
   const uniqueFolderNames = [
     ...new Set(filesByFolder.map((item) => item.folderName)),
@@ -40,11 +39,9 @@ const FileNameList = ({ filesByFolder }) => {
         try {
           while (true) {
             const { done, value } = await reader.read();
-
             if (done) {
               break;
             }
-
             // `value` contains the chunk of data as a Uint8Array
             const jsonString = new TextDecoder().decode(value);
             // Parse the JSON string into an object
@@ -79,9 +76,10 @@ const FileNameList = ({ filesByFolder }) => {
       return verifiedValue ? { ...file, verified: verifiedValue } : file;
     });
     setNewfilesByFolder(updatedFilesByFolder);
+    setFileSearch(updatedFilesByFolder);
   }, [verifiedFilejson]);
-
-  const areas = newfilesByFolder
+  //getting unique area names
+  const areas = filesByFolder
     .map((item) => {
       const match = item.fileName.match(/Area_(\d+[A-Z]?)/);
       return match ? match[0] : null;
@@ -90,7 +88,7 @@ const FileNameList = ({ filesByFolder }) => {
       return value && self.indexOf(value) === index;
     });
 
-  const currentPageFiles = newfilesByFolder.slice(startIndex, endIndex);
+  const currentPageFiles = fileSearch.slice(startIndex, endIndex);
 
   const onSearchHandler = (searchResults) => {
     const { area, waterbody, year, format } = searchResults;
@@ -165,7 +163,10 @@ const FileNameList = ({ filesByFolder }) => {
                 },
               }}
             >
-              {file.fileName.replace(/_/g, " ").replace(".json", "")}{file.verified &&  <Image src={verified} alt="verified" height={25} width={25} />}
+              {file.fileName.replace(/_/g, " ").replace(".json", "")}
+              {file.verified && (
+                <Image src={verified} alt="verified" height={25} width={25} />
+              )}
             </Link>
           </div>
         ))}
