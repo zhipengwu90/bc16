@@ -1,6 +1,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 import FileNameList from "./FileNameList";
+import Link from "next/link";
 const FileNameReader = async () => {
   try {
     // Define the path to the target folder
@@ -27,7 +28,20 @@ const FileNameReader = async () => {
     // Sort the array of file details by file name
     filesByFolder.sort((a, b) => a.fileName.localeCompare(b.fileName));
     // Return the component with the list of file details
-    return <FileNameList filesByFolder={filesByFolder} />;
+    return (
+      <>
+        <FileNameList filesByFolder={filesByFolder} />
+        <Link 
+         href={{
+          pathname: "/errorlog/",
+          query: { folderNames: JSON.stringify(folderNames) }
+        }}
+        >
+          errorlog
+   
+        </Link>
+      </>
+    );
   } catch (error) {
     // Log and throw any errors encountered
     console.error("Error reading file names:", error);

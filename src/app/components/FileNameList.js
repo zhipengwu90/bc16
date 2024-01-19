@@ -80,7 +80,7 @@ const FileNameList = ({ filesByFolder }) => {
       const values = verifiedMap.get(file.fileName);
       return values ? { ...file, ...values } : file;
     });
-    console.log(updatedFilesByFolder);
+
     setNewfilesByFolder(updatedFilesByFolder);
     setFileSearch(updatedFilesByFolder);
   }, [verifiedFilejson]);
