@@ -12,8 +12,11 @@ const page = async ({ searchParams }) => {
     const jsonData = JSON.parse(fileContent);
 
     return (
-      <div>
+      <div className={styles.container}>
+        <div className={styles.fileName}>File Name: {fileName}</div>
         <ModifyForm jsonData={jsonData} folderName ={folderName} fileName={fileName} />
+        <div className={styles.note}>Note: Any changes made here are saved to the storage blob and will not reflect in the web application.</div>
+        
       </div>
     );
   } catch (error) {

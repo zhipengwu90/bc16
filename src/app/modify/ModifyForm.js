@@ -32,9 +32,11 @@ const ModifyForm = async ({ jsonData, folderName, fileName }) => {
         className={styles.textarea}
         defaultValue={JSON.stringify(jsonData, null, 2)}
       ></textarea>
-      <button type="submit" className={styles.button}>
-        Save
-      </button>
+      <div className={styles.buttonWrap}>
+        <button type="submit" className={styles.button}>
+          Save
+        </button>
+      </div>
     </form>
   );
 };
