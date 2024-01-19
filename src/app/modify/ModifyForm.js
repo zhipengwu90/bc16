@@ -22,7 +22,8 @@ const ModifyForm = async ({ jsonData, folderName, fileName }) => {
       throw new Error(Response.statusText);
     } else {
       console.log("Success");
-      alert("Success. Please close this tab!");
+      alert("Success! The tab will now be closed.");
+      window.close();
     }
   };
   return (
