@@ -6,7 +6,7 @@ const UnusualCon = ({ items, folderName }) => {
   const format4c = folderName == "4cresultocr";
   const format7e = folderName == "7eresultocr";
   const isSelect = false;
-  const selected = isSelect ? styles.selected : styles.unselected;
+
 
   const A =
     (format4c || format6e) &&

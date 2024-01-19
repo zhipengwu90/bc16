@@ -11,6 +11,8 @@ import Signature from "./Signature";
 import Note4h from "./Note4h";
 import { useState } from "react";
 import Link from "next/link";
+import Recomm  from "./SingleFormPart/7eFormPart/Recomm";
+import BioDetails from "./SingleFormPart/7eFormPart/BioDetails";
 
 const SingleForm = ({ items, folderName, fileName }) => {
   const format6e = folderName == "6eresultocr";
@@ -55,6 +57,8 @@ const SingleForm = ({ items, folderName, fileName }) => {
       {(format4c || format6e || format7e) && (
         <UnusualCon items={items} folderName={folderName} />
       )}
+      {format7e && <Recomm items={items} folderName={folderName} />}
+      {format7e && <BioDetails items={items} folderName={folderName} />}
       {!format7e && <AdditionalCmt items={items} folderName={folderName} />}
       <Signature items={items} folderName={folderName} />
       {format4h && <Note4h />}
