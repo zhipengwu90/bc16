@@ -2,6 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import FileNameList from "./FileNameList";
 import Link from "next/link";
+import styles from "./FileNameReader.module.css";
 const FileNameReader = async () => {
   try {
     // Define the path to the target folder
@@ -31,15 +32,16 @@ const FileNameReader = async () => {
     return (
       <>
         <FileNameList filesByFolder={filesByFolder} />
-        <Link 
-         href={{
-          pathname: "/errorlog/",
-          query: { folderNames: JSON.stringify(folderNames) }
-        }}
-        >
-          Error Log
-   
-        </Link>
+        <div className={styles.errorLink}>
+          <Link
+            href={{
+              pathname: "/errorlog/",
+              query: { folderNames: JSON.stringify(folderNames) },
+            }}
+          >
+            Error Log
+          </Link>
+        </div>
       </>
     );
   } catch (error) {

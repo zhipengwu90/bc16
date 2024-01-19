@@ -5,6 +5,8 @@ import styles from "./page.module.css";
 const ErrorLog = ({ searchParams }) => {
   const folderNames = JSON.parse(searchParams.folderNames);
   const [errorArray, setErrorArray] = useState([]);
+  const [selectErrorArray, setSelectErrorArray] = useState([]);
+  
 
   const asyncFetch = async () => {
     const Response = await fetch("/api/errorLog", {
@@ -40,6 +42,7 @@ const ErrorLog = ({ searchParams }) => {
                 a.fileName.localeCompare(b.fileName);
               });
             setErrorArray(dataObject);
+            setSelectErrorArray(dataObject);
           }
         } catch (error) {
           console.error("Error reading response:", error);
@@ -55,16 +58,42 @@ const ErrorLog = ({ searchParams }) => {
   useEffect(() => {
     asyncFetch();
   }, []);
+
+
+  const handleChange = (event) => {
+    if( event.target.value === "all"){
+      setSelectErrorArray(errorArray);
+    }
+    else{
+      const filteredErrorArray = errorArray.filter((error) => {
+        return error.folderName === event.target.value;
+      });
+      setSelectErrorArray(filteredErrorArray);
+    }
+
+  };
+
   return (
     <div className={styles.container}>
       <h3>Error Log</h3>
+    <div className={styles.selectContainer}>
+      <select className={styles.select}    onChange={handleChange} >
+        <option value="all">All</option>
+        {
+          folderNames.map((folderName) => {
+            return <option key={folderName} value={folderName}>{folderName}</option>
+          })
+        }
+      </select>
+    </div>
       <div className={styles.errorContainer}>
-        {errorArray.map((error, index) => {
+
+        {selectErrorArray.length? selectErrorArray.map((error, index) => {
           return (
             <div key={index} className={styles.eachError}>
-              <div>{error.folderName}</div>
-              <div>{error.fileName}</div>
-              <div>
+              <div className={styles.folderName}>{error.folderName}</div>
+              <div className={styles.fileName}>{error.fileName}</div>
+              <div className={styles.errorInfoBox}>
                 {error.errorInfo.map((errorInfo, index) => {
                   return (
                     <div key={index} className={styles.errorInfo}>
@@ -76,7 +105,13 @@ const ErrorLog = ({ searchParams }) => {
               </div>
             </div>
           );
-        })}
+        })
+        : <div
+          className={styles.noError}
+        >
+          No Error Log
+          </div>
+          }
       </div>
     </div>
   );
