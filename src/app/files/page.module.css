@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center; /* Horizontally centers the content */
   margin: 0 auto; /* Centers the container horizontally */
-
+  
 }
 
 .linkStyle {
@@ -27,5 +27,5 @@
 .fileName{
   display: flex;
   align-items: center;
- 
+  margin-bottom: 50px;
 }
