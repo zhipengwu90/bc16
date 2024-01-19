@@ -13,6 +13,11 @@ const BioDetails = ({ items, folderName }) => {
   //   "Study PK": "unselected",
   //   "Study CM": "unselected",
   //   "Study CN": "unselected",
+  //   "Predators": "unselected",
+  //   "(20) General comments": "unselected",
+  //   "(21) General comments not covered": "unselected",
+  // "(22) Supplementary documentation": "unselected",
+  // "Comments on condition":
 
   const presentSK = items["Present SK"];
   const presentCO = items["Present CO"];
@@ -24,10 +29,15 @@ const BioDetails = ({ items, folderName }) => {
   const studyPK = items["Study PK"];
   const studyCM = items["Study CM"];
   const studyCN = items["Study CN"];
+  const predators = items["Predators"];
+  const generalComments = items["(20) General comments"];
+  const No21 = items["(21) General comments not covered"];
+  const No22 = items["(22) Supplementary documentation"];
+  const Comments = items["Comments on condition"];
 
   return (
     <>
-      <div className={styles.title}>RECOMMENDATIONS</div>
+      <div className={styles.title}>BIOLOGICAL DETAILS</div>
       <div className={styles.wrapper}>
         <div className={styles.part}>
           <div className={styles.partDetailsTitle}>
@@ -75,18 +85,75 @@ const BioDetails = ({ items, folderName }) => {
             Evidence of digging up of redds or eggs by spawning fish:
           </div>
           <ul className={styles.myList}>
-            <li>
-                Pink:
-            </li>
-            <li>
-                Sockeye:
-            </li>
-            <li>
-                Chum:
-            </li>
-
+            <li>Pink:</li>
+            <li>Sockeye:</li>
+            <li>Chum:</li>
           </ul>
         </div>
+        <div className={styles.part2}>
+          <div className={styles.partDetailsTitle}>Predator observation:</div>
+          <div className={styles.inlineFlex}>
+            <div className={styles[predators]}></div>
+            <div>
+              Predator (bears, eagles or seals) counts available for one or more
+            </div>
+          </div>
+        </div>
+        <div className={styles.part2}>
+          <div className={styles.inlineFlex}>
+            <div className={styles[generalComments]}></div>
+            <div>
+              (20) GENERAL COMMENTS ABOUT ADULT & JUVENILE SALMON DISTRIBUTION
+              OR PREDATOR INTERACTIONS
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.wrapper2}>
+        <div>
+          <div className={styles.bioTitle}>Biosampling procedures</div>
+          <div className={styles.part3}>
+            <div>Species</div>
+            <div>Scales</div>
+            <div>Otoliths</div>
+            <div>Ovaries</div>
+            <div>Length</div>
+            <div>DNA</div>
+            <div>Other</div>
+            <div>Comment</div>
+          </div>
+        </div>
+        <div>
+          <div className={styles.contactLoc}>
+            <div>Contact:</div>
+            <div>Data Location:</div>
+          </div>
+          <div className={styles.part2}>
+            <div className={styles.inlineFlex}>
+              <div className={styles[No21]}></div>
+              <div>
+                (21) GENERAL COMMENTS ON SAMPLING ACTIVITIES OR STUDIES NOT
+                COVERED ABOVE
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.part2}>
+        <div className={styles.inlineFlex}>
+          <div className={styles[No22]}></div>
+          <div>
+            (22) SUPPLEMENTARY DOCUMENTATION NOT INCLUDED WITH THIS REPORT
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.title}>
+        COMMENTS ON CONDITIONS AFFECTING THIS STREAM AND ESCAPEMENT ESTIMATES
+      </div>
+      <div className={styles.wrapper2}>
+        <div className={styles.comments}>{Comments}</div>
       </div>
     </>
   );

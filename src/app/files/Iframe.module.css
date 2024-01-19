@@ -1,4 +1,11 @@
 .iframe {
+  height: 2500px;
+  width: 100%;
+  border: none;
+  margin-left: 5px;
+}
+
+.iframe7e {
   height: 1500px;
   width: 100%;
   border: none;
