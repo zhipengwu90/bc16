@@ -52,3 +52,26 @@
   flex: 1;
   flex-basis: 46%;
 }
+
+
+
+.linkStyle {
+  float:right;
+
+ 
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  color: #000;
+  border: 1px solid #ccc;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.linkStyle:hover {
+  background-color: #ddd;
+
+  color: red;
+}

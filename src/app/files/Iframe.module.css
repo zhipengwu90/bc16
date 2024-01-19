@@ -7,10 +7,10 @@
 .showButton {
   opacity: 0.6;
   position: fixed;
-  bottom: 120px;
-  right: 50px;
+  bottom: 50px;
+  right: 20px;
  
-  right: 50px;
+  
   z-index: 1;
   background-color: #fff;
   border-radius: 24px;

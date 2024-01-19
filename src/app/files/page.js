@@ -64,7 +64,7 @@ const File = async ({ searchParams }) => {
         <ErrorReport fileName={fileName} folderName={folderName} /><br/>
         <VerifiedFile fileName={fileName} folderName={folderName} verified={verified} />
         <div className={styles.container}>
-          <FormRender folderName={folderName} items={jsonData} verified={verified}  />
+          <FormRender folderName={folderName} items={jsonData} fileName={fileName} verified={verified}  />
           <Iframe pdfFolderName={pdfFolderName} fileName={fileName} />
         </div>
 

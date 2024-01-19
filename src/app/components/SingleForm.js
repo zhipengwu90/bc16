@@ -9,8 +9,10 @@ import UnusualCon from "./SingleFormPart/UnusualCon";
 import AdditionalCmt from "./AdditionalCmt";
 import Signature from "./Signature";
 import Note4h from "./Note4h";
+import { useState } from "react";
+import Link from "next/link";
 
-const SingleForm = ({ items, folderName }) => {
+const SingleForm = ({ items, folderName, fileName }) => {
   const format6e = folderName == "6eresultocr";
   const format4c = folderName == "4cresultocr";
   const format4h = folderName == "4hresultocr";
@@ -19,12 +21,27 @@ const SingleForm = ({ items, folderName }) => {
 
   return (
     <div className={styles.container}>
+      <Link
+        className={styles.linkStyle}
+        rel="noopener noreferrer"
+        target="_blank"
+        href={{
+          pathname: "/modify/",
+          query: {
+            folderName: folderName,
+            fileName: fileName,
+          },
+        }}
+      >
+        Modify
+      </Link>
       <div className={styles.header}>
         <div className={styles.header1}>DEPARTMENT OF FISHERIES AND OCEANS</div>
         <div className={styles.header2}>
           ANNUAL REPORT OF SALMON STREAMS AND SPAWNING POPULATION
         </div>
       </div>
+
       <div className={styles.headerBox}>
         <div className={styles.streamID}>
           <StreamID folderName={folderName} items={items} />
