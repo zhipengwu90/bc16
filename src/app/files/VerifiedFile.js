@@ -96,7 +96,7 @@ const VerifiedFile = ({ folderName, fileName, verified }) => {
 
       {!isSuccess && !verified && (
         <button className= {styles.verifiedButton} type="submit" onClick={() => setIsToggled(true)}>
-          <Image src={verifiedIcon} alt="verified" width={22} height={22} />Verified File
+          Verified File<Image src={verifiedIcon} alt="verified" width={22} height={22} />
         </button>
       )}
     </>

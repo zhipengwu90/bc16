@@ -70,6 +70,11 @@
 }
 
 .verifiedButton {
+  z-index: 99;
+  opacity: 0.6;
+  position: fixed;
+  top: 120px;
+  right: 50px;
   display: flex;
   align-items: center;
 
@@ -94,10 +99,12 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: auto;
+  width: 155px;
   will-change: transform, opacity;
 }
 .verifiedButton:hover {
   background: #f6f9fe;
   color: #174ea6;
+
+  opacity: 1;
 }

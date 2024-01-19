@@ -6,12 +6,13 @@
 } */
 .eachError {
   display: grid;
-  grid-template-columns: 1fr 4fr 4fr; /* Three columns in each row */
+  grid-template-columns: 1fr 6fr 4fr; /* Three columns in each row */
   gap: 20px; /* Adjust the gap as needed */
   border: 1px solid #ccc; /* Adjust padding as needed */
 }
 
 .fileName {
+  inline-size: 100%;
   overflow-wrap: break-word;
 }
 

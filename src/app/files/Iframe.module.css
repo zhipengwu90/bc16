@@ -5,8 +5,11 @@
   margin-left: 5px;
 }
 .showButton {
-  position: absolute;
-  top: 80px;
+  opacity: 0.6;
+  position: fixed;
+  bottom: 120px;
+  right: 50px;
+ 
   right: 50px;
   z-index: 1;
   background-color: #fff;
@@ -36,4 +39,5 @@
 .showButton:hover {
   background: #f6f9fe;
   color: #174ea6;
+  opacity: 1;
 }

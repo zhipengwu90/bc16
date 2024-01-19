@@ -83,8 +83,8 @@ const ErrorReport = ({ folderName, fileName }) => {
   return (
     <>
       <button className={styles.reportButton} onClick={() => setIsToggled(!isToggled)}>
-      <Image src={error} alt="error" width={15} height={15} />
-        Report Errors</button>
+
+        Report Errors      <Image src={error} alt="error" width={15} height={15} /></button>
       {isToggled && (
         <>
           <div
