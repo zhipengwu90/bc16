@@ -37,7 +37,7 @@ const FileNameReader = async () => {
           query: { folderNames: JSON.stringify(folderNames) }
         }}
         >
-          errorlog
+          Error Log
    
         </Link>
       </>
