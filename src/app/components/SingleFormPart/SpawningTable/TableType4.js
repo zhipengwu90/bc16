@@ -150,7 +150,7 @@ const TableType4 = ({ items, folderName }) => {
           <div>(5) ESCAPEMENT ESTIMATION COMMENTS</div>
         </div>
         <div className={styles.inlineFlex}>
-          <div className={styles.selected}></div>
+          <div className={styles[No6]}></div>
           <div>(6) GENERAL COMMENTS ON RUN TIMING</div>
         </div>
       </div>
