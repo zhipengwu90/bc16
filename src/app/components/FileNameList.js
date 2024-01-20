@@ -18,6 +18,12 @@ const FileNameList = ({ filesByFolder }) => {
   const endIndex = startIndex + pageSize;
   const [newfilesByFolder, setNewfilesByFolder] = useState(filesByFolder);
   const [isReload, setIsReload] = useState(false);
+  const [searchParams, setSearchParams] = useState({
+    area: "",
+    waterbody: "",
+    year: "",
+    format: "",
+  });
 
   // Extract unique folder names
   const uniqueFolderNames = [
@@ -70,6 +76,8 @@ const FileNameList = ({ filesByFolder }) => {
   }, []);
 
   useEffect(() => {
+
+    
     // Create a map from verifiedFilejson for efficient lookup based on fileName
     // Create a map from verifiedFilejson for efficient lookup based on fileName
     const verifiedMap = new Map(
@@ -86,6 +94,7 @@ const FileNameList = ({ filesByFolder }) => {
     });
     setNewfilesByFolder(updatedFilesByFolder);
     setFileSearch(updatedFilesByFolder);
+    onSearchHandler2(searchParams,updatedFilesByFolder);
   }, [verifiedFilejson]);
   //getting unique area names
   const areas = filesByFolder
@@ -101,6 +110,7 @@ const FileNameList = ({ filesByFolder }) => {
 
   const onSearchHandler = (searchResults) => {
     const { area, waterbody, year, format } = searchResults;
+    setSearchParams(searchResults);
 
     let filteredFiles = newfilesByFolder;
 
@@ -132,6 +142,39 @@ const FileNameList = ({ filesByFolder }) => {
     setPageNumber(1);
   };
 
+  const onSearchHandler2 = (searchResults, newdata) => {
+    const { area, waterbody, year, format } = searchResults;
+    setSearchParams(searchResults);
+
+    let filteredFiles = newdata;
+
+    if (area !== "") {
+      filteredFiles = filteredFiles.filter((file) =>
+        file.fileName.toLowerCase().includes(area.toLowerCase() + "_")
+      );
+    }
+    if (waterbody !== "") {
+      filteredFiles = filteredFiles.filter((file) =>
+        file.fileName
+          .replace(/_/g, " ")
+          .toLowerCase()
+          .includes(waterbody.toLowerCase())
+      );
+    }
+    if (year !== "") {
+      filteredFiles = filteredFiles.filter((file) =>
+        file.fileName.includes("_" + year + "_")
+      );
+    }
+    if (format !== "") {
+      filteredFiles = filteredFiles.filter((file) =>
+        file.fileName.includes(format)
+      );
+    }
+
+    setFileSearch(filteredFiles);
+  };
+
   const handleNextPage = () => {
     setPageNumber((prevPageNumber) => prevPageNumber + 1);
   };
@@ -154,8 +197,11 @@ const FileNameList = ({ filesByFolder }) => {
 
       <div className={styles.listWrapper}>
         <div className={styles.reloadBtnWrapper}>
-          <button className={styles.reloadBtn} onClick={asyncFetch}>
-            {isReload?"Loading":"Reload"}
+          <button
+            className={styles.reloadBtn}
+            onClick={asyncFetch}
+          >
+            {isReload ? "Loading" : "Reload"}
           </button>
         </div>
         {currentPageFiles?.length === 0 && (
