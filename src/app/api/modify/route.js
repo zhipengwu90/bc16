@@ -23,7 +23,7 @@ export async function POST(request) {
         fileName: fileName,
         errorInfo: [
           {
-            errorField: "other",
+            errorField: "Other",
             errorDescription: "Modified json file, pending verification",
           },
         ],
@@ -41,24 +41,45 @@ export async function POST(request) {
       } catch (error) {
         return;
       }
-      const newData = existingJsonArray.map((item) => {
+
+      // const newData = existingJsonArray.map((item) => {
+      //   if (item.fileName === fileName) {
+      //     return {
+      //       ...item,
+      //       isModified: true,
+      //       error: true,
+      //       errorInfo: [
+      //         ...item.errorInfo,
+      //         {
+      //           errorField: "other",
+      //           errorDescription: "Modified json file, pending verification",
+      //         },
+      //       ],
+      //     };
+      //   }
+      //   return item;
+      // });
+
+      let fileExists = false;
+      existingJsonArray.forEach((item) => {
         if (item.fileName === fileName) {
-          return {
-            ...item,
-            isModified: true,
-            error: true,
-            errorInfo: [
-              ...item.errorInfo,
-              {
-                errorField: "other",
-                errorDescription: "Modified json file, pending verification",
-              },
-            ],
-          };
+          // If the fileName exists, append the error info
+          item.isModified = true;
+          item.error = true;
+          item.errorInfo.push({
+            errorField: errorField,
+            errorDescription: errorDescription,
+          });
+          fileExists = true;
         }
-        return item;
       });
-      const updatedJsonData = JSON.stringify(newData, null, 2);
+
+      if (!fileExists) {
+        existingJsonArray = [...existingJsonArray, ...errorData];
+      }
+      // Convert the updated data to JSON string
+      const updatedJsonData = JSON.stringify(existingJsonArray, null, 2);
+
       try {
         await blockBlobClientErrorLog.upload(
           updatedJsonData,
