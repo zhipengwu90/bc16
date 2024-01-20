@@ -17,6 +17,7 @@ const FileNameList = ({ filesByFolder }) => {
   const startIndex = (pageNumber - 1) * pageSize;
   const endIndex = startIndex + pageSize;
   const [newfilesByFolder, setNewfilesByFolder] = useState(filesByFolder);
+  const [isReload, setIsReload] = useState(false);
 
   // Extract unique folder names
   const uniqueFolderNames = [
@@ -24,6 +25,7 @@ const FileNameList = ({ filesByFolder }) => {
   ];
 
   const asyncFetch = async () => {
+    setIsReload(true);
     const Response = await fetch("/api/verifiedFile", {
       method: "POST",
       headers: {
@@ -50,6 +52,7 @@ const FileNameList = ({ filesByFolder }) => {
             const dataObject = JSON.parse(jsonString);
 
             setVerifiedFilejson(dataObject);
+            setIsReload(false);
           }
         } catch (error) {
           console.error("Error reading response:", error);
@@ -150,6 +153,11 @@ const FileNameList = ({ filesByFolder }) => {
       <FileSearch areas={areas} onSearch={onSearchHandler} />
 
       <div className={styles.listWrapper}>
+        <div className={styles.reloadBtnWrapper}>
+          <button className={styles.reloadBtn} onClick={asyncFetch}>
+            {isReload?"Loading":"Reload"}
+          </button>
+        </div>
         {currentPageFiles?.length === 0 && (
           <div className={styles.noFiles}>No files found!</div>
         )}
@@ -179,7 +187,12 @@ const FileNameList = ({ filesByFolder }) => {
                 <Image src={error} alt="error" height={17} width={17} />
               )}
               {file.isModified && (
-                <Image src={modifiedIcon} alt="modified" height={23} width={23} />
+                <Image
+                  src={modifiedIcon}
+                  alt="modified"
+                  height={23}
+                  width={23}
+                />
               )}
             </Link>
           </div>
