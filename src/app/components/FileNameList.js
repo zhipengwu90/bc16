@@ -3,6 +3,7 @@ import { useState, useEffect, use } from "react";
 import Image from "next/image";
 import verified from "../../../public/images/verified.svg";
 import error from "../../../public/images/error.svg";
+import modifiedIcon from "../../../public/images/modified.svg";
 import Link from "next/link";
 import FileSearch from "./FileSearch";
 import styles from "./FileNameList.module.css";
@@ -69,9 +70,9 @@ const FileNameList = ({ filesByFolder }) => {
     // Create a map from verifiedFilejson for efficient lookup based on fileName
     // Create a map from verifiedFilejson for efficient lookup based on fileName
     const verifiedMap = new Map(
-      verifiedFilejson.map(({ fileName, verified, error }) => [
+      verifiedFilejson.map(({ fileName, verified, error, isModified }) => [
         fileName,
-        { verified, error },
+        { verified, error, isModified },
       ])
     );
 
@@ -80,7 +81,6 @@ const FileNameList = ({ filesByFolder }) => {
       const values = verifiedMap.get(file.fileName);
       return values ? { ...file, ...values } : file;
     });
-
     setNewfilesByFolder(updatedFilesByFolder);
     setFileSearch(updatedFilesByFolder);
   }, [verifiedFilejson]);
@@ -167,6 +167,7 @@ const FileNameList = ({ filesByFolder }) => {
                   fileName: file.fileName,
                   verified: file.verified,
                   error: file.error,
+                  isModified: file.isModified,
                 },
               }}
             >
@@ -174,8 +175,11 @@ const FileNameList = ({ filesByFolder }) => {
               {file.verified && (
                 <Image src={verified} alt="verified" height={25} width={25} />
               )}
-               {file.error && (
+              {file.error && (
                 <Image src={error} alt="error" height={17} width={17} />
+              )}
+              {file.isModified && (
+                <Image src={modifiedIcon} alt="modified" height={23} width={23} />
               )}
             </Link>
           </div>

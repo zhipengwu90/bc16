@@ -1,4 +1,4 @@
-// send verified  data to azure blob storage
+// fetch error log from azure blob storage
 import { BlobServiceClient } from "@azure/storage-blob";
 
 export async function POST(request) {
