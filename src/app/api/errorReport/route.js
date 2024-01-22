@@ -11,7 +11,7 @@ export async function POST(request) {
       {
         folderName: folderName,
         fileName: fileName,
-        error: error,
+        error: true,
         errorInfo: [
           { errorField: errorField, errorDescription: errorDescription },
         ],

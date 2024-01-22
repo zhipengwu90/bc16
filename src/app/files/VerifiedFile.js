@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect, use } from "react";
 import Image from "next/image";
 import verifiedIcon from "../../../public/images/verified.svg";
 import styles from "./VerifiedFile.module.css";
@@ -10,6 +10,14 @@ const VerifiedFile = ({ folderName, fileName, verified }) => {
   //   });
   const [isToggled, setIsToggled] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const passwordRef = useRef(null);
+
+  useEffect(() => {
+    if (isToggled) {
+      passwordRef.current.focus();
+    }
+  }, [isToggled]);
+
   const onClickHandler = async (e) => {
     const submitData = {
       folderName: e.target.folderName.value,
@@ -35,9 +43,8 @@ const VerifiedFile = ({ folderName, fileName, verified }) => {
   };
   const onPasswordHandler = (e) => {
     const password = document.getElementById("password").value;
-    if (password === "1234") {
+    if (password === "123") {
       onClickHandler(e);
- 
     } else {
       alert("Wrong Password");
     }
@@ -60,7 +67,12 @@ const VerifiedFile = ({ folderName, fileName, verified }) => {
             <div className={styles.passwordWrap}>
               <label htmlFor="password">Password</label>
 
-              <input type="password" id="password" name="password" />
+              <input
+                type="password"
+                id="password"
+                ref={passwordRef}
+                name="password"
+              />
             </div>
 
             <input
@@ -95,8 +107,13 @@ const VerifiedFile = ({ folderName, fileName, verified }) => {
       )}
 
       {!isSuccess && !verified && (
-        <button className= {styles.verifiedButton} type="submit" onClick={() => setIsToggled(true)}>
-          Verified File<Image src={verifiedIcon} alt="verified" width={22} height={22} />
+        <button
+          className={styles.verifiedButton}
+          type="submit"
+          onClick={() => setIsToggled(true)}
+        >
+          Verified File
+          <Image src={verifiedIcon} alt="verified" width={22} height={22} />
         </button>
       )}
     </>

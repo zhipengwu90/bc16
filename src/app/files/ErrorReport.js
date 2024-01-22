@@ -15,6 +15,7 @@ const ErrorReport = ({ folderName, fileName }) => {
     status: null,
     message: null,
   });
+  const [isSelected, setIsSelected] = useState(false);
 
   // useEffect(() => {
   //   if (state.status === 200) {
@@ -39,21 +40,29 @@ const ErrorReport = ({ folderName, fileName }) => {
   const [submitData, setSubmitData] = useState({
     fileName: fileName,
     folderName: folderName,
-    errorField: "Stream Identification",
+    errorField: "",
     errorDescription: "",
     error: true,
-    
   });
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     const trimmedValue = value.trim();
+
+    
     setSubmitData({
       ...submitData,
       [name]: trimmedValue,
     });
   };
+
+
   const onClickHandler = async () => {
+    if (submitData.errorField === "") {
+      alert("Please select an error field");
+      return;
+    }
+    
     const Response = await fetch("/api/errorReport", {
       method: "POST",
       body: JSON.stringify(submitData),
@@ -72,7 +81,7 @@ const ErrorReport = ({ folderName, fileName }) => {
       setSubmitData({
         fileName: fileName,
         folderName: folderName,
-        errorField: "Stream Identification",
+        errorField: "",
         errorDescription: "",
       });
       errorFieldRef.current.value = "";
@@ -82,9 +91,12 @@ const ErrorReport = ({ folderName, fileName }) => {
 
   return (
     <>
-      <button className={styles.reportButton} onClick={() => setIsToggled(!isToggled)}>
-
-        Report Errors      <Image src={error} alt="error" width={15} height={15} /></button>
+      <button
+        className={styles.reportButton}
+        onClick={() => setIsToggled(!isToggled)}
+      >
+        Report Errors <Image src={error} alt="error" width={15} height={15} />
+      </button>
       {isToggled && (
         <>
           <div
@@ -98,7 +110,6 @@ const ErrorReport = ({ folderName, fileName }) => {
           >
             <div className={styles.title}>Report Errors</div>
             <div className={styles.formField}>
-
               <input
                 type="hidden"
                 id="folderName"
@@ -118,9 +129,11 @@ const ErrorReport = ({ folderName, fileName }) => {
                 onChange={handleChange}
                 ref={errorFieldRef}
               >
-                <option defaultValue value="Stream Identification">
+                <option defaultValue="">Select One</option>
+                <option value="Stream Identification">
                   Stream Identification
                 </option>
+
                 <option value="yearArea">Year/Area</option>
                 <option value="spawningTable">Spawning Table</option>
                 <option value="unusualCondition">Unusual Condition</option>
