@@ -5,19 +5,18 @@ const TableType2 = ({ items, folderName }) => {
   const renderTable = (item) => {
     const species = items["Spawning Run Timing and Estimated Number"]?.[item];
     if (species) {
-      const cleanString = (str) =>
-        str ? str.replace(/^[:/_]+|[:/_]+$/g, "") : "";
+  
 
       return (
         <>
-          <td>{cleanString(species["Arrival In Stream Month"])}</td>
-          <td>{cleanString(species["Arrival In Stream Day"])}</td>
-          <td>{cleanString(species["Spawning Start Month"])}</td>
-          <td>{cleanString(species["Spawning Start Day"])}</td>
-          <td>{cleanString(species["Spawning Peak Month"])}</td>
-          <td>{cleanString(species["Spawning Peak Day"])}</td>
-          <td>{cleanString(species["Spawning End Month"])}</td>
-          <td>{cleanString(species["Spawning End Day"])}</td>
+           <td>{species["Arrival In Stream Month"]}</td>
+          <td>{species["Arrival In Stream Day"]}</td>
+          <td>{species["Spawning Start Month"]}</td>
+          <td>{species["Spawning Start Day"]}</td>
+          <td>{species["Spawning Peak Month"]}</td>
+          <td>{species["Spawning Peak Day"]}</td>
+          <td>{species["Spawning End Month"]}</td>
+          <td>{species["Spawning End Day"]}</td>
 
           <td>{species["Methods"]}</td>
           <td>{species["Reliability"]}</td>
@@ -61,7 +60,7 @@ const TableType2 = ({ items, folderName }) => {
           <td colSpan="6">
             <div>
               (3) <br />
-              DATES of SPAWNING{" "}
+              DATES of SPAWNING
             </div>
             <div className={styles.columThree}>
               <span>START</span>

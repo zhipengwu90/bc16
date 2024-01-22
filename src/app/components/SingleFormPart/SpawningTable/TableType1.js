@@ -9,20 +9,19 @@ const TableType1 = ({ items, folderName }) => {
       (format6e && items["Spawning run timing"]?.[item]) ||
       (format4c && items["Spawning run timing and estimated number"]?.[item]);
     if (species) {
-      const cleanString = (str) =>
-        str ? str.replace(/^[:/_]+|[:/_]+$/g, "") : "";
+      
       return (
         <>
           {format6e && (
             <>
-              <td>{cleanString(species["Arrival month"])}</td>
-              <td>{cleanString(species["Arrival day"])}</td>
-              <td>{cleanString(species["Spawning start month"])}</td>
-              <td>{cleanString(species["Spawning start day"])}</td>
-              <td>{cleanString(species["Spawning peak month"])}</td>
-              <td>{cleanString(species["Spawning peak day"])}</td>
-              <td>{cleanString(species["Spawning end month"])}</td>
-              <td>{cleanString(species["Spawning end day"])}</td>
+              <td>{species["Arrival month"]}</td>
+              <td>{species["Arrival day"]}</td>
+              <td>{species["Spawning start month"]}</td>
+              <td>{species["Spawning start day"]}</td>
+              <td>{species["Spawning peak month"]}</td>
+              <td>{species["Spawning peak day"]}</td>
+              <td>{species["Spawning end month"]}</td>
+              <td>{species["Spawning end day"]}</td>
               <td>{species["Observers"]}</td>
               <td>{species["Methods"]}</td>
               <td>{species["Reliability"]}</td>
@@ -32,14 +31,14 @@ const TableType1 = ({ items, folderName }) => {
           )}
           {format4c && (
             <>
-              <td>{cleanString(species["Arrival month"])}</td>
-              <td>{cleanString(species["Arrival day"])}</td>
-              <td>{cleanString(species["Start month"])}</td>
-              <td>{cleanString(species["Start day"])}</td>
-              <td>{cleanString(species["Peak month"])}</td>
-              <td>{cleanString(species["Peak day"])}</td>
-              <td>{cleanString(species["End month"])}</td>
-              <td>{cleanString(species["End day"])}</td>
+              <td>{species["Arrival month"]}</td>
+              <td>{species["Arrival day"]}</td>
+              <td>{species["Start month"]}</td>
+              <td>{species["Start day"]}</td>
+              <td>{species["Peak month"]}</td>
+              <td>{species["Peak day"]}</td>
+              <td>{species["End month"]}</td>
+              <td>{species["End day"]}</td>
               <td>{species["No. of observer"]}</td>
               <td>{species["Method"]}</td>
               <td>{species["Reliability"]}</td>

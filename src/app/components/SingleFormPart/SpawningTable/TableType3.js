@@ -5,8 +5,7 @@ const TableType2 = ({ items, folderName }) => {
   const renderTable = (item) => {
     const species = items["Duration of Spawning"]?.[item];
     if (species) {
-      const cleanString = (str) =>
-        str ? str.replace(/^[:/_]+|[:/_]+$/g, "") : "";
+
 
       return (
         <>
