@@ -86,6 +86,13 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+.part4 {
+  margin: 5px;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 .wrapper2 {
   border: 2px solid black;

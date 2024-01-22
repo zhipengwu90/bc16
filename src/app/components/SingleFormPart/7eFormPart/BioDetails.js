@@ -34,6 +34,7 @@ const BioDetails = ({ items, folderName }) => {
   const No21 = items["(21) General comments not covered"];
   const No22 = items["(22) Supplementary documentation"];
   const Comments = items["Comments on condition"];
+  const Biosampling = items["Bio Sampling"];
 
   return (
     <>
@@ -123,6 +124,22 @@ const BioDetails = ({ items, folderName }) => {
             <div>Other</div>
             <div>Comment</div>
           </div>
+          {Biosampling&&Biosampling.map((item, index) => {
+            return (
+              <div className={styles.part4} key={index}>
+                <div>{item["Species"]}</div>
+                <div>{item["Scales"]}</div>
+                <div>{item["Otoliths"]}</div>
+                <div>{item["Ovaries"]}</div>
+                <div>{item["Length"]}</div>
+                <div>{item["DNA"]}</div>
+                <div>{item["Other"]}</div>
+                <div>{item["Comments"]}</div>
+              </div>
+            );
+          }
+          )}
+
         </div>
         <div>
           <div className={styles.contactLoc}>
