@@ -11,10 +11,10 @@ export async function POST(request) {
       {
         folderName: folderName,
         fileName: fileName,
+        error: error,
         errorInfo: [
           { errorField: errorField, errorDescription: errorDescription },
         ],
-        error: error,
       },
     ];
 
@@ -22,20 +22,17 @@ export async function POST(request) {
 
     const blobService = new BlobServiceClient(SAS_URL);
 
-    
     const containerClient = blobService.getContainerClient("errorLog");
     // Generate a blob name based on the folder name
     const blobName = `${dataJson.folderName}.json`;
 
     const blockBlobClient = containerClient.getBlockBlobClient(blobName);
 
-
     //remove the verified log
     const containerClient2 = blobService.getContainerClient("verified");
     const blockBlobClient2 = containerClient2.getBlockBlobClient(blobName);
     const blobExists2 = await blockBlobClient2.exists();
     if (blobExists2) {
-
       const existingData = await blockBlobClient2.downloadToBuffer();
       const existingJson = existingData.toString();
       // Parse the existing JSON data
@@ -56,7 +53,6 @@ export async function POST(request) {
         return new Response(error.message, { status: 500 });
       }
     }
-    
 
     // Check if the blob already exists
     const blobExists = await blockBlobClient.exists();
