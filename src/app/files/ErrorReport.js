@@ -15,7 +15,16 @@ const ErrorReport = ({ folderName, fileName }) => {
     status: null,
     message: null,
   });
-  const [isSelected, setIsSelected] = useState(false);
+
+  useEffect(() => {
+    isToggled &&
+      setSubmitData({
+        fileName: fileName,
+        folderName: folderName,
+        errorField: "",
+        errorDescription: "",
+      });
+  }, [isToggled]);
 
   // useEffect(() => {
   //   if (state.status === 200) {
@@ -45,24 +54,24 @@ const ErrorReport = ({ folderName, fileName }) => {
     error: true,
   });
 
+  console.log(submitData);
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     const trimmedValue = value.trim();
 
-    
     setSubmitData({
       ...submitData,
       [name]: trimmedValue,
     });
   };
 
-
   const onClickHandler = async () => {
     if (submitData.errorField === "") {
       alert("Please select an error field");
       return;
     }
-    
+
     const Response = await fetch("/api/errorReport", {
       method: "POST",
       body: JSON.stringify(submitData),
