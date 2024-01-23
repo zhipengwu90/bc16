@@ -54,7 +54,7 @@ const ErrorReport = ({ folderName, fileName }) => {
     error: true,
   });
 
-  console.log(submitData);
+
 
   const handleChange = (event) => {
     const { name, value } = event.target;
