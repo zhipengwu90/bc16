@@ -30,7 +30,7 @@ const TableType4 = ({ items, folderName }) => {
         <td>{details ? details["Est total adults"] : ""}</td>
         <td>{details ? details["Brood stock removals"] : ""}</td>
         <td>{details ? details["Jacks"] : ""}</td>
-        <td>{details ? details["Escapement goal"] : ""}</td>
+        <td>{details ? details["Escapement Goal"] : ""}</td>
       </>
     );
   };
