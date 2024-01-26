@@ -12,7 +12,7 @@ const TableType4 = ({ items, folderName }) => {
     // "(6) General comments": "unselected",
 
     return (
-      <>
+      <> 
         <td>{species ? species["Arrival month"] : ""}</td>
         <td>{species ? species["Arrival day"] : ""}</td>
         <td>{species ? species["Start month"] : ""}</td>
