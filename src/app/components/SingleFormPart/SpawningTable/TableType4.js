@@ -34,7 +34,7 @@ const TableType4 = ({ items, folderName }) => {
       </>
     );
   };
-
+   
   return (
     <>
       <table className={styles.myTable}>
@@ -129,7 +129,7 @@ const TableType4 = ({ items, folderName }) => {
           <tr>
             <td rowSpan={2} className={styles.colOne}>
               CT 1
-              <br />2
+              <br />2 
             </td>
             {renderTable("CT 1")}
           </tr>
